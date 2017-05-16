@@ -1,0 +1,12 @@
+body {
+	padding: 10px;
+	color: $blue;
+	margin: 10px;
+	columns: 300px 2;
+}
+
+.box {
+	a {
+		display: block;
+	}
+}
