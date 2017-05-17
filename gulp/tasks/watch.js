@@ -6,16 +6,16 @@ gulp.task("watch", function() {
 
 	browserSync.init ({
 		server: {
-			baseDir: "./"
+			baseDir: "./app"
 		}
 	});
 
 
-	watch("./index.html", function() { 	 // it takes  arguments, first is the file and second is what to do?
+	watch("./app/index.html", function() { 	 // it takes  arguments, first is the file and second is what to do?
 		browserSync.reload();
 	});
 
-	watch("styles/**/*.css", function() {
+	watch("./app/styles/**/*.css", function() {
 		gulp.start('cssInject');
 	});
 
@@ -24,6 +24,6 @@ gulp.task("watch", function() {
 
 
 gulp.task('cssInject', ['styles'], function() {
-	return gulp.src('temp/style.css')
+	return gulp.src('./app/temp/style.css')
 	.pipe(browserSync.stream());
 });
