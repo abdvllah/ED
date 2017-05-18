@@ -1,0 +1,51 @@
+.large-hero {
+	background-image: url('../assets/hero.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	text-align: center;
+
+	&__trangle-pattern {
+		display: none;
+
+		@mixin atMedium {
+			display: block;
+			position: absolute;
+			width: 60%;
+			opacity: .5;
+			left: 180px;
+			top: 90px;
+		}
+	}
+	&__trangle-pattern--small {
+		position: absolute;
+		width: 70%;
+		opacity: .5;
+		right: 0px;
+		bottom: 0px;
+
+		@mixin atMedium {
+			width: 20%;
+			opacity: .5;
+			right: 0px;
+			bottom: 0px;
+		}
+	}
+
+	&__slogen {
+		position: absolute;
+		bottom: 20%;
+		color: #FFF;
+		font-size: 70px;
+		text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+		opacity: 0.4;
+
+		@mixin atMedium {
+			bottom: 100px;
+			right: 5px;
+			color: #FFF;
+			font-size: 70px;
+		}
+	}
+	
+}

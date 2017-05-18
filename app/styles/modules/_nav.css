@@ -1,11 +1,11 @@
 .nav {
 	background: rgba($black, .7);
-	width: 20%;
+	width: 50%;
 	height: 100%;
 	padding-top: 50px;
 
-	@mixin atSmall {
-		width: 50%;
+	@mixin atMedium {
+		width: 20%;
 	}
 
 	ul {
@@ -17,11 +17,15 @@
 			display: inline-block;
 			width: 100px;
 			height: 30px;
+			padding: 5px;
 			margin-bottom: 15px;
 			margin-left: 25%;
 			text-decoration: none;
 			color: #FFF;
 			border-bottom: 1px solid;
+		}
+		li > a:hover {
+			background-color: rgba($black, .3);
 		}
 	}
 

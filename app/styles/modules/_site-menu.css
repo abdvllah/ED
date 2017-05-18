@@ -60,14 +60,12 @@
 	}
 
 	&__content {
-		opacity: 0;
 		z-index: -10;
 		transform: scaleX(0);
 		transform-origin: top right;
-		transition: transform 0.5s ease-out;
+		transition: transform 0.5s ease-in-out;
 
 		&__is-visible {
-			opacity: 1;
 			z-index: 1;
 			transform: scaleX(1);
 		}
