@@ -4,12 +4,13 @@ autoprefixer = require('autoprefixer'),
 cssvars = require('postcss-simple-vars'),
 nested = require('postcss-nested'),
 cssimport = require('postcss-import'),
-hexrgba = require('postcss-hexrgba');
+hexrgba = require('postcss-hexrgba'),
+mixin = require('postcss-mixins');
 
 
 gulp.task('styles', function() {
 	return gulp.src('./app/styles/style.css')
-	.pipe(postcss([cssimport, cssvars, autoprefixer, nested, hexrgba]))
+	.pipe(postcss([cssimport, cssvars, autoprefixer, nested, hexrgba, mixin]))
 	.on('error', function(errorInfo) {
 		console.log(errorInfo.toString());
 		this.emit('end');

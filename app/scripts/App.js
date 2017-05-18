@@ -1,1 +1,3 @@
-console.log("Hello from App");
+import MobileMenu from './modules/MobileMenu';
+
+var mobileMenu = new MobileMenu();
