@@ -7,8 +7,4 @@
 	max-width: 170px;
 	margin-top: 30px;
 
-	&--right-aligned {
-		position: absolute;
-		right: 0;
-	}
 }
