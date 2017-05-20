@@ -5,7 +5,7 @@
 	background-position: 50% 50%;
 	text-align: center;
 
-	&__trangle-pattern {
+	&__triangle-pattern {
 		display: none;
 
 		@mixin atMedium {
@@ -17,7 +17,7 @@
 			top: 90px;
 		}
 	}
-	&__trangle-pattern--small {
+	&__triangle-pattern--small {
 		position: absolute;
 		width: 70%;
 		opacity: .5;
