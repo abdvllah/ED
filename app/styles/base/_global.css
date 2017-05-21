@@ -12,19 +12,3 @@ img {
 	box-sizing: border-box;
 }
 
-.site-logo {
-	width: 150px;
-	position: absolute;
-	z-index: 1;
-	top: 20px;
-	left: 20px;
-
-	@mixin atMedium {
-		width: 200px;
-		position: absolute;
-		z-index: 1;
-		top: 20px;
-		left: 20px;
-	}
-	
-}

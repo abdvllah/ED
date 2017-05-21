@@ -464,27 +464,6 @@ img {
 	        box-sizing: border-box;
 }
 
-.site-logo {
-	width: 150px;
-	position: absolute;
-	z-index: 1;
-	top: 20px;
-	left: 20px;
-	
-}
-
-@media (min-width: 800px) {
-
-.site-logo {
-		width: 200px;
-		position: absolute;
-		z-index: 1;
-		top: 20px;
-		left: 20px
-	
-}
-	}
-
 .nav {
 	background: rgba(25,29,28, .7);
 	width: 50%;
@@ -541,6 +520,27 @@ img {
 	text-align: center;
 	
 }
+
+.large-hero__site-logo {
+		width: 150px;
+		position: absolute;
+		z-index: 1;
+		top: 20px;
+		left: 20px;
+		
+	}
+
+@media (min-width: 800px) {
+
+.large-hero__site-logo {
+			width: 200px;
+			position: absolute;
+			z-index: 1;
+			top: 20px;
+			left: 20px
+		
+	}
+	}
 
 .large-hero__triangle-pattern {
 		display: none;
@@ -685,12 +685,6 @@ img {
 
 }
 
-.upcoming-events::after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-
 .upcoming-events__wrapper {
 		position: relative;
 		height: 100%;
@@ -776,6 +770,26 @@ img {
 			margin-right: -50px;
 			z-index: 1
 	}
+	}
+
+.upcoming-events__strip::after {
+			content: "";
+			position: absolute;
+			top: 15px;
+			right: 100px;
+			display: block;
+			width: 0; 
+			height: 0; 
+			border-top: 20px solid transparent;
+			border-bottom: 20px solid transparent;
+			border-left: 20px solid white;
+		}
+
+@media (min-width: 800px) {
+
+.upcoming-events__strip::after {
+				right: 15px
+		}
 	}
 
 .upcoming-events__button {
