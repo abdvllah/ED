@@ -58,8 +58,8 @@
 		opacity: 0.4;
 
 		@mixin atMedium {
-			bottom: 100px;
-			right: 5px;
+			bottom: 50px;
+			right: 10px;
 			color: #FFF;
 			font-size: 70px;
 		}

@@ -12,10 +12,21 @@
 	}
 
 	&__title {
-		font-size: 30px;
+		text-align: center;
+		font-size: 50px;
 		color: darken($red, 10%);
 		text-transform: capitalize;
 		position: relative;
+		margin: 0;
+		padding-top: 10%;
+		padding-bottom: 20px;
+		font-weight: bold;
+
+		@mixin atMedium {
+			font-size: 30px;
+			text-align: left;
+			padding-top: 5%;
+		}
 	}
 
 	&__image {
@@ -61,7 +72,7 @@
 		z-index: 1;
 
 		@mixin atMedium {
-			width: 120%;
+			width: 200%;
 			height: 70px;
 			background-color: $red;
 			color: #FFF;

@@ -12,3 +12,10 @@ img {
 	box-sizing: border-box;
 }
 
+.polygon {
+	transition: fill .2s ease-in;
+}
+.polygon:hover {
+	fill: $red;
+}
+
