@@ -1,0 +1,42 @@
+.section {
+
+	&--large {
+		height: 70%;
+		padding: 10% 5%;
+		text-align: center;
+
+		@mixin atMedium {
+			height: 65%;
+			padding: 10% 5%;
+		}
+
+		&__button {
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			margin-top: 0;
+
+			@mixin atMedium {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	&--small {
+		&__title {
+			font-size: 30px;
+			color: lighten($black, .7);
+			padding-top: 30px;
+			padding-left: 10px;
+			margin: 0;
+			background: url('../assets/dark-pattern.png') center center;
+			background-size: contain;
+			text-transform: uppercase;
+
+			@mixin atMedium {
+				padding-top: 60px;
+			}
+		}
+	}
+
+}

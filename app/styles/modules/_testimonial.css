@@ -1,0 +1,78 @@
+.testimonial {
+	width: 100%;
+	height: 90%;
+	position: relative;
+
+	@mixin atMedium {
+		height: 100%;
+	}
+
+	&__photo {
+		width: 120px;
+		height: 120px;
+		background-color: gray;
+		margin: auto;
+		transform: rotate(45deg);
+
+		@mixin atMedium {
+			width: 150px;
+			height: 150px;
+			margin: auto 50px;
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		color: $black;
+		text-align: center;
+		position: relative;
+		line-height: 1.5;
+		padding-top: 20px;
+
+		@mixin atMedium {
+			font-size: 20px;
+			position: absolute;
+			top: 25%;
+			padding-left: 25%;
+			padding-right: 5%;
+			padding-top: 0;
+			line-height: 1.5;
+		}
+		
+		span {
+			font-size: 80px;
+			position: absolute;
+
+			@mixin atMedium {
+				font-size: 100px;
+			}
+		}
+		span.right-q {
+			right: 0;
+			top: 70%;
+
+			@mixin atMedium {
+				right: 5%;
+				top: 30px;
+			}
+		}
+		span.left-q {
+			left: 0;
+			bottom: 30%;
+
+			@mixin atMedium {
+				left: 22%;
+				bottom: 2%;
+			}
+		}
+	}
+
+	&__name {
+		display: inline;
+		position: absolute;
+		right: 15%;
+		font-weight: bold;
+		font-size: 20px;
+		color: $red;
+	}
+}
