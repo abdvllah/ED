@@ -70,4 +70,22 @@
 			transform: scaleX(1);
 		}
 	}
+
+	&__navigation {
+		position: fixed;
+		bottom: 30%;
+		left: 7%;
+		z-index: 10;
+
+		a {
+			display: block;
+			border: 2px solid $black;
+			width: 20px;
+			height: 20px;
+			margin-bottom: 10px;
+			text-decoration: none;
+			color: #FFF;
+			font-size: 20px;
+		}
+	}
 }

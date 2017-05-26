@@ -1,0 +1,39 @@
+.quote {
+	font-size: 18px;
+	color: $black;
+	text-align: center;
+	position: relative;
+	line-height: 1.5;
+
+		@mixin atMedium {
+			font-size: 14px;
+			line-height: 1.5;
+		}
+		
+		span {
+			font-size: 80px;
+			position: absolute;
+
+			@mixin atMedium {
+				font-size: 70px;
+			}
+		}
+		span.right-q {
+			right: 0;
+			top: 70%;
+
+			@mixin atMedium {
+				right: 5%;
+				top: 30px;
+			}
+		}
+		span.left-q {
+			left: 0;
+			bottom: 30%;
+
+			@mixin atMedium {
+				left: 0%;
+				bottom: 20%;
+			}
+		}
+}

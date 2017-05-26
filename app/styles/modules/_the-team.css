@@ -1,0 +1,48 @@
+.the-team {
+	background: url('../assets/pattern-top.svg') top center no-repeat;
+	background-size: contain;
+
+	&__heading {
+		font-size: 35px;
+		color: $black;
+		text-align: center;
+		padding-top: 60px;
+	}
+
+	&__photo {
+		margin: auto;
+		width: 200px;
+		height: 200px;
+	}
+
+	&__bio {
+		background-color: lighten($black, .1);
+		margin: 50px auto;
+		width: 300px;
+		padding: 10px;
+		text-align: justify;
+		color: #FFF;
+	}
+
+	&__pillow {
+		background: url('../assets/left-pillow.svg') top center no-repeat;
+		height: 100px;
+		width: 100%;
+		padding: 20% 0 0 15%;
+		font-size: 18px;
+		font-weight: bold;
+		color: #FFF;
+		margin-bottom: -30px;
+
+		&--right {
+			padding: 20% 0 0 50%;
+			background: url('../assets/right-pillow.svg') top center no-repeat;
+
+		}
+	}
+
+	&__button {
+		position: absolute;
+		bottom: 10%;
+	}
+}

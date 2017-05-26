@@ -1,14 +1,27 @@
 @import "normalize.css";
+
+/* Global */
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
+
+/* General Modules */
+@import "modules/_site-menu";
 @import "modules/_nav";
 @import "modules/_wrapper-full-height";
-@import "modules/_large-hero";
-@import "modules/_site-menu";
-@import "modules/_upcoming-events";
+@import "modules/_photo";
+@import "modules/_quote";
+@import "modules/_form";
+@import "modules/_heading";
 @import "modules/_button";
+@import "modules/_slider-container";
+@import "modules/_flex-wrapper";
+@import "modules/_section";
+
+/* Home Page Sections Modules */
+@import "modules/_large-hero";
+@import "modules/_upcoming-events";
 @import "modules/_our-services";
 @import "modules/_testimonial";
-@import "modules/_section";
-@import "modules/_slider-container";
+@import "modules/_the-team";
+@import "modules/_contact";

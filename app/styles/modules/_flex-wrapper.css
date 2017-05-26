@@ -1,0 +1,14 @@
+.flex-wrapper {
+	display: flex;
+	justify-content: space-around;
+
+	&__child {
+		flex-basis: 20%;
+	}
+
+	&--narrow-height {
+		height: 80%;
+		width: 70%;
+		align-items: flex-start;
+	}
+}

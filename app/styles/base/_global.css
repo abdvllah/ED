@@ -1,6 +1,6 @@
 html, body {
 	height: 100%;
-	background-color: #cfcfcf;
+	background: $backGray;
 }
 
 img {
@@ -12,9 +12,25 @@ img {
 	box-sizing: border-box;
 }
 
-.polygon {
-	transition: fill .2s ease-in;
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-.polygon:hover {
-	fill: $red;
+
+g polygon {
+	transition: fill 0.5s;
+
+	&:hover {
+		fill: $red;
+	}
+}
+
+.background-image {
+	background-position: center center;
+	background-size: 50% 50%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: $black;
+	height: 100%;
 }

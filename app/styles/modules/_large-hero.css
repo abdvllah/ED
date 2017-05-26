@@ -4,6 +4,13 @@
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	text-align: center;
+	background-attachment: fixed;
+
+
+
+	@mixin atMedium {
+		background-attachment: fixed;
+	}
 
 	&__site-logo {
 		width: 150px;
@@ -13,7 +20,7 @@
 		left: 20px;
 
 		@mixin atMedium {
-			width: 200px;
+			width: 150px;
 			position: absolute;
 			z-index: 1;
 			top: 20px;
