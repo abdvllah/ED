@@ -1,0 +1,15 @@
+.slide-item {
+	
+	&--to-right {
+		left: -100%;
+		transition: all .5s ease-in;
+
+		&--is-visible {
+			left: 0;
+		}
+	}
+	
+	&--is-visible {
+
+	}
+}

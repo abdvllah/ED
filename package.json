@@ -14,12 +14,15 @@
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.0",
     "gulp-watch": "^4.3.11",
+    "jquery-scrollify": "^1.0.14",
     "postcss-colour-functions": "^1.5.2",
     "postcss-hexrgba": "^0.2.1",
     "postcss-import": "^10.0.0",
+    "postcss-inherit": "^4.0.3",
     "postcss-mixins": "^6.0.0",
     "postcss-nested": "^2.0.2",
     "postcss-simple-vars": "^4.0.0",
+    "waypoints": "^4.0.1",
     "webpack": "^2.5.1"
   }
 }

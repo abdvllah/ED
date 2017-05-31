@@ -2,7 +2,7 @@
 	&__icon {
 		position: absolute;
 		top: 50px;
-		right: 50px;
+		right: 2%;
 		width: 30px;
 		height: 30px;
 		z-index: 10;
@@ -73,19 +73,62 @@
 
 	&__navigation {
 		position: fixed;
-		bottom: 30%;
-		left: 7%;
+		top: 15%;
+		right: 2.3%;
 		z-index: 10;
 
-		a {
+		.direct-page {
 			display: block;
-			border: 2px solid $black;
-			width: 20px;
 			height: 20px;
-			margin-bottom: 10px;
+			width: 20px;
+			border: 2px solid #FFF;
 			text-decoration: none;
 			color: #FFF;
 			font-size: 20px;
+			margin: 10px auto 10px auto;
+			border-radius: 100%;
+			position: relative;
+			cursor: pointer;
+
+			.caption {
+				display: none;
+				color: #FFF;
+				background-color: $red;
+				font-size: 12px;
+				text-align: center;
+				position: absolute;
+				left: -130px;
+				top: -30%;
+				padding: 10px;
+				width: 120px;
+
+				&::after {
+					content: "";
+					position: absolute;
+					right: -8px;
+					top: 35%;
+					display: block;
+					width: 0; 
+					height: 0; 
+					border-top: 5px solid transparent;
+					border-bottom: 5px solid transparent;
+					border-left: 10px solid $red;
+				}
+			}
+
+			&:hover .caption {
+				display: block;
+			}
+		}
+		.active {
+			background-color: $red;
+		}
+
+		.prev, .next {
+			color: $red;
+			font-size: 35px;
+			margin: 0 auto;
+			cursor: pointer;
 		}
 	}
 }

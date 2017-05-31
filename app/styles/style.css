@@ -5,6 +5,11 @@
 @import "base/_mixins";
 @import "base/_global";
 
+/* Animations Modules */
+@import "animations/_slide-item";
+@import "animations/_reveal-item";
+
+
 /* General Modules */
 @import "modules/_site-menu";
 @import "modules/_nav";

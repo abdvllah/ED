@@ -6,4 +6,10 @@
 	max-width: 170px;
 	margin-top: 30px;
 	text-align: center;
+
+	/*&:hover {
+		background-color: $red;
+		color: #FFF;
+		transform: scale(1.1);
+	}*/
 }
