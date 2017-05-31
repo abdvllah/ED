@@ -713,6 +713,32 @@ g polygon:hover {
 	overflow: hidden;
 }
 
+.slider-wrapper {
+	overflow: hidden;
+	height: 75%;
+	padding: 10% 2%;
+	position: relative;
+}
+
+.slider-wrapper .slide {
+		height: 100%;
+		display: none;
+	}
+
+.slider-wrapper .slide--visible {
+			display: block;
+		}
+
+.slider-wrapper .next {
+		width: 50px;
+		background-color: #C7001C;
+		position: absolute;
+		bottom: 0;
+		color: #FFF;
+		padding: 10px;
+		cursor: pointer;
+	}
+
 .photo {
 	width: 120px;
 	height: 120px;
@@ -849,15 +875,16 @@ g polygon:hover {
 
 .section--large {
 		height: 70%;
-		padding: 10% 5%;
-		text-align: center;
+/*		padding: 10% 5%;
+*/		text-align: center;
 	}
 
 @media (min-width: 800px) {
 
 .section--large {
-			height: 65%;
-			padding: 10% 5%
+			height: 65%
+/*			padding: 10% 5%;
+*/
 	}
 	}
 

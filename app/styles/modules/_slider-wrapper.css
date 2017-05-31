@@ -1,0 +1,25 @@
+.slider-wrapper {
+	overflow: hidden;
+	height: 75%;
+	padding: 10% 2%;
+	position: relative;
+
+	.slide {
+		height: 100%;
+		display: none;
+
+		&--visible {
+			display: block;
+		}
+	}
+
+	.next {
+		width: 50px;
+		background-color: $red;
+		position: absolute;
+		bottom: 0;
+		color: #FFF;
+		padding: 10px;
+		cursor: pointer;
+	}
+}

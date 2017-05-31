@@ -2,13 +2,13 @@
 
 	&--large {
 		height: 70%;
-		padding: 10% 5%;
-		text-align: center;
+/*		padding: 10% 5%;
+*/		text-align: center;
 
 		@mixin atMedium {
 			height: 65%;
-			padding: 10% 5%;
-		}
+/*			padding: 10% 5%;
+*/		}
 
 		&__button {
 			display: block;
