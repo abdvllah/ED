@@ -1,6 +1,10 @@
 .flex-wrapper {
-	display: flex;
-	justify-content: space-around;
+	display: block;
+	
+	@mixin atMedium {
+		display: flex;
+		justify-content: space-around;
+	}
 
 	&__child {
 		flex-basis: 20%;

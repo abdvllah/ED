@@ -1,5 +1,12 @@
 import $ from 'jquery';
 
+$(document).ready(function() {
+    console.log("Document is ready");
+    var sponsersItem = $('.sponsers__item');
+    console.log(sponsersItem.length);
+});
+
+
 // Activating hover for touch screens
 $('*').on("touchstart", function (e) {
     "use strict"; //satisfy the code inspectors

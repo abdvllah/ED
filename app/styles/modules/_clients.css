@@ -42,4 +42,40 @@
 		}
 	}
 
+	.control {
+			background-color: $black;
+			width: 100px;
+			height: 50px;
+			color: #FFF;
+		}
+
+	.sponsers {
+		width: 100%;
+		padding: 0 10px;
+		margin: 10px 0;
+		position: relative;
+		transition: all 5s ease;
+
+		&:hover {
+			transform: translateX(-50%);
+		}
+
+		&__item {
+			background-color: $red;
+			margin: 10px;
+			width: 200px;
+			height: 100px;
+			float: left;
+		}
+	}
+
+}
+
+#testimonial-slider {
+	height: 75%;
+	margin-bottom: 10%;
+
+	@mixin atMedium {
+		margin-bottom: 0;
+	}
 }

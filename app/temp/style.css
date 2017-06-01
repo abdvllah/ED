@@ -715,7 +715,7 @@ g polygon:hover {
 
 .slider-wrapper {
 	overflow: hidden;
-	height: 75%;
+	height: 100%;
 	position: relative;
 }
 
@@ -869,12 +869,19 @@ g polygon:hover {
 }
 
 .flex-wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	display: block;
 }
+
+@media (min-width: 800px) {
+
+.flex-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around
+}
+	}
 
 .flex-wrapper__child {
 		-ms-flex-preferred-size: 20%;
@@ -897,14 +904,14 @@ g polygon:hover {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	text-align: center;
-	background-attachment: fixed;
 	
 }
 
 @media (min-width: 800px) {
 
 .large-hero {
-		background-attachment: fixed
+		background-attachment: fixed;
+		background-position: 50% 50%
 	
 }
 	}
@@ -1319,6 +1326,47 @@ g polygon:hover {
 .clients__small img {
 			height: 100%;
 		}
+
+.clients .control {
+			background-color: #191D1C;
+			width: 100px;
+			height: 50px;
+			color: #FFF;
+		}
+
+.clients .sponsers {
+		width: 100%;
+		padding: 0 10px;
+		margin: 10px 0;
+		position: relative;
+		-webkit-transition: all 5s ease;
+		transition: all 5s ease;
+	}
+
+.clients .sponsers:hover {
+			-webkit-transform: translateX(-50%);
+			        transform: translateX(-50%);
+		}
+
+.clients .sponsers__item {
+			background-color: #C7001C;
+			margin: 10px;
+			width: 200px;
+			height: 100px;
+			float: left;
+		}
+
+#testimonial-slider {
+	height: 75%;
+	margin-bottom: 10%;
+}
+
+@media (min-width: 800px) {
+
+#testimonial-slider {
+		margin-bottom: 0
+}
+	}
 
 .testimonial {
 	width: 100%;

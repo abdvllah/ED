@@ -10627,6 +10627,29 @@ new _Slider2.default((0, _jquery2.default)('#testimonial-slider'));
 
 // new RevealOnScroll();
 
+(0, _jquery2.default)(document).ready(function () {
+    console.log("Document is ready");
+    var sponsersItem = (0, _jquery2.default)('.sponsers__item');
+    var sponsersWidth = sponsersItem.width() * (sponsersItem.length + 1) + 50;
+    (0, _jquery2.default)('.sponsers').css('width', sponsersWidth);
+    console.log(sponsersWidth);
+});
+
+// Activating hover for touch screens
+(0, _jquery2.default)('*').on("touchstart", function (e) {
+    "use strict"; //satisfy the code inspectors
+
+    var link = (0, _jquery2.default)(this); //preselect the link
+    if (link.hasClass('hover')) {
+        return true;
+    } else {
+        link.addClass("hover");
+        (0, _jquery2.default)('*').not(this).removeClass("hover");
+        // e.preventDefault();
+        // return false; //extra, and to make sure the function has consistent return points
+    }
+});
+
 /***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
