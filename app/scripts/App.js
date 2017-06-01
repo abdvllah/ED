@@ -8,7 +8,7 @@ import Slider from './modules/Slider';
 var mobileMenu = new MobileMenu();
 var pageScroll = new PageScroll();
 
-new Slider();
+new Slider($('#testimonial-slider'));
 
 // new RevealOnScroll();
 

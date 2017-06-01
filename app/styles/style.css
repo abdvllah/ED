@@ -22,12 +22,12 @@
 @import "modules/_button";
 @import "modules/_slider-container";
 @import "modules/_flex-wrapper";
-@import "modules/_section";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";
 @import "modules/_upcoming-events";
 @import "modules/_our-services";
+@import "modules/_clients";
 @import "modules/_testimonial";
 @import "modules/_the-team";
 @import "modules/_contact";

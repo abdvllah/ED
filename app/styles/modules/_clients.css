@@ -1,14 +1,12 @@
-.section {
+.clients {
 
-	&--large {
+	&__large {
 		height: 70%;
-/*		padding: 10% 5%;
-*/		text-align: center;
+		text-align: center;
 
 		@mixin atMedium {
 			height: 65%;
-/*			padding: 10% 5%;
-*/		}
+		}
 
 		&__button {
 			display: block;
@@ -23,7 +21,7 @@
 		}
 	}
 
-	&--small {
+	&__small {
 		&__title {
 			font-size: 30px;
 			color: lighten($black, .7);
@@ -37,6 +35,10 @@
 			@mixin atMedium {
 				padding-top: 60px;
 			}
+		}
+
+		img {
+			height: 100%;
 		}
 	}
 

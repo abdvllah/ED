@@ -716,27 +716,43 @@ g polygon:hover {
 .slider-wrapper {
 	overflow: hidden;
 	height: 75%;
-	padding: 10% 2%;
 	position: relative;
 }
 
 .slider-wrapper .slide {
 		height: 100%;
+		margin-top: 7%;
 		display: none;
+
 	}
 
 .slider-wrapper .slide--visible {
 			display: block;
 		}
 
+.slider-wrapper--narrow {
+		width: 70%;
+		overflow: scroll;
+	}
+
+.slider-wrapper--narrow .slide {
+			background-color: #C7001C;
+			margin: 5px;
+			height: 100%;
+		}
+
 .slider-wrapper .next {
-		width: 50px;
-		background-color: #C7001C;
+		width: 100px;
+		background-color: #191D1C;
 		position: absolute;
 		bottom: 0;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		color: #FFF;
 		padding: 10px;
 		cursor: pointer;
+		border: 0;
 	}
 
 .photo {
@@ -871,55 +887,6 @@ g polygon:hover {
 		-webkit-box-align: start;
 		    -ms-flex-align: start;
 		        align-items: flex-start;
-	}
-
-.section--large {
-		height: 70%;
-/*		padding: 10% 5%;
-*/		text-align: center;
-	}
-
-@media (min-width: 800px) {
-
-.section--large {
-			height: 65%
-/*			padding: 10% 5%;
-*/
-	}
-	}
-
-.section--large__button {
-			display: block;
-			position: relative;
-			left: 50%;
-			-webkit-transform: translateX(-50%);
-			        transform: translateX(-50%);
-			margin-top: 0;
-		}
-
-@media (min-width: 800px) {
-
-.section--large__button {
-				margin-top: 30px
-		}
-	}
-
-.section--small__title {
-			font-size: 30px;
-			color: rgb(186,187,187);
-			padding-top: 30px;
-			padding-left: 10px;
-			margin: 0;
-			background: url('../assets/dark-pattern.png') center center;
-			background-size: contain;
-			text-transform: uppercase;
-		}
-
-@media (min-width: 800px) {
-
-.section--small__title {
-				padding-top: 60px
-		}
 	}
 
 /* Home Page Sections Modules */
@@ -1302,6 +1269,56 @@ g polygon:hover {
 			left: 22.5%
 	}
 	}
+
+.clients__large {
+		height: 70%;
+		text-align: center;
+	}
+
+@media (min-width: 800px) {
+
+.clients__large {
+			height: 65%
+	}
+	}
+
+.clients__large__button {
+			display: block;
+			position: relative;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			        transform: translateX(-50%);
+			margin-top: 0;
+		}
+
+@media (min-width: 800px) {
+
+.clients__large__button {
+				margin-top: 30px
+		}
+	}
+
+.clients__small__title {
+			font-size: 30px;
+			color: rgb(186,187,187);
+			padding-top: 30px;
+			padding-left: 10px;
+			margin: 0;
+			background: url('../assets/dark-pattern.png') center center;
+			background-size: contain;
+			text-transform: uppercase;
+		}
+
+@media (min-width: 800px) {
+
+.clients__small__title {
+				padding-top: 60px
+		}
+	}
+
+.clients__small img {
+			height: 100%;
+		}
 
 .testimonial {
 	width: 100%;
