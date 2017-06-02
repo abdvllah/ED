@@ -1,0 +1,11 @@
+@keyframes horizentalScroll {
+	0% {transform: translateX(0%);}
+	50% {transform: translateX(-40%);}
+	100% {transform: translateX(0%);}
+}
+
+.sponsers {
+	animation-name: horizentalScroll;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}

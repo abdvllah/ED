@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10347,6 +10347,54 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+var ContentChange = function () {
+	function ContentChange(element) {
+		_classCallCheck(this, ContentChange);
+
+		this.element = element;
+		this.pillow = element.find('.team__pillow');
+		this.alterContent();
+	}
+
+	_createClass(ContentChange, [{
+		key: 'alterContent',
+		value: function alterContent() {
+			var that = this;
+			this.pillow.on('click', function () {
+				var who = (0, _jquery2.default)(this).attr('data-who');
+				(0, _jquery2.default)('.team-member').hide();
+				(0, _jquery2.default)('#' + who).fadeIn(2000);
+				console.log(who);
+			});
+		}
+	}]);
+
+	return ContentChange;
+}();
+
+exports.default = ContentChange;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 var MobileMenu = function () {
 	function MobileMenu() {
 		_classCallCheck(this, MobileMenu);
@@ -10375,7 +10423,7 @@ var MobileMenu = function () {
 exports.default = MobileMenu;
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10391,11 +10439,11 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _jqueryScrollify = __webpack_require__(6);
+var _jqueryScrollify = __webpack_require__(7);
 
 var _jqueryScrollify2 = _interopRequireDefault(_jqueryScrollify);
 
-var _noframework = __webpack_require__(8);
+var _noframework = __webpack_require__(9);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
@@ -10462,7 +10510,7 @@ var PageScroll = function () {
 exports.default = PageScroll;
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10513,7 +10561,7 @@ exports.default = PageScroll;
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10529,7 +10577,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _jqueryUiBundle = __webpack_require__(7);
+var _jqueryUiBundle = __webpack_require__(8);
 
 var _jqueryUiBundle2 = _interopRequireDefault(_jqueryUiBundle);
 
@@ -10592,7 +10640,7 @@ var Slider = function () {
 exports.default = Slider;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10602,21 +10650,25 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _MobileMenu = __webpack_require__(1);
+var _MobileMenu = __webpack_require__(2);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _PageScroll = __webpack_require__(2);
+var _PageScroll = __webpack_require__(3);
 
 var _PageScroll2 = _interopRequireDefault(_PageScroll);
 
-var _RevealOnScroll = __webpack_require__(3);
+var _RevealOnScroll = __webpack_require__(4);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
-var _Slider = __webpack_require__(4);
+var _Slider = __webpack_require__(5);
 
 var _Slider2 = _interopRequireDefault(_Slider);
+
+var _ContentChange = __webpack_require__(1);
+
+var _ContentChange2 = _interopRequireDefault(_ContentChange);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10625,6 +10677,8 @@ var pageScroll = new _PageScroll2.default();
 
 new _Slider2.default((0, _jquery2.default)('#testimonial-slider'));
 
+new _ContentChange2.default((0, _jquery2.default)('#team'));
+
 // new RevealOnScroll();
 
 (0, _jquery2.default)(document).ready(function () {
@@ -10632,7 +10686,6 @@ new _Slider2.default((0, _jquery2.default)('#testimonial-slider'));
     var sponsersItem = (0, _jquery2.default)('.sponsers__item');
     var sponsersWidth = sponsersItem.width() * (sponsersItem.length + 1) + 50;
     (0, _jquery2.default)('.sponsers').css('width', sponsersWidth);
-    console.log(sponsersWidth);
 });
 
 // Activating hover for touch screens
@@ -10651,7 +10704,7 @@ new _Slider2.default((0, _jquery2.default)('#testimonial-slider'));
 });
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11490,7 +11543,7 @@ if touchScroll is false - update index
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! jQuery UI - v1.12.1 - 2017-03-19
@@ -30204,7 +30257,7 @@ var effectsEffectTransfer = effect;
 }));
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 /*!

@@ -22,6 +22,8 @@
 	}
 
 	&__small {
+		height: 30%;
+
 		&__title {
 			font-size: 30px;
 			color: lighten($black, .7);
@@ -52,20 +54,22 @@
 	.sponsers {
 		width: 100%;
 		padding: 0 10px;
-		margin: 10px 0;
+		margin: 20px 0;
 		position: relative;
 		transition: all 5s ease;
 
-		&:hover {
+		/*&:hover {
 			transform: translateX(-50%);
-		}
+		}*/
 
 		&__item {
-			background-color: $red;
-			margin: 10px;
-			width: 200px;
-			height: 100px;
+			margin: 0 10px;
+			width: 100px;
 			float: left;
+
+			@mixin atMedium {
+				width: 150px;
+			}
 		}
 	}
 

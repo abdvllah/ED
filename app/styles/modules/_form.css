@@ -8,13 +8,19 @@
 	input {
 		margin: 10px 0;
 		height: 40px;
-		width: 300px;
+		width: 100%;
 		padding: 10px;
 	}
 
 	textarea {
-		width: 300px;
+		width: 100%;
 		padding: 10px;
+	}
+
+	@mixin atMedium {
+		input, textarea {
+			width: 300px;
+		}
 	}
 
 

@@ -3,12 +3,15 @@ import MobileMenu from './modules/MobileMenu';
 import PageScroll from './modules/PageScroll';
 import RevealOnScroll from './modules/RevealOnScroll';
 import Slider from './modules/Slider';
+import ContentChange from './modules/ContentChange';
 
 
 var mobileMenu = new MobileMenu();
 var pageScroll = new PageScroll();
 
 new Slider($('#testimonial-slider'));
+
+new ContentChange($('#team'));
 
 // new RevealOnScroll();
 
@@ -17,7 +20,6 @@ $(document).ready(function() {
     var sponsersItem = $('.sponsers__item');
     var sponsersWidth = sponsersItem.width() * (sponsersItem.length + 1) + 50;
     $('.sponsers').css('width', sponsersWidth);
-    console.log(sponsersWidth);
 
 });
 

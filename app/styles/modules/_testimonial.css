@@ -28,6 +28,7 @@
 		position: relative;
 		line-height: 1.5;
 		padding-top: 20px;
+		margin: 0 10%;
 
 		@mixin atMedium {
 			font-size: 20px;
@@ -37,6 +38,7 @@
 			padding-right: 5%;
 			padding-top: 0;
 			line-height: 1.5;
+			margin: 0;
 		}
 		
 		span {
