@@ -6,10 +6,10 @@
 	max-width: 170px;
 	margin-top: 30px;
 	text-align: center;
-
-	/*&:hover {
+	transition: all 1s cubic-bezier(0, 0.79, 0.96, 0.69);
+	
+	&:hover {
 		background-color: $red;
 		color: #FFF;
-		transform: scale(1.1);
-	}*/
+	}
 }

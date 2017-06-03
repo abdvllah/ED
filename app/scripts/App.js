@@ -13,7 +13,7 @@ new Slider($('#testimonial-slider'));
 
 new ContentChange($('#team'));
 
-// new RevealOnScroll();
+new RevealOnScroll();
 
 $(document).ready(function() {
     console.log("Document is ready");

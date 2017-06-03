@@ -1,25 +1,32 @@
-.form {
+form {
 
 	label {
 		position: absolute;
 		left: -9999px;
 	}
 
-	input {
+	input[type="text"] {
 		margin: 10px 0;
 		height: 40px;
-		width: 100%;
+		width: 300px;
 		padding: 10px;
+		background-color: $black;
+		border: 1px solid $black;
+		color: #FFF;
 	}
 
 	textarea {
-		width: 100%;
+		width: 400px;
 		padding: 10px;
+		border: none;
+	}
+
+	input[type="submit"] {
+		border: none;
 	}
 
 	@mixin atMedium {
 		input, textarea {
-			width: 300px;
 		}
 	}
 
