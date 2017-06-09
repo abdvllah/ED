@@ -801,8 +801,8 @@ g polygon:hover {
 		display: table;
 	}
 
-.row--t-padding {
-    padding-top: 80px;
+.row--padding {
+    padding: 50px;
   }
 
 .row--gutters {
@@ -1844,6 +1844,8 @@ form input[type="submit"] {
 		margin-left: 15px;
 		width: 49%;
 		display: inline-block;
+		-webkit-transition: all .3s ease;
+		transition: all .3s ease;
 	}
 
 @media (min-width: 800px) {
@@ -1859,6 +1861,16 @@ form input[type="submit"] {
 			cursor: pointer
 	}
 	}
+
+.team__pillow.active {
+			-webkit-transform: translateX(30px);
+			        transform: translateX(30px);
+			pointer-events: none;
+		}
+
+/*&:hover {
+			transform: scale(1.1);
+		}*/
 
 .team__pillow span {
 			position: absolute;
@@ -1980,4 +1992,85 @@ form input[type="submit"] {
 .contact__form {
 		position: relative;
 		left: 0;
+	}
+
+/* Events Page Modules */
+
+.events-page {
+	background-image: url('../assets/pages/back-pattern.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+.events-page__header {
+		position: relative;
+		width: 100%;
+	}
+
+.content-wrapper {
+	background-color: #FFF;
+	height: 1000px;
+	padding: 30px;
+	font-size: 150%;
+}
+
+.icon-wrapper {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.icon-wrapper__icon {
+		margin: 50px 50px;
+		padding: 15px;
+		position: relative;
+		background-color: rgba(255,255,255,.7);
+		cursor: pointer;
+		-webkit-transition: background-color .5s ease, -webkit-transform .2s ease;
+		transition: background-color .5s ease, -webkit-transform .2s ease;
+		transition: transform .2s ease, background-color .5s ease ;
+		transition: transform .2s ease, background-color .5s ease, -webkit-transform .2s ease;
+
+	}
+
+.icon-wrapper__icon img {
+			display: block;
+			height: 100px;
+			margin: auto;
+			position: relative;
+		}
+
+.icon-wrapper__icon::after {
+			content: "";
+			position: absolute;
+			top: 40%;
+			right: -20%;;
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 30px solid transparent;
+			border-bottom: 30px solid transparent;
+			border-left: 30px solid #FFF;
+		}
+
+.icon-wrapper__icon.active {
+			background-color: rgba(199,0,28,.7);
+			-webkit-transform: scale(1.1);
+			        transform: scale(1.1);
+		}
+
+.icon-wrapper__icon.active::after {
+				border-left-color: #C7001C;
+			}
+
+.icon-wrapper__icon:hover {
+			-webkit-transform: scale(1.1);
+			        transform: scale(1.1);
+		}
+
+.icon-wrapper__text {
+		display: inline-block;
+		font-weight: bold;
+		font-size: 150%;
+		padding-top: 15px;
 	}

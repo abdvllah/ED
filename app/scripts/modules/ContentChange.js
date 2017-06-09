@@ -1,20 +1,34 @@
 import $ from 'jquery';
 
 class ContentChange {
-	constructor(element) {
-		this.element = element;	
-		this.pillow = element.find('.team__pillow');
+	constructor(element, content) {
+		// this.element = element;	
+		// this.pillow = element.find('.team__pillow');
+		this.element = element;
+		this.contentE = content;
 		this.alterContent();
 	}
 
 	alterContent() {
 		var that = this;
-		this.pillow.on('click', function() {
+		this.element.on('click', function() {
+			var thisElement = this;
+			$(thisElement).css('pointer-events','none');
+			// console.log(that.contentE);
+			$(that.element).removeClass('active');
+			$(this).addClass('active');
+
 			var who = $(this).attr('data-who');
-			$('.team-member').hide();
-			$('#' + who).fadeIn(2000);
+			that.contentE.hide();
+			$('#' + who).fadeIn(2000, function() {
+				$(thisElement).css('pointer-events','auto');
+			});
 			console.log(who);
 		});
+	}
+
+	makeActive() {
+
 	}
 
 }

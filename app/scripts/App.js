@@ -11,7 +11,9 @@ var pageScroll = new PageScroll();
 
 new Slider($('#testimonial-slider'));
 
-new ContentChange($('#team'));
+// new ContentChange( $('#team .team__pillow') , $('.team-member') );
+new ContentChange( $('.team__pillow'), $('.team-member') );
+new ContentChange( $('.icon-wrapper__icon'), $('.content-wrapper') );
 
 new RevealOnScroll();
 

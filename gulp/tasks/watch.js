@@ -12,7 +12,7 @@ gulp.task("watch", function() {
 	});
 
 
-	watch("./app/index.html", function() { 	 // it takes  arguments, first is the file and second is what to do?
+	watch("./app/*.html", function() { 	 // it takes two arguments, first is the file and second is what to do?
 		browserSync.reload();
 	});
 

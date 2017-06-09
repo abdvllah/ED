@@ -33,3 +33,8 @@
 @import "modules/_testimonial";
 @import "modules/_the-team";
 @import "modules/_contact";
+
+/* Events Page Modules */
+@import "events-page/_events-page";
+@import "events-page/_content-wrapper";
+@import "events-page/_icon-wrapper";

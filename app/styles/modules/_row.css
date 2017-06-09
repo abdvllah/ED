@@ -2,8 +2,8 @@
 
   @mixin clearfix;
 
-  &--t-padding {
-    padding-top: 80px;
+  &--padding {
+    padding: 50px;
   }
 
   &--gutters {

@@ -11111,11 +11111,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var ContentChange = function () {
-	function ContentChange(element) {
+	function ContentChange(element, content) {
 		_classCallCheck(this, ContentChange);
 
+		// this.element = element;	
+		// this.pillow = element.find('.team__pillow');
 		this.element = element;
-		this.pillow = element.find('.team__pillow');
+		this.contentE = content;
 		this.alterContent();
 	}
 
@@ -11123,13 +11125,24 @@ var ContentChange = function () {
 		key: 'alterContent',
 		value: function alterContent() {
 			var that = this;
-			this.pillow.on('click', function () {
+			this.element.on('click', function () {
+				var thisElement = this;
+				(0, _jquery2.default)(thisElement).css('pointer-events', 'none');
+				// console.log(that.contentE);
+				(0, _jquery2.default)(that.element).removeClass('active');
+				(0, _jquery2.default)(this).addClass('active');
+
 				var who = (0, _jquery2.default)(this).attr('data-who');
-				(0, _jquery2.default)('.team-member').hide();
-				(0, _jquery2.default)('#' + who).fadeIn(2000);
+				that.contentE.hide();
+				(0, _jquery2.default)('#' + who).fadeIn(2000, function () {
+					(0, _jquery2.default)(thisElement).css('pointer-events', 'auto');
+				});
 				console.log(who);
 			});
 		}
+	}, {
+		key: 'makeActive',
+		value: function makeActive() {}
 	}]);
 
 	return ContentChange;
@@ -11485,7 +11498,9 @@ var pageScroll = new _PageScroll2.default();
 
 new _Slider2.default((0, _jquery2.default)('#testimonial-slider'));
 
-new _ContentChange2.default((0, _jquery2.default)('#team'));
+// new ContentChange( $('#team .team__pillow') , $('.team-member') );
+new _ContentChange2.default((0, _jquery2.default)('.team__pillow'), (0, _jquery2.default)('.team-member'));
+new _ContentChange2.default((0, _jquery2.default)('.icon-wrapper__icon'), (0, _jquery2.default)('.content-wrapper'));
 
 new _RevealOnScroll2.default();
 

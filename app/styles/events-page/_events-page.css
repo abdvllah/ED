@@ -1,0 +1,11 @@
+.events-page {
+	background-image: url('../assets/pages/back-pattern.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+
+	&__header {
+		position: relative;
+		width: 100%;
+	}
+}

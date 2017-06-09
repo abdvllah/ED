@@ -67,7 +67,7 @@
 		margin-left: 15px;
 		width: 49%;
 		display: inline-block;
-
+		transition: all .3s ease;
 
 		@mixin atMedium {
 			height: 100px;
@@ -79,6 +79,15 @@
 			display: block;
 			cursor: pointer;
 		}
+
+		&.active {
+			transform: translateX(30px);
+			pointer-events: none;
+		}
+
+		/*&:hover {
+			transform: scale(1.1);
+		}*/
 
 		span {
 			position: absolute;
