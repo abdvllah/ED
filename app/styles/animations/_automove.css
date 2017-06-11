@@ -1,11 +1,11 @@
 @keyframes horizentalScroll {
-	0% {transform: translateX(0%);}
+	0% {transform: translateX(10%);}
 	50% {transform: translateX(-40%);}
-	100% {transform: translateX(0%);}
+	100% {transform: translateX(10%);}
 }
 .horizentalScroll {
 	animation-name: horizentalScroll;
-	animation-duration: 15s;
+	animation-duration: 25s;
 	animation-iteration-count: infinite;
 	animation-play-state: running;
 }
