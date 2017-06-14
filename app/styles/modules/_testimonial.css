@@ -2,10 +2,9 @@
 	width: 100%;
 	height: 90%;
 	position: relative;
-
-	@mixin atMedium {
-		height: 100%;
-	}
+	padding: 5%;
+	margin:0;
+	top: 10%;
 
 	&__photo {
 		width: 120px;
@@ -15,13 +14,16 @@
 		transform: rotate(45deg);
 
 		@mixin atMedium {
-			width: 150px;
-			height: 150px;
-			margin: auto 50px;
+			width: 200px;
+			height: 200px;
+			margin: 0;
+			display: inline-block;
+			vertical-align: middle;
 		}
 	}
 
 	&__text {
+		position: relative;
 		font-size: 18px;
 		color: $black;
 		text-align: center;
@@ -31,15 +33,36 @@
 		margin: 0 10%;
 
 		@mixin atMedium {
+			display: inline-block;
+			vertical-align: middle;
+			width: 65%;
+			margin-left: 6%;
 			font-size: 20px;
-			position: absolute;
-			top: 25%;
-			padding-left: 25%;
-			padding-right: 5%;
-			padding-top: 0;
+			/*position: absolute;
+			left: 30%;
+			width: 60%;
+			top: 50%;
+			transform: translateY(-50%);*/
 			line-height: 1.5;
-			margin: 0;
 		}
+
+		&::before {
+			content: "“";
+			left: -5%;
+			top: -5%;
+		}
+		&::after {
+			content: "”";
+			right: -5%;
+			bottom: -15%;
+		}
+		&::before, &::after {
+			font-size: 100px;
+			line-height: .5;
+			display: block;
+			position: absolute;
+		}
+		
 		
 		span {
 			font-size: 80px;
@@ -49,13 +72,12 @@
 				font-size: 100px;
 			}
 		}
-		span.right-q {
+		/*span.right-q {
 			right: 0;
 			top: 70%;
 
 			@mixin atMedium {
 				right: 5%;
-				top: 30px;
 			}
 		}
 		span.left-q {
@@ -63,14 +85,11 @@
 			bottom: 30%;
 
 			@mixin atMedium {
-				left: 22%;
-				bottom: 2%;
 			}
-		}
+		}*/
 	}
 
 	&__name {
-		display: inline;
 		position: absolute;
 		right: 15%;
 		font-weight: bold;

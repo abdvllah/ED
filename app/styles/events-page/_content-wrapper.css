@@ -1,6 +1,13 @@
 .content-wrapper {
 	background-color: #FFF;
-	height: 1000px;
+	height: 1200px;
 	padding: 30px;
 	font-size: 150%;
+
+	.content {
+		display: none;
+	}
+	.content.active {
+		display: block;
+	}
 }

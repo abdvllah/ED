@@ -1,0 +1,65 @@
+.icon {
+		position: absolute;
+		top: 50px;
+		right: 2%;
+		width: 30px;
+		height: 30px;
+		z-index: 10;
+		cursor: pointer;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: inherit;
+			height: 5px;
+			background-color: #FFF;
+			transform-origin: top left;
+			transition: all .5s ease-out; 
+		}
+
+		&__middle {
+			position: absolute;
+			top: 13px;
+			left: 0;
+			width: inherit;
+			height: 5px;
+			background-color: #FFF;
+			transition: all .5s ease-out; 
+			transform-origin: left center;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: inherit;
+			height: 5px;
+			background-color: #FFF;
+			transform-origin: bottom left;
+			transition: all .5s ease-out; 
+		}
+
+		&--close-x {
+			&::before {
+				transform: rotate(45deg) scaleX(1.25);
+			}
+
+			.icon__middle {
+				opacity: 0;
+				transform: scaleX(0);
+			}
+
+			&::after {
+				transform: rotate(-45deg) scaleX(1.25);
+			}
+		}
+
+		&--color-red {
+		&::before, &::after {
+				background-color: $red;
+			}
+		}
+}

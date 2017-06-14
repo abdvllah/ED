@@ -1,0 +1,49 @@
+.modal {
+	position: fixed;
+	z-index: 20;
+	background-color: rgba(#FFF, .8);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s ease-out;
+	transform: scale(1.2);
+	color: $black;
+	text-align: center;
+
+	&--visible {
+		opacity: 1;
+		visibility: visible;
+		transform: scale(1);
+	}
+	&__close {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		z-index: 6;
+		cursor: pointer;
+		top: 40px;
+		right: 40px;
+	}
+
+	&__form-wrapper {
+		width: 70%;
+		padding: 30px;
+		margin: auto;
+		border: 3px dotted $black;
+		background-color: #FFF;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		textarea {
+			background-color: $black;
+			width: 600px;
+			height: 200px;
+			color: #FFF;
+		}
+	}
+}

@@ -5,7 +5,6 @@
 
 	.slide {
 		height: 100%;
-		margin-top: 7%;
 		display: none;
 
 		&--visible {

@@ -20,10 +20,12 @@
 @import "modules/_slider-wrapper";
 @import "modules/_photo";
 @import "modules/_quote";
+@import "modules/_modal";
 @import "modules/_form";
 @import "modules/_heading";
 @import "modules/_button";
 @import "modules/_flex-wrapper";
+@import "modules/_icon";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";

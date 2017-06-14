@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11133,6 +11133,9 @@ var ContentChange = function () {
 				(0, _jquery2.default)(this).addClass('active');
 
 				var who = (0, _jquery2.default)(this).attr('data-who');
+
+				// $(this).find('img').attr('src','assets/pages/' + who + '.svg');
+
 				that.contentE.hide();
 				(0, _jquery2.default)('#' + who).fadeIn(2000, function () {
 					(0, _jquery2.default)(thisElement).css('pointer-events', 'auto');
@@ -11175,7 +11178,7 @@ var MobileMenu = function () {
 	function MobileMenu() {
 		_classCallCheck(this, MobileMenu);
 
-		this.menuIcon = (0, _jquery2.default)('.site-menu__icon');
+		this.menuIcon = (0, _jquery2.default)('.site-menu .icon');
 		this.menuContent = (0, _jquery2.default)('.site-menu__content');
 		this.events();
 	}
@@ -11189,7 +11192,7 @@ var MobileMenu = function () {
 		key: 'toggleTheMenu',
 		value: function toggleTheMenu() {
 			this.menuContent.toggleClass("site-menu__content__is-visible");
-			this.menuIcon.toggleClass("site-menu__icon--close-x");
+			this.menuIcon.toggleClass("icon--close-x");
 		}
 	}]);
 
@@ -11215,7 +11218,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _jqueryScrollify = __webpack_require__(8);
+var _jqueryScrollify = __webpack_require__(9);
 
 var _jqueryScrollify2 = _interopRequireDefault(_jqueryScrollify);
 
@@ -11398,7 +11401,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _jqueryUiBundle = __webpack_require__(9);
+var _jqueryUiBundle = __webpack_require__(10);
 
 var _jqueryUiBundle2 = _interopRequireDefault(_jqueryUiBundle);
 
@@ -11467,6 +11470,65 @@ exports.default = Slider;
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var modal = function () {
+	function modal() {
+		_classCallCheck(this, modal);
+
+		this.openModalButton = (0, _jquery2.default)('.open-modal');
+		this.modal = (0, _jquery2.default)('.modal');
+		this.closeModalButton = (0, _jquery2.default)('.modal__close');
+		this.events();
+	}
+
+	_createClass(modal, [{
+		key: 'events',
+		value: function events() {
+			// Clicking open modal button
+			this.openModalButton.click(this.openModal.bind(this));
+
+			// Clicking close button
+			this.closeModalButton.click(this.closeModal.bind(this));
+		}
+	}, {
+		key: 'openModal',
+		value: function openModal() {
+			this.modal.addClass('modal--visible');
+			return false;
+		}
+	}, {
+		key: 'closeModal',
+		value: function closeModal() {
+			this.modal.removeClass('modal--visible');
+			return false;
+		}
+	}]);
+
+	return modal;
+}();
+
+exports.default = modal;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -11491,6 +11553,10 @@ var _ContentChange = __webpack_require__(2);
 
 var _ContentChange2 = _interopRequireDefault(_ContentChange);
 
+var _modal = __webpack_require__(7);
+
+var _modal2 = _interopRequireDefault(_modal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
@@ -11500,9 +11566,11 @@ new _Slider2.default((0, _jquery2.default)('#testimonial-slider'));
 
 // new ContentChange( $('#team .team__pillow') , $('.team-member') );
 new _ContentChange2.default((0, _jquery2.default)('.team__pillow'), (0, _jquery2.default)('.team-member'));
-new _ContentChange2.default((0, _jquery2.default)('.icon-wrapper__icon'), (0, _jquery2.default)('.content-wrapper'));
+new _ContentChange2.default((0, _jquery2.default)('.events-page .icon-wrapper__icon'), (0, _jquery2.default)('.events-page .content'));
 
 new _RevealOnScroll2.default();
+
+new _modal2.default();
 
 (0, _jquery2.default)(document).ready(function () {
     console.log("Document is ready");
@@ -11527,7 +11595,7 @@ new _RevealOnScroll2.default();
 });
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -12366,7 +12434,7 @@ if touchScroll is false - update index
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! jQuery UI - v1.12.1 - 2017-03-19

@@ -2,40 +2,86 @@
 	margin-top: 30px;
 	text-align: center;
 
+
+	.cultural {
+		background: url('../assets/pages/cultural-b.svg') no-repeat top center;
+		background-size: auto 90%;
+
+		&.active {
+			background-image: url('../assets/pages/cultural.svg');
+		}
+	}
+
+	.family {
+		background: url('../assets/pages/family-b.svg') no-repeat top center;
+		background-size: auto 90%;
+
+		&.active {
+			background-image: url('../assets/pages/family.svg');
+		}
+	}
+
+	.business {
+		background: url('../assets/pages/business-b.svg') no-repeat top center;
+		background-size: auto 90%;
+
+		&.active {
+			background-image: url('../assets/pages/business.svg');
+		}
+	}
+
+	.ramadan {
+		background: url('../assets/pages/ramadan-b.svg') no-repeat top center;
+		background-size: auto 90%;
+
+		&.active {
+			background-image: url('../assets/pages/ramadan.svg');
+		}
+	}
+
+
 	&__icon {
-		margin: 50px 50px;
+		height: 90px;
+		margin: 100px 50px;
 		padding: 15px;
 		position: relative;
-		background-color: rgba(255,255,255,.7);
+		/*background-color: rgba(255,255,255,.7);*/
 		cursor: pointer;
-		transition: transform .2s ease, background-color .5s ease ;
+		transition: transform .2s ease, background-color .5s ease;
 
-		img {
+		&:first-of-type {
+			margin-top: 50px;
+		}
+		/*img {
 			display: block;
 			height: 100px;
 			margin: auto;
 			position: relative;
-		}
+		}*/
 
 		&::after {
 			content: "";
 			position: absolute;
 			top: 40%;
-			right: -20%;;
-			display: block;
+			right: 0%;;
+			visibility: hidden;
+			opacity: 0;
 			width: 0;
 			height: 0;
 			border-top: 30px solid transparent;
 			border-bottom: 30px solid transparent;
 			border-left: 30px solid #FFF;
+			transition: all .3s ease;
 		}
 
 		&.active {
-			background-color: rgba($red,.7);
+			/*background-color: rgba($red,.7);*/
 			transform: scale(1.1);
 
 			&::after {
 				border-left-color: $red;
+				visibility: visible;
+				opacity: 1;
 			}
 		}
 
@@ -51,5 +97,7 @@
 		font-weight: bold;
 		font-size: 150%;
 		padding-top: 15px;
+		position: relative;
+		bottom: -100%;;
 	}
 }

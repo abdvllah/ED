@@ -1,5 +1,5 @@
 .site-menu {
-	&__icon {
+	/*&__icon {
 		position: absolute;
 		top: 50px;
 		right: 2%;
@@ -57,7 +57,7 @@
 				transform: rotate(-45deg) scaleX(1.25);
 			}
 		}
-	}
+	}*/
 
 	&__content {
 		z-index: -10;

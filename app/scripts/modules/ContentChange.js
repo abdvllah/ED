@@ -19,6 +19,9 @@ class ContentChange {
 			$(this).addClass('active');
 
 			var who = $(this).attr('data-who');
+
+			// $(this).find('img').attr('src','assets/pages/' + who + '.svg');
+
 			that.contentE.hide();
 			$('#' + who).fadeIn(2000, function() {
 				$(thisElement).css('pointer-events','auto');
