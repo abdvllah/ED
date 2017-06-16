@@ -1,11 +1,11 @@
 @keyframes horizentalScroll {
-	0% {transform: translateX(10%);}
-	50% {transform: translateX(-50%);}
-	100% {transform: translateX(10%);}
+	0% {transform: translateX(5%);}
+	90% {transform: translateX(-50%);}
+	100% {transform: translateX(5%);}
 }
 .horizentalScroll {
 	animation-name: horizentalScroll;
-	animation-duration: 25s;
+	animation-duration: 30s;
 	animation-iteration-count: infinite;
 	animation-play-state: running;
 }
@@ -13,6 +13,7 @@
 @keyframes slideToLeft {
 	0% {
 		right: -100%;
+		left: 120%;
 	}
 	50% {
 		opacity: 1;
@@ -23,6 +24,13 @@
 	animation-duration: 3s;
 	animation-iteration-count: 1;
 	animation-play-state: running;
+
+	&--slow {
+		animation-name: slideToLeft;
+		animation-duration: 3s;
+		animation-iteration-count: 1;
+		animation-play-state: running;
+	}
 }
 
 @keyframes slideToRight {

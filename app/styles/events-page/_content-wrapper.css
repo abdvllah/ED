@@ -2,7 +2,13 @@
 	background-color: #FFF;
 	height: 1200px;
 	padding: 30px;
-	font-size: 150%;
+	font-size: 120%;
+	margin: -10%;
+
+	@mixin atMedium {
+		font-size: 150%;
+		margin: 0;
+	}
 
 	.content {
 		display: none;

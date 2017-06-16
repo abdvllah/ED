@@ -1,0 +1,36 @@
+.detail {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	margin: 20px 10px;
+
+	&__icon {
+		height: 50px;
+	}
+
+	&__title {
+		color: lighten($black, .2);
+		font-weight: 500;
+		font-size: 115%;
+		margin: 0;
+		display: inline;
+		vertical-align: top;
+		padding-left: 10px;
+
+		@mixin atMedium {
+			font-size: 105%;
+		}
+	}
+
+	&__content {
+		font-size: 100%;
+		color: lighten($black, .2);
+		margin: -20px 0 0 90px;
+		font-weight: 100;
+
+		@mixin atMedium {
+			font-size: 90%;
+		}
+		
+	}
+}

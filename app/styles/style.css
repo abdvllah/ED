@@ -20,12 +20,12 @@
 @import "modules/_slider-wrapper";
 @import "modules/_photo";
 @import "modules/_quote";
-@import "modules/_modal";
 @import "modules/_form";
 @import "modules/_heading";
 @import "modules/_button";
 @import "modules/_flex-wrapper";
 @import "modules/_icon";
+@import "modules/_modal";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";
@@ -40,3 +40,4 @@
 @import "events-page/_events-page";
 @import "events-page/_content-wrapper";
 @import "events-page/_icon-wrapper";
+@import "events-page/_detail";

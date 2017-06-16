@@ -1,7 +1,7 @@
 .modal {
 	position: fixed;
 	z-index: 20;
-	background-color: rgba(#FFF, .8);
+	background-color: rgba($backGray, .97);
 	top: 0;
 	bottom: 0;
 	right: 0;
@@ -12,6 +12,8 @@
 	transform: scale(1.2);
 	color: $black;
 	text-align: center;
+	cursor: url('../assets/cursor-close.png'), auto;
+
 
 	&--visible {
 		opacity: 1;
@@ -24,26 +26,19 @@
 		height: 30px;
 		z-index: 6;
 		cursor: pointer;
-		top: 40px;
-		right: 40px;
+		top: 10%;
+		right: 5%;
 	}
 
 	&__form-wrapper {
-		width: 70%;
+		width: 60%;
 		padding: 30px;
 		margin: auto;
-		border: 3px dotted $black;
-		background-color: #FFF;
 		position: fixed;
+		text-align: right;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-
-		textarea {
-			background-color: $black;
-			width: 600px;
-			height: 200px;
-			color: #FFF;
-		}
+		cursor: auto;
 	}
 }

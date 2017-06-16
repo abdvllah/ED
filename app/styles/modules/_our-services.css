@@ -1,18 +1,16 @@
 .our-services {
 	position: relative;
-	background-color: lighten($black, .4);
-	background-image: url('../assets/our-services.png');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background: url('../assets/our-services-l.png') no-repeat top 30% left, url('../assets/our-services-r.png') no-repeat bottom right;
+	background-size: 70% auto;
+	background-color: $black;
 	display: block;
 	text-align: center;
 
 
 	@mixin atMedium {
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
+		background: url('../assets/our-services-l.png') no-repeat top left, url('../assets/our-services-r.png') no-repeat top right;
+		background-size: contain;
+		background-color: $black;
 		display: block;
 		text-align: center;
 	}
@@ -26,51 +24,55 @@
 		text-transform: uppercase;
 
 		@mixin atMedium {
-			font-size: 70px;
+			font-size: 50px;
 			padding-top: 3%;
 		}
 	}
 
-	&__strip {
-		position: relative;
-		background-color: lighten( rgba($black, .7), .4);
-		top: 25%;
+	&__heading {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%); 
+		color: #FFF;
+		font-size: 40px;
+		font-weight: 100;
+		background-color: rgba($black, .77);
+		padding: 50px 0;
+		margin: 0;
 
 		@mixin atMedium {
-			top: 24%;
+		font-size: 50px;
 		}
 
-		&__heading:first-of-type {
-			float: left;
+		&:first-of-type {
+			left: 0;
 			padding-left: 10%;
-		}
-
-		&__heading:last-of-type {
-			float: right;
-			padding-right: 10%;
-		}
-
-		&__heading {
-			color: #FFF;
-			font-size: 30px;
-			font-weight: 100;
+			padding-right: 50%;
+			top: 40%;
 
 			@mixin atMedium {
-			font-size: 40px;
+				padding-right: 25%;
+				top: 50%;
 			}
 		}
 
-		&::after {
-			content: "";
-			display: table;
-			clear: both;
+		&:last-of-type {
+			right: 0;
+			padding-right: 10%;
+			padding-left: 50%;
+			top: 80%;
+
+			@mixin atMedium {
+				padding-left: 25%;
+				top: 50%;
+			}
 		}
 	}
 
 	&__triangle-pattern {
 		display: block;
 		position: absolute;
-		width: 80%;
+		width: 60%;
 		opacity: .5;
 		bottom: -20px;
 		left: 13%;
@@ -78,10 +80,21 @@
 		@mixin atMedium {
 			display: block;
 			position: absolute;
-			width: 55%;
+			width: 37%;
 			opacity: .5;
 			bottom: -20px;
-			left: 22.5%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.shape {
+			opacity: .2;
+
+			.polygon-fill {
+				fill: none;
+				stroke: #FFF;
+				stroke-width: 2px;
+			}
 		}
 	}
 }

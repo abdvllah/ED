@@ -1,32 +1,38 @@
 import $ from 'jquery';
+import Generic from './modules/Generic';
 import MobileMenu from './modules/MobileMenu';
 import PageScroll from './modules/PageScroll';
 import RevealOnScroll from './modules/RevealOnScroll';
 import Slider from './modules/Slider';
 import ContentChange from './modules/ContentChange';
-import Modal from './modules/_modal.js';
+import Modal from './modules/Modal';
 
+// Handle Site Navigation
+new MobileMenu();
 
-var mobileMenu = new MobileMenu();
-var pageScroll = new PageScroll();
+// Handle Page Scrolling
+new PageScroll();
 
+// Handle Slider Components
 new Slider($('#testimonial-slider'));
 
-// new ContentChange( $('#team .team__pillow') , $('.team-member') );
+// Script for change content in div when clicking on control
 new ContentChange( $('.team__pillow'), $('.team-member') );
 new ContentChange( $('.events-page .icon-wrapper__icon'), $('.events-page .content') );
 
+// Handle Items anmination on reveal
 new RevealOnScroll();
 
+// Handle Model components
 new Modal();
 
-$(document).ready(function() {
-    console.log("Document is ready");
-    var sponsersItem = $('.sponsers__item');
-    var sponsersWidth = sponsersItem.width() * (sponsersItem.length + 1) + 50;
-    $('.sponsers').css('width', sponsersWidth);
+// Generic Scripts
+new Generic();
 
-});
+// $(document).ready(function() {
+//     console.log("Document is ready");
+    
+// });
 
 
 // Activating hover for touch screens

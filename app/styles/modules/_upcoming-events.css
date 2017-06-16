@@ -1,5 +1,4 @@
 .upcoming-events {
-	position: relative;
 
 	&__wrapper {
 		position: relative;
@@ -7,7 +6,7 @@
 
 		@mixin atMedium {
 			float: right;
-			margin-right: 150px;
+			margin-right: 100px;
 		}
 	}
 
@@ -35,7 +34,7 @@
 		width: 100%;
 
 		@mixin atMedium {
-			width: 600px;
+			width: 700px;
 		}
 		
 
@@ -61,8 +60,8 @@
 		width: 100%;
 		background-color: $red;
 		color: #FFF;
-		padding: 20px 50px;
-		font-size: 20px;
+		padding: 35px 50px;
+		font-size: 25px;
 		text-align: right;
 		position: absolute;
 		bottom: 15%;
@@ -127,9 +126,9 @@
 
 	&__triangle-pattern--small {
 		position: absolute;
-		width: 80%;
+		width: 50%;
 		opacity: .5;
-		left: -130px;
+		left: 5%;
 		bottom: 20px;
 		z-index: 3;
 
@@ -143,15 +142,25 @@
 
 	&__background {
 		position: absolute;
-		top: 50%;
+		background: url('../assets/upcoming-b.png')  no-repeat top left;
+		background-size: contain;
+		top: 45%;
 		left: 0;
 		z-index: 2;
-		height: 50%;
+		height: 100%;
+		width: 100%;
+		transition: all 2s ease-in-out;
+		z-index: 2;
 
 		@mixin atMedium {
+			text-align: center;
 			top: 0;
 			left: 0;
 			height: 100%;
+		}
+
+		&:hover {
+			background-image: url('../assets/upcoming.png');
 		}
 	}
 

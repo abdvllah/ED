@@ -47,7 +47,8 @@ class RevealOnScroll {
 		new Waypoint({
 			element: document.getElementById('services'),
 			handler: function() {
-				$('.our-services__strip').addClass('slideToTop--slow');
+				$('.our-services__heading:first-of-type').addClass('slideToRight--slow');
+				$('.our-services__heading:last-of-type').addClass('slideToLeft--slow');
 				},
 				offset: '50%'
 			});

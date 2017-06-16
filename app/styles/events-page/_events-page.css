@@ -7,5 +7,16 @@
 	&__header {
 		position: relative;
 		width: 100%;
+		display: block;
+	}
+
+	.details-wrapper {
+		margin-top: 10px;
+		padding: 10px;
+
+		@mixin atMedium {
+			margin-top: 100px;
+			padding: 30px;
+		}
 	}
 }
