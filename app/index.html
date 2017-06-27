@@ -6,7 +6,7 @@
 	<meta name="keywords" content="Embrace, culture, tours, sessions, explore qatar, qatar, tourist">
 	<meta name="description" content="Embrace Doha is your guied to embrace qatari culture">
 	<link rel="stylesheet" href="temp/style.css">
-	
+	<script src="temp/Vendor.js"></script>
 </head>
 <body>
 	
@@ -59,7 +59,7 @@
 			
 			<div class="upcoming-events__image">
 				<a href="events-template.html">
-					<img src="assets/upcoming-event.jpg" alt="">
+					<img class="lazyload" data-src="assets/upcoming-event.jpg" alt="">
 					<div class="upcoming-events__image__caption">April 12 | Souq Waqif Tour</div>
 				</a>
 			</div>
@@ -72,10 +72,10 @@
 
 		<svg class="upcoming-events__triangle-pattern--small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 905.4 454.17"><defs><style>.cls-1{isolation:isolate;}.plygon{fill:#f2f2f2;mix-blend-mode:soft-light;}.polygon{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g class="cls-1"><polygon class="plygon" points="227.86 222.65 340.46 335.88 227.89 449.12 227.86 222.65"/><polygon class="plygon" points="340.46 109.44 453.04 222.65 340.5 335.88 340.46 109.44"/><polygon class="plygon" points="675.21 227.31 562.62 340.54 675.17 453.78 675.21 227.31"/><polygon class="plygon" points="562.62 114.1 450.03 227.31 562.57 340.54 562.62 114.1"/><polygon class="polygon" points="226.74 227.69 113.52 340.26 0.29 227.71 226.74 227.69"/><polygon class="polygon" points="340.52 113.91 227.3 226.48 114.07 113.93 340.52 113.91"/><polygon class="polygon" points="454.3 0.12 341.09 112.69 227.86 0.14 454.3 0.12"/><polygon class="polygon" points="227.29 454.06 114.08 341.47 0.85 454.01 227.29 454.06"/><polygon class="polygon" points="678.11 227.69 791.32 340.26 904.55 227.71 678.11 227.69"/><polygon class="polygon" points="564.32 113.91 677.54 226.48 790.77 113.93 564.32 113.91"/><polygon class="polygon" points="450.54 0.12 563.75 112.69 676.98 0.14 450.54 0.12"/><polygon class="polygon" points="678.67 454.06 791.88 341.47 905.11 454.01 678.67 454.06"/><path class="polygon" d="M110.71,340.26"/></g></svg>
 
-		<div class="upcoming-events__background" alt=""></div>
+		<div class="upcoming-events__background lazyload" alt=""></div>
 	</section>
 
-	<section id="services" class="wrapper-full-height our-services">
+	<section id="services" class="wrapper-full-height our-services lazyload">
 		<h2 class="our-services__title">Our Services</h2>
 
 		<h3 class="our-services__heading">Events</h3>
@@ -225,7 +225,7 @@
 
 </section>
 
-<section id="contact" class="wrapper-full-height contact">
+<section id="contact" class="wrapper-full-height contact lazyload">
 	<h2 class="contact__heading">Contact Us</h2>
 
 	<form class="contact__form" action="contact.php">

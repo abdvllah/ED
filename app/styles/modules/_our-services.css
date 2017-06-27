@@ -1,16 +1,21 @@
 .our-services {
+	&.lazyloaded {
+		background: url('../assets/our-services-l.png') no-repeat top 30% left, url('../assets/our-services-r.png') no-repeat bottom right;
+		background-size: 70% auto;
+		background-color: $black;
+	}
 	position: relative;
-	background: url('../assets/our-services-l.png') no-repeat top 30% left, url('../assets/our-services-r.png') no-repeat bottom right;
-	background-size: 70% auto;
-	background-color: $black;
 	display: block;
 	text-align: center;
 
 
 	@mixin atMedium {
-		background: url('../assets/our-services-l.png') no-repeat top left, url('../assets/our-services-r.png') no-repeat top right;
-		background-size: contain;
-		background-color: $black;
+		&.lazyloaded {
+			background: url('../assets/our-services-l.png') no-repeat top left, url('../assets/our-services-r.png') no-repeat top right;
+			background-size: contain;
+			background-color: $black;
+		}
+		
 		display: block;
 		text-align: center;
 	}

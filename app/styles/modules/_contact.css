@@ -1,7 +1,10 @@
 .contact {
-	background: url('../assets/contact-back.png') top right no-repeat;
-	background-size: contain;
-	background-color: lighten($black, .5);
+	&.lazyloaded {
+		background: url('../assets/contact-back.png') top right no-repeat;
+		background-size: contain;
+		background-color: lighten($black, .5);
+	}
+	
 
 	&__heading {
 		font-size: 40px;

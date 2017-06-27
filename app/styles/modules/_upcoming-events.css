@@ -141,9 +141,12 @@
 	}
 
 	&__background {
+		&.lazyloaded {
+			background: url('../assets/upcoming-b.png')  no-repeat top left;
+			background-size: contain;
+		}
+
 		position: absolute;
-		background: url('../assets/upcoming-b.png')  no-repeat top left;
-		background-size: contain;
 		top: 45%;
 		left: 0;
 		z-index: 2;

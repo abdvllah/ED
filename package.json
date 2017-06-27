@@ -6,6 +6,7 @@
     "jquery-scrollify": "^1.0.14",
     "jquery-ui": "^1.12.1",
     "jquery-ui-bundle": "^1.12.1",
+    "lazysizes": "^4.0.0-rc3",
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {

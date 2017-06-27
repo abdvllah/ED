@@ -1564,9 +1564,8 @@ form input[type="submit"] {
 	}
 
 .upcoming-events__background {
+
 		position: absolute;
-		background: url('../assets/upcoming-b.png')  no-repeat top left;
-		background-size: contain;
 		top: 45%;
 		left: 0;
 		z-index: 2;
@@ -1576,6 +1575,11 @@ form input[type="submit"] {
 		transition: all 2s ease-in-out;
 		z-index: 2;
 	}
+
+.upcoming-events__background.lazyloaded {
+			background: url('../assets/upcoming-b.png')  no-repeat top left;
+			background-size: contain;
+		}
 
 @media (min-width: 800px) {
 
@@ -1593,22 +1597,28 @@ form input[type="submit"] {
 
 .our-services {
 	position: relative;
-	background: url('../assets/our-services-l.png') no-repeat top 30% left, url('../assets/our-services-r.png') no-repeat bottom right;
-	background-size: 70% auto;
-	background-color: #272727;
 	display: block;
 	text-align: center;
 }
 
+.our-services.lazyloaded {
+		background: url('../assets/our-services-l.png') no-repeat top 30% left, url('../assets/our-services-r.png') no-repeat bottom right;
+		background-size: 70% auto;
+		background-color: #272727;
+	}
+
 @media (min-width: 800px) {
 
 .our-services {
-		background: url('../assets/our-services-l.png') no-repeat top left, url('../assets/our-services-r.png') no-repeat top right;
-		background-size: contain;
-		background-color: #272727;
+		
 		display: block;
 		text-align: center
 }
+		.our-services.lazyloaded {
+			background: url('../assets/our-services-l.png') no-repeat top left, url('../assets/our-services-r.png') no-repeat top right;
+			background-size: contain;
+			background-color: #272727;
+		}
 	}
 
 .our-services__title {
@@ -2087,12 +2097,11 @@ form input[type="submit"] {
 			display: block;
 		}
 
-.contact {
-	background: url('../assets/contact-back.png') top right no-repeat;
-	background-size: contain;
-	background-color: rgb(147,147,147);
-			
-}
+.contact.lazyloaded {
+		background: url('../assets/contact-back.png') top right no-repeat;
+		background-size: contain;
+		background-color: rgb(147,147,147);
+	}
 
 .contact__heading {
 		font-size: 40px;
