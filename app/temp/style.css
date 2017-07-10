@@ -2272,7 +2272,7 @@ form input[type="submit"] {
 /* Events Page Modules */
 
 .events-page {
-	background-image: url('../assets/images/pages/icons/back-pattern.svg');
+	background-image: url('../assets/imagespages/icons/back-pattern.svg');
 	background-size: 90%;
 	background-repeat: no-repeat;
 	background-position: bottom right;
@@ -2342,39 +2342,39 @@ form input[type="submit"] {
 	}
 
 .icon-wrapper .cultural {
-		background: url('../assets/icons/cultural-b.svg') no-repeat top center;
+		background: url('../assets/images/icons/cultural-b.svg') no-repeat top center;
 		background-size: auto 90%;
 	}
 
 .icon-wrapper .cultural.active {
-			background-image: url('../assets/icons/cultural.svg');
+			background-image: url('../assets/images/icons/cultural.svg');
 		}
 
 .icon-wrapper .family {
-		background: url('../assets/icons/family-b.svg') no-repeat top center;
+		background: url('../assets/images/icons/family-b.svg') no-repeat top center;
 		background-size: auto 90%;
 	}
 
 .icon-wrapper .family.active {
-			background-image: url('../assets/icons/family.svg');
+			background-image: url('../assets/images/icons/family.svg');
 		}
 
 .icon-wrapper .business {
-		background: url('../assets/icons/business-b.svg') no-repeat top center;
+		background: url('../assets/images/icons/business-b.svg') no-repeat top center;
 		background-size: auto 90%;
 	}
 
 .icon-wrapper .business.active {
-			background-image: url('../assets/icons/business.svg');
+			background-image: url('../assets/images/icons/business.svg');
 		}
 
 .icon-wrapper .ramadan {
-		background: url('../assets/icons/ramadan-b.svg') no-repeat top center;
+		background: url('../assets/images/icons/ramadan-b.svg') no-repeat top center;
 		background-size: auto 90%;
 	}
 
 .icon-wrapper .ramadan.active {
-			background-image: url('../assets/icons/ramadan.svg');
+			background-image: url('../assets/images/icons/ramadan.svg');
 		}
 
 .icon-wrapper__icon {

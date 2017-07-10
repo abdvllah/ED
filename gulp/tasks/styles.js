@@ -11,7 +11,7 @@ colorFunctions = require('postcss-colour-functions');
 
 
 gulp.task('styles', function() {
-	return gulp.src('./app/styles/style.css')
+	return gulp.src('./app/assets/styles/style.css')
 	.pipe(postcss([cssImport, cssInherit, mixins, cssvars, nested, hexrgba, autoprefixer, colorFunctions]))
 	.on('error', function(errorInfo) {
 		console.log(errorInfo.toString());

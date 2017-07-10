@@ -26,10 +26,10 @@ gulp.task('copyGeneralFiles', ['deletDistFolder'], function() {
 	'!./app/*.html',
 	'!./app/assets',
 	'!./app/assets/**',
-	'!./app/scripts',
-	'!./app/scripts/**',
-	'!./app/styles',
-	'!./app/styles/**',
+	'!./app/assets/scripts',
+	'!./app/assets/scripts/**',
+	'!./app/assets/styles',
+	'!./app/assets/styles/**',
 	'!./app/temp',
 	'!./app/temp/**'
 	];

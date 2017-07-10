@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import scrollify from 'jquery-scrollify';
-import waypoints from '../../../node_modules/waypoints/lib/noframework.waypoints';
+import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
 
 class PageScroll {
 	constructor() {
