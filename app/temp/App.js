@@ -11553,7 +11553,7 @@ var Slider = function () {
 				// Remove class from all siblings and hide them
 				this.sliders.removeClass('slide--visible').hide();
 
-				(0, _jquery2.default)(next).addClass('slide--visible').show("bounce", { time: 3, distance: 50 }, 1000, function () {
+				(0, _jquery2.default)(next).addClass('slide--visible').show("slide", { time: 3, distance: 50 }, 1300, function () {
 					(0, _jquery2.default)('.slider-wrapper .next').prop('disabled', false);
 				});
 			}
@@ -11562,7 +11562,7 @@ var Slider = function () {
 					this.count = 1;
 					this.sliders.removeClass('slide--visible').hide();
 
-					(0, _jquery2.default)('.slide:first').addClass('slide--visible').show("bounce", { time: 3, distance: 50 }, 1000, function () {
+					(0, _jquery2.default)('.slide:first').addClass('slide--visible').show("slide", { time: 3, distance: 50 }, 1300, function () {
 						(0, _jquery2.default)('.slider-wrapper .next').prop('disabled', false);
 					});
 				}
@@ -11626,7 +11626,7 @@ new _PageScroll2.default();
 new _Slider2.default((0, _jquery2.default)('#testimonial-slider'));
 
 // Script for change content in div when clicking on control
-new _ContentChange2.default((0, _jquery2.default)('.team__pillow'), (0, _jquery2.default)('.team-member'));
+new _ContentChange2.default((0, _jquery2.default)('.team .pillow'), (0, _jquery2.default)('.team-member'));
 new _ContentChange2.default((0, _jquery2.default)('.events-page .icon-wrapper__icon'), (0, _jquery2.default)('.events-page .content'));
 
 // Handle Items anmination on reveal

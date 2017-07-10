@@ -29,8 +29,8 @@
 			padding-top: 30px;
 			padding-left: 10px;
 			margin: 0;
-			background: url('../assets/dark-pattern.png') center center;
-			background-size: contain;
+			background: url('../assets/images/dark-pattern.png') top 100% right no-repeat;
+			background-size: cover;
 			text-transform: uppercase;
 
 			@mixin atMedium {

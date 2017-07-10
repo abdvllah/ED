@@ -1,6 +1,8 @@
 .modal {
 	position: fixed;
 	z-index: 20;
+	background: url('../assets/images/side-patt.png') top left no-repeat, url('../assets/images/side-patt.png') top right no-repeat;
+	background-size: contain;
 	background-color: rgba($backGray, .97);
 	top: 0;
 	bottom: 0;
@@ -12,7 +14,7 @@
 	transform: scale(1.2);
 	color: $black;
 	text-align: center;
-	cursor: url('../assets/cursor-close.png'), auto;
+	cursor: url('../assets/images/cursor-close.png'), auto;
 
 
 	&--visible {

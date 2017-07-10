@@ -17,7 +17,7 @@ new PageScroll();
 new Slider($('#testimonial-slider'));
 
 // Script for change content in div when clicking on control
-new ContentChange( $('.team__pillow'), $('.team-member') );
+new ContentChange( $('.team .pillow'), $('.team-member') );
 new ContentChange( $('.events-page .icon-wrapper__icon'), $('.events-page .content') );
 
 // Handle Items anmination on reveal

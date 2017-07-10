@@ -16,38 +16,38 @@
 
 
 	.cultural {
-		background: url('../assets/pages/cultural-b.svg') no-repeat top center;
+		background: url('../assets/icons/cultural-b.svg') no-repeat top center;
 		background-size: auto 90%;
 
 		&.active {
-			background-image: url('../assets/pages/cultural.svg');
+			background-image: url('../assets/icons/cultural.svg');
 		}
 	}
 
 	.family {
-		background: url('../assets/pages/family-b.svg') no-repeat top center;
+		background: url('../assets/icons/family-b.svg') no-repeat top center;
 		background-size: auto 90%;
 
 		&.active {
-			background-image: url('../assets/pages/family.svg');
+			background-image: url('../assets/icons/family.svg');
 		}
 	}
 
 	.business {
-		background: url('../assets/pages/business-b.svg') no-repeat top center;
+		background: url('../assets/icons/business-b.svg') no-repeat top center;
 		background-size: auto 90%;
 
 		&.active {
-			background-image: url('../assets/pages/business.svg');
+			background-image: url('../assets/icons/business.svg');
 		}
 	}
 
 	.ramadan {
-		background: url('../assets/pages/ramadan-b.svg') no-repeat top center;
+		background: url('../assets/icons/ramadan-b.svg') no-repeat top center;
 		background-size: auto 90%;
 
 		&.active {
-			background-image: url('../assets/pages/ramadan.svg');
+			background-image: url('../assets/icons/ramadan.svg');
 		}
 	}
 

@@ -1,0 +1,49 @@
+.pillow {
+	position: relative;
+	background: url('../assets/images/left-pillow.svg') top center no-repeat;
+	height: 60px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	margin-right: 10px;
+	width: 49%;
+	display: inline-block;
+	transform: translateY(50%);
+	transition: all .3s ease;
+
+	@mixin atMedium {
+		height: 100px;
+		width: 200px;
+		font-size: 18px;
+		cursor: pointer;
+	}
+
+	&.active {
+		transform: translateY(20%);
+		pointer-events: none;
+	}
+
+	span {
+		position: absolute;
+		left: 28%;
+		top: 50%;
+
+		@mixin atMedium {
+			left: 15%;
+			top: 40%;
+		}
+	}
+
+
+	&--right {
+		background: url('../assets/images/right-pillow.svg') top center no-repeat;
+
+		span {
+			position: absolute;
+			left: 51%;
+			top: 46%;
+		}
+	}
+
+}
+

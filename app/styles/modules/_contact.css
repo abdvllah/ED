@@ -1,6 +1,6 @@
 .contact {
 	&.lazyloaded {
-		background: url('../assets/contact-back.png') top right no-repeat;
+		background: url('../assets/images/contact-back.png') top right no-repeat;
 		background-size: contain;
 		background-color: lighten($black, .5);
 	}

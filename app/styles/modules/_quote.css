@@ -17,8 +17,36 @@
 			@mixin atMedium {
 				font-size: 70px;
 			}
+
+			
 		}
-		span.right-q {
+
+		&::before {
+				/*content: "“";*/
+				content: "";
+				display: block;
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				left: -5%;
+				top: -5%;
+				background: url('../assets/images/left-q.png') top left no-repeat;
+				background-size: contain;
+			}
+			&::after {
+				/*content: "“";*/
+				content: "";
+				display: block;
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				right: -5%;
+				bottom: -5%;
+				background: url('../assets/images/right-q.png') top left no-repeat;
+				background-size: contain;
+			}
+
+		/*span.right-q {
 			right: 0;
 			top: 70%;
 
@@ -35,5 +63,5 @@
 				left: 0%;
 				bottom: 20%;
 			}
-		}
+		}*/
 }

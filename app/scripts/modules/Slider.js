@@ -30,7 +30,7 @@ class Slider {
 			this.sliders.removeClass('slide--visible').hide();
 
 			$(next).addClass('slide--visible')
-			.show("bounce", { time: 3, distance: 50 }, 1000, function(){
+			.show("slide", { time: 3, distance: 50 }, 1300, function(){
 				$('.slider-wrapper .next').prop('disabled', false);
 			});
 		}
@@ -40,7 +40,7 @@ class Slider {
 			this.sliders.removeClass('slide--visible').hide();
 
 			$('.slide:first').addClass('slide--visible')
-			.show("bounce", { time: 3, distance: 50 }, 1000, function() {
+			.show("slide", { time: 3, distance: 50 }, 1300, function() {
 				$('.slider-wrapper .next').prop('disabled', false);
 			});
 		}

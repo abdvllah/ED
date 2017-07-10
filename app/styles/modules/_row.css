@@ -3,7 +3,12 @@
   @mixin clearfix;
 
   &--padding {
+    padding: 10px;
+
+    @mixin atMedium {
     padding: 50px;
+    }
+    
   }
 
   &--gutters {

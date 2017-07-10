@@ -1,0 +1,58 @@
+.team-member {
+
+	&__photo {
+		display: block;
+		margin: 5px auto;
+		width: 70%;
+		transform: none;
+
+		@mixin atMedium {
+			margin: 10px auto;
+			width: 450px;
+		}
+	}
+
+	&__name {
+		padding:0;
+		margin:0;
+		font-size: 30px;
+		color: $red;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: center;
+
+		@mixin atMedium {
+			text-align: left;
+		}
+
+	}
+
+	&__info {
+		width: 100%;
+		height: 100%;
+		margin: 10px;
+		text-align: left;
+		color: $black;
+		padding: 10px;
+
+		@mixin atMedium {
+			padding: 10px 20px;
+		}
+	}
+
+	&__quote {
+		display: none;
+		text-align: left;
+		color: lighten($black, .4);
+		width: 80%;
+		margin: auto;
+
+		@mixin atMedium {
+			display: block;
+			font-size: 100%;
+			padding-left: 20px;
+		}
+	}
+
+
+}
