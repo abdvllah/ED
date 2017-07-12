@@ -37,7 +37,7 @@
 		border-bottom: 25px solid transparent;
 		border-left: 25px solid $red;
 
-		/*background: url('../assets/images/change.jpg') top left no-repeat;
+		/*background: url('../images/change.jpg') top left no-repeat;
 		background-size: contain;*/
 		position: absolute;
 		bottom: 50%;

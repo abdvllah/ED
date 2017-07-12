@@ -30,7 +30,7 @@
 				height: 25px;
 				left: -5%;
 				top: -5%;
-				background: url('../assets/images/left-q.png') top left no-repeat;
+				background: url('../images/left-q.png') top left no-repeat;
 				background-size: contain;
 			}
 			&::after {
@@ -42,7 +42,7 @@
 				height: 25px;
 				right: -5%;
 				bottom: -5%;
-				background: url('../assets/images/right-q.png') top left no-repeat;
+				background: url('../images/right-q.png') top left no-repeat;
 				background-size: contain;
 			}
 

@@ -6,7 +6,7 @@ module.exports = {
 		Vendor: "./app/assets/scripts/Vendor.js"
 	},
 	output: {
-		path: path.resolve(__dirname, "./app/temp"),
+		path: path.resolve(__dirname, "./app/assets/temp"),
 		filename: "[name].js"
 	},
 	module: {

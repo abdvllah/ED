@@ -1,5 +1,5 @@
 .button {
-	background: url('../assets/images/button.png') top left no-repeat;
+	background: url('../images/button.png') top left no-repeat;
 	background-size: cover;
 	background-color: #FFF;
 	color: $black;

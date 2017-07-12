@@ -1041,7 +1041,7 @@ ul {
 		border-bottom: 25px solid transparent;
 		border-left: 25px solid #ad191d;
 
-		/*background: url('../assets/images/change.jpg') top left no-repeat;
+		/*background: url('../images/change.jpg') top left no-repeat;
 		background-size: contain;*/
 		position: absolute;
 		bottom: 50%;
@@ -1121,7 +1121,7 @@ ul {
 				height: 25px;
 				left: -5%;
 				top: -5%;
-				background: url('../assets/images/left-q.png') top left no-repeat;
+				background: url('../images/left-q.png') top left no-repeat;
 				background-size: contain;
 			}
 
@@ -1134,7 +1134,7 @@ ul {
 				height: 25px;
 				right: -5%;
 				bottom: -5%;
-				background: url('../assets/images/right-q.png') top left no-repeat;
+				background: url('../images/right-q.png') top left no-repeat;
 				background-size: contain;
 			}
 
@@ -1183,7 +1183,7 @@ form input[type="submit"] {
 	}
 
 .button {
-	background: url('../assets/images/button.png') top left no-repeat;
+	background: url('../images/button.png') top left no-repeat;
 	background-size: cover;
 	background-color: #FFF;
 	color: #272727;
@@ -1309,7 +1309,7 @@ form input[type="submit"] {
 .modal {
 	position: fixed;
 	z-index: 20;
-	background: url('../assets/images/side-patt.png') top left no-repeat, url('../assets/images/side-patt.png') top right no-repeat;
+	background: url('../images/side-patt.png') top left no-repeat, url('../images/side-patt.png') top right no-repeat;
 	background-size: contain;
 	background-color: rgba(207,207,207, .97);
 	top: 0;
@@ -1324,7 +1324,7 @@ form input[type="submit"] {
 	        transform: scale(1.2);
 	color: #272727;
 	text-align: center;
-	cursor: url('../assets/images/cursor-close.png'), auto;
+	cursor: url('../images/cursor-close.png'), auto;
 }
 
 .modal--visible {
@@ -1360,7 +1360,7 @@ form input[type="submit"] {
 /* Home Page Sections Modules */
 
 .large-hero {
-	background-image: url('../assets/images/hero.png');
+	background-image: url('../images/hero.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -1625,7 +1625,7 @@ form input[type="submit"] {
 	}
 
 .upcoming-events__background.lazyloaded {
-			background: url('../assets/images/upcoming-b.png')  no-repeat top left;
+			background: url('../images/upcoming-b.png')  no-repeat top left;
 			background-size: contain;
 		}
 
@@ -1640,7 +1640,7 @@ form input[type="submit"] {
 	}
 
 .upcoming-events__background:hover {
-			background-image: url('../assets/images/upcoming.png');
+			background-image: url('../images/upcoming.png');
 		}
 
 .our-services {
@@ -1650,7 +1650,7 @@ form input[type="submit"] {
 }
 
 .our-services.lazyloaded {
-		background: url('../assets/images/our-services-l.png') no-repeat top 30% left, url('../assets/images/our-services-r.png') no-repeat bottom right;
+		background: url('../images/our-services-l.png') no-repeat top 30% left, url('../images/our-services-r.png') no-repeat bottom right;
 		background-size: 70% auto;
 		background-color: #272727;
 	}
@@ -1663,7 +1663,7 @@ form input[type="submit"] {
 		text-align: center
 }
 		.our-services.lazyloaded {
-			background: url('../assets/images/our-services-l.png') no-repeat top left, url('../assets/images/our-services-r.png') no-repeat top right;
+			background: url('../images/our-services-l.png') no-repeat top left, url('../images/our-services-r.png') no-repeat top right;
 			background-size: contain;
 			background-color: #272727;
 		}
@@ -1802,7 +1802,7 @@ form input[type="submit"] {
 			padding-top: 30px;
 			padding-left: 10px;
 			margin: 0;
-			background: url('../assets/images/dark-pattern.png') top 100% right no-repeat;
+			background: url('../images/dark-pattern.png') top 100% right no-repeat;
 			background-size: cover;
 			text-transform: uppercase;
 		}
@@ -1951,7 +1951,7 @@ form input[type="submit"] {
 			height: 50px;
 			left: -5%;
 			top: -5%;
-			background: url('../assets/images/left-q.png') top left no-repeat;
+			background: url('../images/left-q.png') top left no-repeat;
 			background-size: contain;
 		}
 
@@ -1961,7 +1961,7 @@ form input[type="submit"] {
 			display: none;
 			width: 50px;
 			height: 50px;
-			background: url('../assets/images/right-q.png') top left no-repeat;
+			background: url('../images/right-q.png') top left no-repeat;
 			background-size: contain;
 			right: -5%;
 			bottom: -15%;
@@ -2010,7 +2010,7 @@ form input[type="submit"] {
 			width: 50px;
 			height: 50px;
 			margin-right: 10px;
-			background: url('../assets/images/left-q.png') top left no-repeat;
+			background: url('../images/left-q.png') top left no-repeat;
 			background-size: contain;
 		}
 
@@ -2152,7 +2152,7 @@ form input[type="submit"] {
 
 .pillow {
 	position: relative;
-	background: url('../assets/images/left-pillow.svg') top center no-repeat;
+	background: url('../images/left-pillow.svg') top center no-repeat;
 	height: 60px;
 	font-size: 12px;
 	font-weight: bold;
@@ -2199,7 +2199,7 @@ form input[type="submit"] {
 	}
 
 .pillow--right {
-		background: url('../assets/images/right-pillow.svg') top center no-repeat;
+		background: url('../images/right-pillow.svg') top center no-repeat;
 	}
 
 .pillow--right span {
@@ -2209,7 +2209,7 @@ form input[type="submit"] {
 		}
 
 .contact.lazyloaded {
-		background: url('../assets/images/contact-back.png') top right no-repeat;
+		background: url('../images/contact-back.png') top right no-repeat;
 		background-size: contain;
 		background-color: rgb(147,147,147);
 	}
@@ -2342,39 +2342,39 @@ form input[type="submit"] {
 	}
 
 .icon-wrapper .cultural {
-		background: url('../assets/images/icons/cultural-b.svg') no-repeat top center;
+		background: url('../images/icons/cultural-b.svg') no-repeat top center;
 		background-size: auto 90%;
 	}
 
 .icon-wrapper .cultural.active {
-			background-image: url('../assets/images/icons/cultural.svg');
+			background-image: url('../images/icons/cultural.svg');
 		}
 
 .icon-wrapper .family {
-		background: url('../assets/images/icons/family-b.svg') no-repeat top center;
+		background: url('../images/icons/family-b.svg') no-repeat top center;
 		background-size: auto 90%;
 	}
 
 .icon-wrapper .family.active {
-			background-image: url('../assets/images/icons/family.svg');
+			background-image: url('../images/icons/family.svg');
 		}
 
 .icon-wrapper .business {
-		background: url('../assets/images/icons/business-b.svg') no-repeat top center;
+		background: url('../images/icons/business-b.svg') no-repeat top center;
 		background-size: auto 90%;
 	}
 
 .icon-wrapper .business.active {
-			background-image: url('../assets/images/icons/business.svg');
+			background-image: url('../images/icons/business.svg');
 		}
 
 .icon-wrapper .ramadan {
-		background: url('../assets/images/icons/ramadan-b.svg') no-repeat top center;
+		background: url('../images/icons/ramadan-b.svg') no-repeat top center;
 		background-size: auto 90%;
 	}
 
 .icon-wrapper .ramadan.active {
-			background-image: url('../assets/images/icons/ramadan.svg');
+			background-image: url('../images/icons/ramadan.svg');
 		}
 
 .icon-wrapper__icon {

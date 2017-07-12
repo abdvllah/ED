@@ -1,6 +1,6 @@
 .pillow {
 	position: relative;
-	background: url('../assets/images/left-pillow.svg') top center no-repeat;
+	background: url('../images/left-pillow.svg') top center no-repeat;
 	height: 60px;
 	font-size: 12px;
 	font-weight: bold;
@@ -36,7 +36,7 @@
 
 
 	&--right {
-		background: url('../assets/images/right-pillow.svg') top center no-repeat;
+		background: url('../images/right-pillow.svg') top center no-repeat;
 
 		span {
 			position: absolute;
