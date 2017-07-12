@@ -2,6 +2,7 @@ html, body {
 	height: 100%;
 	background: $backGray;
 	font-family: "raleway",sans-serif;
+	color: $black;
 }
 
 img {
@@ -18,6 +19,12 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+
+h1,h2,h3,h4,h5 {
+	font-family: "raleway", sans-serif;
+}
+
+
 
 .background-image {
 	background-position: center center;

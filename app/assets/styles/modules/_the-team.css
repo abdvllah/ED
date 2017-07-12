@@ -6,6 +6,7 @@
 		text-align: center;
 		padding-top: 30px;
 		margin:0;
+		text-transform: capitalize;
 
 		@mixin atMedium {
 		}
@@ -27,7 +28,7 @@
 		overflow: hidden;
 		padding-left: 50px;
 		margin-bottom: 10%;
-		text-align: center;
+		text-align: left;
 	}
 	
 	&__things {
