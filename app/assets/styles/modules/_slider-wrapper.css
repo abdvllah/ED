@@ -31,15 +31,21 @@
 		display: block;
 		width: 0;
 		height: 0;
-		border-top: 25px solid transparent;
-		border-bottom: 25px solid transparent;
-		border-left: 25px solid $red;
+		border-top: 18px solid transparent;
+		border-bottom: 18px solid transparent;
+		border-left: 18px solid $red;
 		position: absolute;
 		bottom: 50%;
 		right: 10%;
 		transform: translateX(-50%);
 		cursor: pointer;
 		transition: transform .4s ease-out;
+
+		@mixin atMedium {
+			border-top: 25px solid transparent;
+			border-bottom: 25px solid transparent;
+			border-left: 25px solid $red;
+		}
 
 	}
 }

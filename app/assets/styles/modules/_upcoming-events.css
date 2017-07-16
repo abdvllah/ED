@@ -13,7 +13,7 @@
 
 	&__title {
 		text-align: center;
-		font-size: 35px;
+		font-size: 30px;
 		color: darken($red, 10%);
 		text-transform: capitalize;
 		position: relative;
@@ -45,7 +45,7 @@
 			color: #FFF;
 			padding: 10px;
 			text-align: center;
-			font-size: 24px;
+			font-size: 18px;
 			position: absolute;
 			bottom: 10%;
 
@@ -61,11 +61,11 @@
 		width: 100%;
 		background-color: $red;
 		color: #FFF;
-		padding: 25px 50px;
-		font-size: 20px;
+		padding: 20px 35px;
+		font-size: 14px;
 		text-align: right;
 		position: absolute;
-		bottom: 20%;
+		bottom: 15%;
 		right: 0;
 		margin: 0;
 		z-index: 1;
@@ -87,9 +87,9 @@
 			display: block;
 			width: 0;
 			height: 0;
-			border-top: 15px solid transparent;
-			border-bottom: 15px solid transparent;
-			border-left: 15px solid white;
+			border-top: 13px solid transparent;
+			border-bottom: 13px solid transparent;
+			border-left: 13px solid white;
 
 			@mixin atMedium {
 				right: 15px;

@@ -12,7 +12,7 @@ class RevealOnScroll {
 	setInitially() {
 		var that = this;
 		$('.upcoming-events__image').addClass('reveal-item');
-		$('.testimonial').addClass('reveal-item');
+		// $('.testimonial').addClass('reveal-item');
 	}
 
 	createWaypoints() {
@@ -40,7 +40,7 @@ class RevealOnScroll {
 			element: document.getElementById('testimonial'),
 			handler: function() {
 				$('.sponsers').addClass('horizentalScroll');
-				$('.testimonial').addClass('reveal-item--is-visible');
+				// $('.testimonial').addClass('reveal-item--is-visible');
 				},
 				offset: '70%'
 			});

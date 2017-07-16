@@ -1,14 +1,16 @@
 .team {
 
 	&__heading {
-		font-size: 35px;
+		font-size: 25px;
 		color: $black;
 		text-align: center;
-		padding-top: 30px;
+		padding-top: 15px;
 		margin:0;
 		text-transform: capitalize;
 
 		@mixin atMedium {
+			font-size: 35px;
+			padding-top: 30px;
 		}
 	}
 

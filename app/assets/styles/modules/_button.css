@@ -4,13 +4,21 @@
 	background-color: #FFF;
 	color: $black;
 	text-decoration: none;
-	padding: 15px 30px;
-	width: 175px;
-	height: 50px;
+	padding: 10px;
+	width: 125px;
+	height: 35px;
 	margin-top: 30px;
 	cursor: pointer;
 	text-align: center;
 	transition: all 1s cubic-bezier(0, 0.79, 0.96, 0.69);
+	font-size: 70%;
+
+	@mixin atMedium {
+		font-size: 95%;
+		padding: 15px 30px;
+		height: 50px;
+		width: 175px;
+	}
 	
 	&:hover {
 		background-color: $red;

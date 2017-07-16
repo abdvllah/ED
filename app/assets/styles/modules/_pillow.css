@@ -1,11 +1,10 @@
 .pillow {
 	position: relative;
 	background: $black;
-	width: 80px;
 	text-align: center;
 	/*height: 60px;*/
-	padding: 15px;
-	font-size: 12px;
+	padding: 6px 8px;
+	font-size: 10px;
 	font-weight: bold;
 	color: #FFF;
 	margin-right: 0;
@@ -18,6 +17,7 @@
 		background: url('../images/left-pillow.svg') top center no-repeat;
 		height: 100px;
 		width: 200px;
+		padding: 15px;
 		font-size: 15px;
 		margin-right: 10px;
 	}

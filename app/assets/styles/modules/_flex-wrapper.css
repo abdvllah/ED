@@ -11,10 +11,15 @@
 	}
 
 	&--narrow-height {
-		height: 80%;
-		width: 70%;
+		height: 100%;
+		width: 100%;
 		padding: 0 5%;
-		
 		align-items: flex-start;
+		overflow: hidden;
+
+		@mixin atMedium {
+			height: 80%;
+			width: 70%;
+		}
 	}
 }

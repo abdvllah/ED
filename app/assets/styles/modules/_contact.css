@@ -7,10 +7,15 @@
 	
 
 	&__heading {
-		font-size: 40px;
+		font-size: 35px;
 		color: #FFF;
 		text-align: center;
-		margin-bottom: 100px;
+		margin-bottom: 20px;
+
+		@mixin atMedium {
+			margin-bottom: 100px;
+			font-size: 40px;
+		}
 	}
 
 	&__footer {
@@ -30,6 +35,11 @@
 				color: #FFF;
 				text-transform: lowercase;
 				margin-top: 5px;
+				font-size: 80%;
+
+				@mixin atMedium {
+					font-size: 100%;
+				}
 			}
 		}
 
