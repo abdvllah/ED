@@ -12,6 +12,7 @@ class RevealOnScroll {
 	setInitially() {
 		var that = this;
 		$('.upcoming-events__image').addClass('reveal-item');
+		$('.testimonial').addClass('reveal-item');
 	}
 
 	createWaypoints() {
@@ -39,7 +40,7 @@ class RevealOnScroll {
 			element: document.getElementById('testimonial'),
 			handler: function() {
 				$('.sponsers').addClass('horizentalScroll');
-				// console.log($(currentItem).attr('id') + " triggered");
+				$('.testimonial').addClass('reveal-item--is-visible');
 				},
 				offset: '70%'
 			});
@@ -49,6 +50,14 @@ class RevealOnScroll {
 			handler: function() {
 				$('.our-services__heading:first-of-type').addClass('slideToRight--slow');
 				$('.our-services__heading:last-of-type').addClass('slideToLeft--slow');
+				},
+				offset: '50%'
+			});
+
+		new Waypoint({
+			element: document.getElementById('team'),
+			handler: function() {
+				$('.team__nav ').addClass('slideToLeft--slow');
 				},
 				offset: '50%'
 			});

@@ -11438,6 +11438,7 @@ var RevealOnScroll = function () {
 		value: function setInitially() {
 			var that = this;
 			(0, _jquery2.default)('.upcoming-events__image').addClass('reveal-item');
+			(0, _jquery2.default)('.testimonial').addClass('reveal-item');
 		}
 	}, {
 		key: 'createWaypoints',
@@ -11466,7 +11467,7 @@ var RevealOnScroll = function () {
 				element: document.getElementById('testimonial'),
 				handler: function handler() {
 					(0, _jquery2.default)('.sponsers').addClass('horizentalScroll');
-					// console.log($(currentItem).attr('id') + " triggered");
+					(0, _jquery2.default)('.testimonial').addClass('reveal-item--is-visible');
 				},
 				offset: '70%'
 			});
@@ -11476,6 +11477,14 @@ var RevealOnScroll = function () {
 				handler: function handler() {
 					(0, _jquery2.default)('.our-services__heading:first-of-type').addClass('slideToRight--slow');
 					(0, _jquery2.default)('.our-services__heading:last-of-type').addClass('slideToLeft--slow');
+				},
+				offset: '50%'
+			});
+
+			new Waypoint({
+				element: document.getElementById('team'),
+				handler: function handler() {
+					(0, _jquery2.default)('.team__nav ').addClass('slideToLeft--slow');
 				},
 				offset: '50%'
 			});

@@ -1,7 +1,7 @@
 .modal {
 	position: fixed;
 	z-index: 20;
-	background: url('../images/side-patt.png') top left no-repeat, url('../images/side-patt.png') top right no-repeat;
+	background: url('../images/side-patt.png') top left no-repeat;
 	background-size: contain;
 	background-color: rgba($backGray, .97);
 	top: 0;
@@ -15,6 +15,11 @@
 	color: $black;
 	text-align: center;
 	cursor: url('../images/cursor-close.png'), auto;
+
+	@mixin atMedium {
+		background: url('../images/side-patt.png') top left no-repeat, url('../images/side-patt.png') top right no-repeat;
+		background-color: rgba($backGray, .97);
+	}
 
 
 	&--visible {
@@ -33,14 +38,20 @@
 	}
 
 	&__form-wrapper {
-		width: 60%;
+		width: 65%;
 		padding: 30px;
 		margin: auto;
 		position: fixed;
 		text-align: right;
 		top: 50%;
-		left: 50%;
+		left: 60%;
 		transform: translate(-50%, -50%);
 		cursor: auto;
+		overflow: hidden;
+
+		@mixin atMedium {
+			width: 60%;
+			left: 50%;
+		}
 	}
 }
