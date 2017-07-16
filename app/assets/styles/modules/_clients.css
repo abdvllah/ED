@@ -24,14 +24,12 @@
 
 
 		&__title {
-			font-size: 30px;
 			color: lighten($black, .7);
 			padding-top: 30px;
 			padding-left: 10px;
 			margin: 0;
 			background: url('../images/dark-pattern.png') top 100% right no-repeat;
 			background-size: cover;
-			text-transform: uppercase;
 
 			@mixin atMedium {
 				padding-top: 60px;

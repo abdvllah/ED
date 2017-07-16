@@ -42,12 +42,11 @@
 		text-align: left;
 		color: $black;
 		padding: 8px;
-		font-size: 10px;
+		font-size: 100%;
 
 		@mixin atMedium {
 			padding: 10px 20px;
 			margin: 10px;
-			font-size: 100%;
 		}
 	}
 

@@ -8,19 +8,18 @@ form {
 	input {
 		margin: 5px 0;
 		height: 30px;
-		width: 100%;
+		width: 80%;
 		padding: 5px;
 		background-color: $black;
 		border: 1px solid $black;
 		color: #FFF;
-		font-size: 80%;
+		font-size: 100%;
 
 		@mixin atMedium {
 			width: 300px;
 			height: 40px;
 			padding: 10px;
 			margin: 10px;
-			font-size: 100%;
 		}
 	}
 
@@ -30,10 +29,9 @@ form {
 		padding: 10px;
 		margin: 5px 0;
 		border: none;
-		font-size: 80%;
+		font-size: 100%;
 
 		@mixin atMedium {
-			font-size: 100%;
 			width: 400px;
 			height: 250px;
 		}

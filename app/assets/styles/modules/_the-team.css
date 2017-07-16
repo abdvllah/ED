@@ -1,12 +1,10 @@
 .team {
 
-	&__heading {
-		font-size: 25px;
+	&__title {
 		color: $black;
 		text-align: center;
 		padding-top: 15px;
 		margin:0;
-		text-transform: capitalize;
 
 		@mixin atMedium {
 			font-size: 35px;
@@ -16,7 +14,7 @@
 
 	&__content {
 		height: 67%;
-		padding: 7% 0;
+		padding: 2% 0;
 		overflow: hidden;
 
 		@mixin atMedium {
@@ -26,13 +24,19 @@
 	}
 
 	&__nav {
-		height: 25%;
+		height: 50px;
+		width: 80%;
 		position: relative;
 		left: 0;
+		top: 15px;
 		overflow: hidden;
-		padding-left: 50px;
-		margin-bottom: 10%;
+		margin: 0 auto;
 		text-align: left;
+
+		@mixin atMedium {
+			width: 90%;
+			height: 100%;
+		}
 	}
 	
 	&__things {

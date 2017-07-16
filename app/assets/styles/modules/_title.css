@@ -1,0 +1,13 @@
+.title {
+	color: #FFF;
+	font-size: 300%;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 5%;
+	position: relative;
+	margin: 0;
+
+	@mixin atMedium {
+		font-size: 40px;
+	}
+}

@@ -29,7 +29,7 @@
 
 	&__text {
 		position: relative;
-		font-size: 10px;
+		font-size: 100%;
 		color: $black;
 		text-align: center;
 		line-height: 1.5;
@@ -87,32 +87,17 @@
 				font-size: 100px;
 			}
 		}
-		/*span.right-q {
-			right: 0;
-			top: 70%;
-
-			@mixin atMedium {
-				right: 5%;
-			}
-		}
-		span.left-q {
-			left: 0;
-			bottom: 30%;
-
-			@mixin atMedium {
-			}
-		}*/
 	}
 
 	&__name {
 		position: relative;
+		right: -50%;
 		font-weight: bold;
 		font-size: 14px;
 		color: $red;
 		padding: 10px;
 		background-color: lighten($black, .7);
 		width: 140px;
-		margin-left: 45%;
 
 		@mixin atMedium {
 			position: absolute;

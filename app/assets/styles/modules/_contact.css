@@ -6,13 +6,12 @@
 	}
 	
 
-	&__heading {
-		font-size: 35px;
-		color: #FFF;
+	&__title {
 		text-align: center;
 		margin-bottom: 20px;
 
 		@mixin atMedium {
+			font-size: 35px;
 			margin-bottom: 100px;
 			font-size: 40px;
 		}
@@ -44,9 +43,15 @@
 		}
 
 		.address {
-			margin-top: 40px;
+			margin-top: 15px;
+
+			@mixin atMedium {
+				margin-top: 40px;
+			}
+
 			span {
 				color: #FFF;
+				text-decoration: none;
 
 				&::after {
 					content: "";

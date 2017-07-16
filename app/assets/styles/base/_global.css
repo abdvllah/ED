@@ -3,6 +3,11 @@ html, body {
 	background: $backGray;
 	font-family: "raleway",sans-serif;
 	color: $black;
+	font-size: 12px;
+
+	@mixin atMedium {
+		font-size: 16px;
+	}
 }
 
 img {

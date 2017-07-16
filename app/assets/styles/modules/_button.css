@@ -11,7 +11,7 @@
 	cursor: pointer;
 	text-align: center;
 	transition: all 1s cubic-bezier(0, 0.79, 0.96, 0.69);
-	font-size: 70%;
+	font-size: 110%;
 
 	@mixin atMedium {
 		font-size: 95%;
