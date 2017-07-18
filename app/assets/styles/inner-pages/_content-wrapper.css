@@ -1,13 +1,13 @@
 .content-wrapper {
 	background-color: #FFF;
-	height: 1200px;
 	padding: 30px;
-	font-size: 120%;
-	margin: -10%;
+	margin: 0;
+	padding-bottom: 100px;
 
 	@mixin atMedium {
-		font-size: 150%;
 		margin: 0;
+		padding-bottom: 30px;
+		margin: -10%;
 	}
 
 	.content {

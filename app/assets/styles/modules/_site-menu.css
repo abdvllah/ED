@@ -1,21 +1,12 @@
 .site-menu {
 
-	&__content {
-		z-index: -10;
-		transform: scaleX(0);
-		transform-origin: top right;
-		transition: transform 0.5s ease-in-out;
-
-		&__is-visible {
-			z-index: 9;
-			transform: scaleX(1);
-		}
-	}
+	display: block;
+	position: relative;
 
 	&__navigation {
 		position: fixed;
-		top: 13%;
-		right: 5.5%;
+		top: 16%;
+		right: 6.5%;
 		z-index: 10;
 
 		@mixin atMedium {
@@ -30,8 +21,7 @@
 			border: 1px solid #FFF;
 			text-decoration: none;
 			color: #FFF;
-			font-size: 20px;
-			margin: 10px auto 10px auto;
+			margin: 15px auto;
 			border-radius: 100%;
 			position: relative;
 			cursor: pointer;

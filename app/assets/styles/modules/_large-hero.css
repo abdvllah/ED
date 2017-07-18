@@ -12,19 +12,6 @@
 		background-position: 50% 50%;
 	}
 
-	&__site-logo {
-		width: 30%;
-		position: absolute;
-		z-index: 1;
-		top: 20px;
-		left: 20px;
-
-		@mixin atMedium {
-			width: 150px;
-		}
-		
-	}
-
 	&__triangle-pattern {
 		display: none;
 
@@ -40,13 +27,13 @@
 	&__triangle-pattern--small {
 		position: absolute;
 		width: 70%;
-		opacity: .5;
+		opacity: .3;
 		right: 0px;
 		bottom: 0px;
 
 		@mixin atMedium {
 			width: 20%;
-			opacity: .5;
+			opacity: .3;
 			right: 0px;
 			bottom: 0px;
 		}
@@ -55,7 +42,7 @@
 	&__slogen {
 		position: absolute;
 		width: 100%;
-		bottom: 25%;
+		bottom: 15%;
 		padding: 5%;
 		right: 0;
 		color: #FFF;

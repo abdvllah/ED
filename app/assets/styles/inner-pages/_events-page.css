@@ -1,14 +1,8 @@
 .events-page {
-	background-image: url('../images/pages/icons/back-pattern.svg');
+	background-image: url('../icons/back-pattern.svg');
 	background-size: 90%;
 	background-repeat: no-repeat;
 	background-position: bottom right;
-
-	&__header {
-		position: relative;
-		width: 100%;
-		display: block;
-	}
 
 	.details-wrapper {
 		margin-top: 10px;

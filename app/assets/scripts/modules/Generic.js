@@ -3,6 +3,7 @@ import $ from 'jquery';
 class Generic {
 	constructor() {
 		this.setParentWidth();
+		this.closeNav();
 		// this.changeImageOnHover();
 	}
 
@@ -12,13 +13,14 @@ class Generic {
 		$('.sponsers').css('width', sponsersWidth);
 	}
 
-	changeImageOnHover() {
-		$('.upcoming-events__background').hover(function() {
-			console.log('From hover');
-			$(this).attr('src', 'assets/upcoming.png');
-		});
 
-	}
+	// changeImageOnHover() {
+	// 	$('.upcoming-events__background').hover(function() {
+	// 		console.log('From hover');
+	// 		$(this).attr('src', 'assets/upcoming.png');
+	// 	});
+
+	// }
 	
 }
 

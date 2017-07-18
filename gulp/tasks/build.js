@@ -48,7 +48,7 @@ gulp.task('optimizeImages', ['deletDistFolder'], function() {
 	.pipe(gulp.dest("./dist/assets/images"));
 });
 
-// this will move html, css, javascript file to dist folder + compremise and versionize them!! happy ending ;)
+// this will move php, css, javascript file to dist folder + compremise and versionize them!! happy ending ;)
 gulp.task('usemin', ['styles', 'scripts'], function() {
 	return gulp.src("./app/*.html")
 	.pipe(usemin({

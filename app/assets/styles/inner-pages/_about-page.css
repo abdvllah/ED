@@ -1,0 +1,16 @@
+.about-page {
+	background: url('../images/about-bg.png') top -30% left no-repeat;
+	background-size: cover;
+	background-color: #FFF;
+	text-align: center;
+
+	.about {
+		width: 150%;
+		margin-left: -20%;
+		margin-bottom: 50px;
+	}
+
+	.logo {
+		width: 200px;
+	}
+}

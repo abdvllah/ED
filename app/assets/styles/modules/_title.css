@@ -7,6 +7,17 @@
 	position: relative;
 	margin: 0;
 
+	&:first-letter  {
+		font-size: 135%;
+	}
+
+	&--red {
+		color: $red;
+	}
+	&--smaller {
+		font-size: 200%;
+	}
+
 	@mixin atMedium {
 		font-size: 40px;
 	}

@@ -1,6 +1,7 @@
 .pillow {
 	position: relative;
 	background: $black;
+	top: 30px;
 	text-align: center;
 	padding: 6px 8px;
 	font-size: 100%;
@@ -8,7 +9,6 @@
 	color: #FFF;
 	margin:0;
 	display: inline-block;
-	transform: translateY(50%);
 	transition: all .3s ease;
 	cursor: pointer;
 
@@ -19,18 +19,24 @@
 		padding: 15px;
 		font-weight: 500;
 		margin-right: 10px;
+
+		&:hover {
+			transform: rotateZ(10deg);
+
+		}
 	}
 
 	&.active {
-		transform: translateY(20%);
+		transform: translateY(-30%);
 		pointer-events: none;
 		background-color: $red;
 
 		@mixin atMedium {
-			transform: translateY(20%);
 			background-color: transparent;
 		}
 	}
+
+	
 
 	span {
 		position: relative;

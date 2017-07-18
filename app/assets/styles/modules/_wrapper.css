@@ -3,4 +3,8 @@
 
 	@mixin atMedium {
 	}
+
+	&--narrow {
+		padding: 3% 25%;
+	}
 }

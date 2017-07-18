@@ -12,6 +12,7 @@ class RevealOnScroll {
 	setInitially() {
 		var that = this;
 		$('.upcoming-events__image').addClass('reveal-item');
+		$('.team__nav').addClass('reveal-item');
 		// $('.testimonial').addClass('reveal-item');
 	}
 
@@ -20,7 +21,7 @@ class RevealOnScroll {
 		new Waypoint({
 			element: document.getElementById('large-hero'),
 			handler: function() {
-				$('.large-hero__site-logo').addClass('slideToRight');
+				$('.site-logo').addClass('slideToRight');
 				$('.large-hero__slogen').addClass('slideToLeft');
 				// console.log($(currentItem).attr('id') + " triggered");
 				},
@@ -57,7 +58,7 @@ class RevealOnScroll {
 		new Waypoint({
 			element: document.getElementById('team'),
 			handler: function() {
-				$('.team__nav ').addClass('slideToLeft--slow');
+				$('.team__nav ').addClass('reveal-item--is-visible');
 				},
 				offset: '50%'
 			});

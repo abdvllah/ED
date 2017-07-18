@@ -1,11 +1,21 @@
 .nav {
+	position: fixed;
+	z-index: 9;
+	top: 0;
+	right: -100%;
 	background: rgba($black, .9);
 	width: 60%;
 	height: 100%;
 	padding-top: 50px;
+	transition: all 0.7s ease-in-out;
+
 
 	@mixin atMedium {
 		width: 25%;
+	}
+
+	&--is-visible {
+		right: 0;
 	}
 
 	ul {
@@ -19,7 +29,6 @@
 			width: 100px;
 			height: 30px;
 			padding: 5px;
-			font-size: 80%;
 			margin-bottom: 15px;
 			margin-left: 15%;
 			text-decoration: none;
@@ -37,9 +46,4 @@
 		}
 	}
 
-	&--pull-right {
-		position: fixed;
-		top: 0;
-		right: 0;
-	}
 }

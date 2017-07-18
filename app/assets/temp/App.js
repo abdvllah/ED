@@ -11179,6 +11179,7 @@ var Generic = function () {
 		_classCallCheck(this, Generic);
 
 		this.setParentWidth();
+		this.closeNav();
 		// this.changeImageOnHover();
 	}
 
@@ -11189,14 +11190,15 @@ var Generic = function () {
 			var sponsersWidth = sponsersItem.width() * (sponsersItem.length + 1) + 50;
 			(0, _jquery2.default)('.sponsers').css('width', sponsersWidth);
 		}
-	}, {
-		key: 'changeImageOnHover',
-		value: function changeImageOnHover() {
-			(0, _jquery2.default)('.upcoming-events__background').hover(function () {
-				console.log('From hover');
-				(0, _jquery2.default)(this).attr('src', 'assets/upcoming.png');
-			});
-		}
+
+		// changeImageOnHover() {
+		// 	$('.upcoming-events__background').hover(function() {
+		// 		console.log('From hover');
+		// 		$(this).attr('src', 'assets/upcoming.png');
+		// 	});
+
+		// }
+
 	}]);
 
 	return Generic;
@@ -11230,7 +11232,7 @@ var MobileMenu = function () {
 		_classCallCheck(this, MobileMenu);
 
 		this.menuIcon = (0, _jquery2.default)('.site-menu .icon');
-		this.menuContent = (0, _jquery2.default)('.site-menu__content');
+		this.menuContent = (0, _jquery2.default)('.site-menu nav');
 		this.events();
 	}
 
@@ -11242,7 +11244,7 @@ var MobileMenu = function () {
 	}, {
 		key: 'toggleTheMenu',
 		value: function toggleTheMenu() {
-			this.menuContent.toggleClass("site-menu__content__is-visible");
+			this.menuContent.toggleClass("site-menu nav--is-visible");
 			this.menuIcon.toggleClass("icon--close-x");
 		}
 	}]);
@@ -11438,6 +11440,7 @@ var RevealOnScroll = function () {
 		value: function setInitially() {
 			var that = this;
 			(0, _jquery2.default)('.upcoming-events__image').addClass('reveal-item');
+			(0, _jquery2.default)('.team__nav').addClass('reveal-item');
 			// $('.testimonial').addClass('reveal-item');
 		}
 	}, {
@@ -11447,7 +11450,7 @@ var RevealOnScroll = function () {
 			new Waypoint({
 				element: document.getElementById('large-hero'),
 				handler: function handler() {
-					(0, _jquery2.default)('.large-hero__site-logo').addClass('slideToRight');
+					(0, _jquery2.default)('.site-logo').addClass('slideToRight');
 					(0, _jquery2.default)('.large-hero__slogen').addClass('slideToLeft');
 					// console.log($(currentItem).attr('id') + " triggered");
 				},
@@ -11484,7 +11487,7 @@ var RevealOnScroll = function () {
 			new Waypoint({
 				element: document.getElementById('team'),
 				handler: function handler() {
-					(0, _jquery2.default)('.team__nav ').addClass('slideToLeft--slow');
+					(0, _jquery2.default)('.team__nav ').addClass('reveal-item--is-visible');
 				},
 				offset: '50%'
 			});

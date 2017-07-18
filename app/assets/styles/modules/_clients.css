@@ -62,8 +62,12 @@
 			background-repeat: no-repeat;
 			margin: auto 10px;
 			width: 200px;
-			height: 40%;
+			height: 30%;
 			float: left;
+
+			@mixin atMedium {
+				height: 40%;
+			}
 		}
 	}
 

@@ -1,0 +1,23 @@
+.site-logo {
+	position: absolute;
+	width: 30%;
+	z-index: 1;
+	top: 20px;
+	left: 20px;
+
+
+		&--horizental {
+			img {
+				height: 30px;
+
+				@mixin atMedium {
+					height: 80px;
+				}
+			}
+		}
+		
+	@mixin atMedium {
+		width: 150px;
+	}
+
+}

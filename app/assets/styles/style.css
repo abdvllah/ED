@@ -13,6 +13,7 @@
 
 /* General Modules */
 @import "modules/_site-menu";
+@import "modules/_site-logo";
 @import "modules/_row";
 @import "modules/_nav";
 @import "modules/_wrapper-full-height";
@@ -39,8 +40,10 @@
 @import "modules/_pillow";
 @import "modules/_contact";
 
-/* Events Page Modules */
-@import "events-page/_events-page";
-@import "events-page/_content-wrapper";
-@import "events-page/_icon-wrapper";
-@import "events-page/_detail";
+/* Inner Page Modules */
+@import "modules/_page-header";
+@import "inner-pages/_events-page";
+@import "inner-pages/_about-page";
+@import "inner-pages/_content-wrapper";
+@import "inner-pages/_icon-wrapper";
+@import "inner-pages/_detail";
