@@ -13,6 +13,12 @@ class Generic {
 		$('.sponsers').css('width', sponsersWidth);
 	}
 
+	closeNav() {
+		$(document.body).click(function() {
+			console.log('click on body');
+		});
+	}
+
 
 	// changeImageOnHover() {
 	// 	$('.upcoming-events__background').hover(function() {

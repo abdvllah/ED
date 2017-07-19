@@ -26,7 +26,7 @@ class ContentChange {
 			$('#' + who).fadeIn(2000, function() {
 				$(thisElement).css('pointer-events','auto');
 			});
-			console.log(who);
+			// console.log(who);
 		});
 	}
 

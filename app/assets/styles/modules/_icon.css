@@ -76,6 +76,10 @@
 
 		&--top {
 			position: absolute;
-			
+			top: 20px;
+
+			@mixin atMedium {
+				top: 50px;
+			}
 		}
 }

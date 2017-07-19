@@ -8,7 +8,7 @@
 
 		&--horizental {
 			img {
-				height: 30px;
+				height: 50px;
 
 				@mixin atMedium {
 					height: 80px;

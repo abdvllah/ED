@@ -135,10 +135,9 @@
 	}
 
 	&__background {
-		&.lazyloaded {
-			background: url('../images/upcoming-b.png')  no-repeat top left;
-			background-size: contain;
-		}
+
+		background: url('../images/upcoming.png')  no-repeat top left;
+		background-size: contain;
 
 		position: absolute;
 		bottom: 0;
@@ -157,9 +156,9 @@
 			opacity: 1;
 		}
 
-		&:hover {
-			background-image: url('../images/upcoming.png');
-		}
+		/*&:hover {
+			background-image: url('../images/upcoming-b.png');
+		}*/
 	}
 
 }

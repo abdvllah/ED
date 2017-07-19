@@ -766,7 +766,7 @@ polygon:hover {
 }
 
 .site-logo--horizental img {
-				height: 30px;
+				height: 50px;
 			}
 
 @media (min-width: 800px) {
@@ -1416,8 +1416,15 @@ form input[type="submit"] {
 
 .icon--top {
 			position: absolute;
-			
+			top: 20px;
 		}
+
+@media (min-width: 800px) {
+
+.icon--top {
+				top: 50px
+		}
+	}
 
 .modal {
 	position: fixed;
@@ -1728,6 +1735,9 @@ form input[type="submit"] {
 
 .upcoming-events__background {
 
+		background: url('../images/upcoming.png')  no-repeat top left;
+		background-size: contain;
+
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -1737,12 +1747,11 @@ form input[type="submit"] {
 		-webkit-transition: all 2s ease-in-out;
 		transition: all 2s ease-in-out;
 		opacity: .8;
-	}
 
-.upcoming-events__background.lazyloaded {
-			background: url('../images/upcoming-b.png')  no-repeat top left;
-			background-size: contain;
-		}
+		/*&:hover {
+			background-image: url('../images/upcoming-b.png');
+		}*/
+	}
 
 @media (min-width: 800px) {
 
@@ -1754,10 +1763,6 @@ form input[type="submit"] {
 			opacity: 1
 	}
 	}
-
-.upcoming-events__background:hover {
-			background-image: url('../images/upcoming.png');
-		}
 
 .our-services {
 	position: relative;
@@ -1817,6 +1822,10 @@ form input[type="submit"] {
 		padding: 50px 0
 	}
 	}
+
+.our-services__heading:hover {
+			background-color: rgba(39,39,39, .7);
+		}
 
 .our-services__heading:first-of-type {
 			left: 0;
@@ -1910,7 +1919,8 @@ form input[type="submit"] {
 
 .clients__small__title {
 			color: rgb(190,190,190);
-			padding-top: 30px;
+			font-size: 250%;
+			padding-top: 10px;
 			padding-left: 10px;
 			margin: 0;
 			background: url('../images/dark-pattern.png') top 100% right no-repeat;
@@ -2159,7 +2169,7 @@ form input[type="submit"] {
 	}
 
 .team__content {
-		height: 67%;
+		height: 60%;
 		padding: 2% 0;
 		overflow: hidden;
 	}
@@ -2173,7 +2183,7 @@ form input[type="submit"] {
 	}
 
 .team__nav {
-		height: 50px;
+		height: 100px;
 		width: 80%;
 		position: relative;
 		left: 0;
@@ -2338,7 +2348,7 @@ form input[type="submit"] {
 .pillow {
 	position: relative;
 	background: #272727;
-	top: 30px;
+	top: 20%;
 	text-align: center;
 	padding: 6px 8px;
 	font-size: 100%;
@@ -2358,6 +2368,7 @@ form input[type="submit"] {
 		background: url('../images/left-pillow.svg') top center no-repeat;
 		height: 100px;
 		width: 200px;
+		top: 30px;
 		padding: 15px;
 		font-weight: 500;
 		margin-right: 10px
@@ -2518,7 +2529,7 @@ form input[type="submit"] {
 /* Inner Page Modules */
 
 .page-header__menu {
-		height: 50px;
+		height: 70px;
 		overflow: hidden;
 		padding: 10px;
 		background-color: #cfcfcf;
@@ -2543,7 +2554,7 @@ form input[type="submit"] {
 
 .events-page {
 	background-image: url('../icons/back-pattern.svg');
-	background-size: 90%;
+	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: bottom right;
 }
@@ -2588,9 +2599,7 @@ form input[type="submit"] {
 @media (min-width: 800px) {
 
 .content-wrapper {
-		margin: 0;
-		padding-bottom: 30px;
-		margin: -10%
+		padding-bottom: 30px
 }
 	}
 
@@ -2606,11 +2615,12 @@ form input[type="submit"] {
 .icon-wrapper {
 	text-align: center;
 	background-color: rgb(104,104,104);
-	padding: 15px 0;
+	padding: 5px 0;
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	left: 0;
+	z-index: 20;
 }
 
 @media (min-width: 800px) {
@@ -2623,48 +2633,14 @@ form input[type="submit"] {
 }
 	}
 
-.icon-wrapper .cultural {
-		background: url('../icons/cultural-b.svg') no-repeat top center;
-		background-size: auto 90%;
-	}
-
-.icon-wrapper .cultural.active {
-			background-image: url('../icons/cultural.svg');
-		}
-
-.icon-wrapper .family {
-		background: url('../icons/family-b.svg') no-repeat top center;
-		background-size: auto 90%;
-	}
-
-.icon-wrapper .family.active {
-			background-image: url('../icons/family.svg');
-		}
-
-.icon-wrapper .business {
-		background: url('../icons/business-b.svg') no-repeat top center;
-		background-size: auto 90%;
-	}
-
-.icon-wrapper .business.active {
-			background-image: url('../icons/business.svg');
-		}
-
-.icon-wrapper .ramadan {
-		background: url('../icons/ramadan-b.svg') no-repeat top center;
-		background-size: auto 90%;
-	}
-
-.icon-wrapper .ramadan.active {
-			background-image: url('../icons/ramadan.svg');
-		}
-
 .icon-wrapper__icon {
-		height: 50px;
-		width: 22.5%;
-		padding: 10px;
+		width: 24%;
+		padding: 30px;
 		display: inline-block;
 		cursor: pointer;
+		-webkit-transition: background-color .4s ease;
+		transition: background-color .4s ease;
+		border-bottom: 3px solid transparent;
 
 	}
 
@@ -2673,6 +2649,7 @@ form input[type="submit"] {
 .icon-wrapper__icon {
 			display: block;
 			width: auto;
+			border: none;
 			height: 90px;
 			margin: 100px 50px;
 			padding: 15px;
@@ -2705,8 +2682,7 @@ form input[type="submit"] {
 			border-right: 15px solid transparent;*/
 			visibility: hidden;
 			-webkit-transition: all .3s ease;
-			transition: all .3s ease;
-				
+			transition: all .3s ease;	
 		}
 
 @media (min-width: 800px) {
@@ -2722,23 +2698,21 @@ form input[type="submit"] {
 				border-bottom: 30px solid transparent;
 				border-left: 30px solid #ad191d;
 				-webkit-transition: all .3s ease;
-				transition: all .3s ease
-				
+				transition: all .3s ease	
 		}
 	}
 
-/*img {
-			display: block;
-			height: 100px;
-			margin: auto;
-			position: relative;
-		}*/
+.icon-wrapper__icon.active {
+			border-bottom: 3px solid;
+			border-bottom-color: rgba(173,25,29,.7);
+		}
+
+@media (min-width: 800px) {
 
 .icon-wrapper__icon.active {
-			/*background-color: rgba($red,.7);*/
-			-webkit-transform: scale(1.1);
-			        transform: scale(1.1);
+				border: none
 		}
+	}
 
 .icon-wrapper__icon.active::after {
 				visibility: visible;
@@ -2746,9 +2720,64 @@ form input[type="submit"] {
 			}
 
 .icon-wrapper__icon:hover {
-			-webkit-transform: scale(1.1);
-			        transform: scale(1.1);
+			border-bottom: 3px solid;
+			border-bottom-color: rgba(173,25,29,.7);
 		}
+
+@media (min-width: 800px) {
+
+.icon-wrapper__icon:hover {
+				border: none;
+				-webkit-transform: scale(1.1);
+				        transform: scale(1.1)
+		}
+	}
+
+.icon-wrapper .cultural {
+		background: url('../icons/cultural-b.svg') no-repeat;
+	}
+
+.icon-wrapper .cultural.active {
+			background-image: url('../icons/cultural.svg');
+		}
+
+.icon-wrapper .family {
+		background: url('../icons/family-b.svg') no-repeat;
+	}
+
+.icon-wrapper .family.active {
+			background-image: url('../icons/family.svg');
+		}
+
+.icon-wrapper .business {
+		background: url('../icons/business-b.svg') no-repeat;
+	}
+
+.icon-wrapper .business.active {
+			background-image: url('../icons/business.svg');
+		}
+
+.icon-wrapper .ramadan {
+		background: url('../icons/ramadan-b.svg') no-repeat;
+	}
+
+.icon-wrapper .ramadan.active {
+			background-image: url('../icons/ramadan.svg');
+		}
+
+.icon-wrapper .cultural, .icon-wrapper .family, .icon-wrapper .business, .icon-wrapper .ramadan {
+		background-size: auto 70%;
+		background-position: center center;
+		background-color: rgb(61,61,61);
+	}
+
+@media (min-width: 800px) {
+
+.icon-wrapper .cultural, .icon-wrapper .family, .icon-wrapper .business, .icon-wrapper .ramadan {
+			background-size: auto 90%;
+			background-color: transparent
+	}
+	}
 
 .icon-wrapper__text {
 		font-weight: bold;

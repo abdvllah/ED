@@ -13,7 +13,7 @@
 	}
 
 	&__content {
-		height: 67%;
+		height: 60%;
 		padding: 2% 0;
 		overflow: hidden;
 
@@ -24,7 +24,7 @@
 	}
 
 	&__nav {
-		height: 50px;
+		height: 100px;
 		width: 80%;
 		position: relative;
 		left: 0;

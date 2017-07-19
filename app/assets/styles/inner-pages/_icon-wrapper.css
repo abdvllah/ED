@@ -1,11 +1,12 @@
 .icon-wrapper {
 	text-align: center;
 	background-color: lighten($black, .3);
-	padding: 15px 0;
+	padding: 5px 0;
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	left: 0;
+	z-index: 20;
 
 	@mixin atMedium {
 		background-color: initial;
@@ -14,55 +15,19 @@
 		position: relative;
 	}
 
-
-	.cultural {
-		background: url('../icons/cultural-b.svg') no-repeat top center;
-		background-size: auto 90%;
-
-		&.active {
-			background-image: url('../icons/cultural.svg');
-		}
-	}
-
-	.family {
-		background: url('../icons/family-b.svg') no-repeat top center;
-		background-size: auto 90%;
-
-		&.active {
-			background-image: url('../icons/family.svg');
-		}
-	}
-
-	.business {
-		background: url('../icons/business-b.svg') no-repeat top center;
-		background-size: auto 90%;
-
-		&.active {
-			background-image: url('../icons/business.svg');
-		}
-	}
-
-	.ramadan {
-		background: url('../icons/ramadan-b.svg') no-repeat top center;
-		background-size: auto 90%;
-
-		&.active {
-			background-image: url('../icons/ramadan.svg');
-		}
-	}
-
-
 	&__icon {
-		height: 50px;
-		width: 22.5%;
-		padding: 10px;
+		width: 24%;
+		padding: 30px;
 		display: inline-block;
 		cursor: pointer;
+		transition: background-color .4s ease;
+		border-bottom: 3px solid transparent;
 
 
 		@mixin atMedium {
 			display: block;
 			width: auto;
+			border: none;
 			height: 90px;
 			margin: 100px 50px;
 			padding: 15px;
@@ -102,22 +67,16 @@
 				border-bottom: 30px solid transparent;
 				border-left: 30px solid $red;
 				transition: all .3s ease;
-			}
-				
+			}	
 		}
-		
-		/*img {
-			display: block;
-			height: 100px;
-			margin: auto;
-			position: relative;
-		}*/
-
-		
 
 		&.active {
-			/*background-color: rgba($red,.7);*/
-			transform: scale(1.1);
+			border-bottom: 3px solid;
+			border-bottom-color: rgba($red,.7);
+
+			@mixin atMedium {
+				border: none;
+			}
 
 			&::after {
 				visibility: visible;
@@ -126,9 +85,62 @@
 		}
 
 		&:hover {
-			transform: scale(1.1);
+			border-bottom: 3px solid;
+			border-bottom-color: rgba($red,.7);
+
+			@mixin atMedium {
+				border: none;
+				transform: scale(1.1);
+			}
 		}
 
+	}
+
+	.cultural {
+		background: url('../icons/cultural-b.svg') no-repeat;
+		
+
+		&.active {
+			background-image: url('../icons/cultural.svg');
+		}
+	}
+
+	.family {
+		background: url('../icons/family-b.svg') no-repeat;
+		
+
+		&.active {
+			background-image: url('../icons/family.svg');
+		}
+	}
+
+	.business {
+		background: url('../icons/business-b.svg') no-repeat;
+		
+
+		&.active {
+			background-image: url('../icons/business.svg');
+		}
+	}
+
+	.ramadan {
+		background: url('../icons/ramadan-b.svg') no-repeat;
+		
+
+		&.active {
+			background-image: url('../icons/ramadan.svg');
+		}
+	}
+
+	.cultural, .family, .business, .ramadan {
+		background-size: auto 70%;
+		background-position: center center;
+		background-color: lighten($black, .1);
+
+		@mixin atMedium {
+			background-size: auto 90%;
+			background-color: transparent;
+		}
 	}
 
 

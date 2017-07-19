@@ -11140,7 +11140,7 @@ var ContentChange = function () {
 				(0, _jquery2.default)('#' + who).fadeIn(2000, function () {
 					(0, _jquery2.default)(thisElement).css('pointer-events', 'auto');
 				});
-				console.log(who);
+				// console.log(who);
 			});
 		}
 	}, {
@@ -11189,6 +11189,13 @@ var Generic = function () {
 			var sponsersItem = (0, _jquery2.default)('.sponsers__item');
 			var sponsersWidth = sponsersItem.width() * (sponsersItem.length + 1) + 50;
 			(0, _jquery2.default)('.sponsers').css('width', sponsersWidth);
+		}
+	}, {
+		key: 'closeNav',
+		value: function closeNav() {
+			(0, _jquery2.default)(document.body).click(function () {
+				console.log('click on body');
+			});
 		}
 
 		// changeImageOnHover() {
