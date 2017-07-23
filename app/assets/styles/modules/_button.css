@@ -24,4 +24,9 @@
 		background-color: $red;
 		color: #FFF;
 	}
+
+	&--center {
+		display: block;
+		margin: 25px auto;
+	}
 }

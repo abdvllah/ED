@@ -1,16 +1,30 @@
 .about-page {
-	background: url('../images/about-bg.png') top -30% left no-repeat;
-	background-size: cover;
-	background-color: #FFF;
-	text-align: center;
+	text-align: left;
+
+	@mixin atMedium {
+		background: url('../images/about-bg.png') top -30% left no-repeat;
+		background-color: #FFF;
+		background-size: cover;
+
+		text-align: center;
+	}
 
 	.about {
-		width: 150%;
-		margin-left: -20%;
-		margin-bottom: 50px;
+		width: 100%;
+
+		@mixin atMedium {
+			width: 150%;
+			margin-left: -20%;
+			margin-bottom: 50px;
+		}
 	}
 
 	.logo {
-		width: 200px;
+		display: none;
+
+		@mixin atMedium {
+			display: block;
+			width: 200px;
+		}
 	}
 }

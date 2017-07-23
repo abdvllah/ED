@@ -153,12 +153,13 @@
 			top: 0;
 			left: 0;
 			height: 100%;
+			width: 100%;
 			opacity: 1;
 		}
 
-		/*&:hover {
+		&:hover {
 			background-image: url('../images/upcoming-b.png');
-		}*/
+		}
 	}
 
 }

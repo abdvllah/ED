@@ -28,6 +28,7 @@
 @import "modules/_flex-wrapper";
 @import "modules/_icon";
 @import "modules/_modal";
+@import "modules/_thumbnail";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";

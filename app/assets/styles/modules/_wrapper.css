@@ -5,6 +5,10 @@
 	}
 
 	&--narrow {
-		padding: 3% 25%;
+		padding: 3%;
+
+		@mixin atMedium {
+			padding: 3% 25%;
+		}
 	}
 }
