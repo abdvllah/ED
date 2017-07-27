@@ -46,9 +46,24 @@
       margin-bottom: 0;
     }
 
+    &__medium-2 {
+      float: left;
+      width: 16.66%;
+
+      &--margin {
+        width: 14%;
+        margin: 1%;
+      }
+    }
+
     &__medium-3 {
       float: left;
       width: 25%;
+
+      &--margin {
+        width: 23%;
+        margin: 1%;
+      }
     }
 
     &__medium-3--larger {
@@ -62,6 +77,7 @@
 
       &--margin {
         width: 31%;
+        margin: 1%;
       }
     }
 
@@ -72,6 +88,10 @@
     &__medium-6 {
       float: left;
       width: 50%;
+
+      &--margin {
+        width: 48%;
+      }
     }
 
     &__medium-8 {
@@ -81,6 +101,16 @@
 
     &__medium-8--smaller {
       width: 63%;
+    }
+
+    &__medium-9 {
+      float: left;
+      width: 75%;
+    }
+
+     &__medium-10 {
+      float: left;
+      width: 83.33%;
     }
 
   }

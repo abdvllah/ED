@@ -29,6 +29,10 @@
 @import "modules/_icon";
 @import "modules/_modal";
 @import "modules/_thumbnail";
+@import "modules/_event-thumb";
+@import "modules/_months-calendar";
+@import "modules/_filter";
+@import "modules/_mobile-filter";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";

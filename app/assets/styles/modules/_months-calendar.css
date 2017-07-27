@@ -1,0 +1,25 @@
+.months-calendar {
+	color: #FFF;
+	padding: 20px 10px;
+	text-align: center;
+
+	&__title {
+		display: block;
+		margin-bottom: 10px;
+		font-weight: bold;
+		color: #FFF;
+	}
+
+	&__month {
+		display: inline-block;
+		padding: 5px;
+		background-color: #FFF;
+		color: $black;
+		margin: 0.5%;
+		width: 32%;
+
+		&:hover, .active {
+			background-color: $red;
+		}
+	}
+}
