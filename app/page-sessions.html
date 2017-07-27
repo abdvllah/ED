@@ -5,7 +5,13 @@
 	<title>Embrace Doha New Website</title>
 	<meta name="keywords" content="Embrace, culture, tours, sessions, explore qatar, qatar, tourist">
 	<meta name="description" content="Embrace Doha is your guied to embrace qatari culture">
+	<!-- build:css /assets/styles/styles.css -->
 	<link rel="stylesheet" href="assets/temp/style.css">
+	<!-- endbuild -->
+
+	<!-- build:js /assets/scripts/Vendor.js -->
+	<script src="assets/temp/Vendor.js"></script>
+	<!-- endbuild -->
 </head>
 <body>
 	
@@ -57,7 +63,10 @@
 
 			<div class="row__medium-8 row--padding">
 				<div class="content-wrapper">
+
 					<div id="cultural" class="content active">
+						<a id="open-book" class="button button--center open-modal" href="#">Book</a>
+
 						<p>Why is everyone in black and white? How do you say ‘thank you’ in Arabic? How do you make Qatari friends? Or, are you having issues communicating with Qataris?</p>
 						<p>Join Embrace Doha’s cultural session now and learn more about the Qatari culture, custom and history, and the traditional ways of behaving or doing things in Qatar! This highly interactive and entertaining workshop also covers the Qatari hospitality greetings and traditional dresses. Plus, it includes a break for you to enjoy some authentic Qatari food while delighting in our traditional majlis!</p>
 
@@ -110,14 +119,20 @@
 					</div>
 
 					<div id="family" class="content">
+						<a class="button button--center" href="#">Book</a>
+
 						<p>Family Content</p>
 					</div>
 
 					<div id="business" class="content">
+						<a class="button button--center" href="#">Book</a>
+
 						<p>business Content</p>
 					</div>
 
 					<div id="ramadan" class="content">
+						<a class="button button--center" href="#">Book</a>
+
 						<p>ramadan Content</p>
 					</div>
 				</div>
@@ -129,9 +144,68 @@
 
 
 <footer class="site-footer">
-	<p></p>
+	
 </footer>
+
+<div id="book-modal" class="modal">
+	<h3 class="modal__title title">Book Session Form</h3>
+		<form action="book-session.php">
+			<div class="flex-wrapper modal__form-wrapper">
+				<div>
+					<div>
+						<label for="session">Session Name</label>
+						<!-- $dropDown = array(
+								'child_of' => 18,
+								'name' => 'catagory',
+								'class' => 'form-control',
+							);
+						?>
+						<?php wp_dropdown_pages($dropDown); ?> -->
+
+					</div>
+					<div>
+						<label for="company">Company</label>
+						<input type="text" name="company" placeholder="Company Name">
+					</div>
+					<div>
+						<label for="name">Contact Name</label>
+						<input type="text" name="name" placeholder="Contact Name">
+					</div>
+					<div>
+						<label for="email">Contact Email</label>
+						<input type="text" name="email" placeholder="Contact Email">
+					</div>
+					<div>
+						<label for="number">Contact Number</label>
+						<input type="text" name="number" placeholder="Contact Number">
+					</div>
+					<div>
+						<label for="attendees">Attendees</label>
+						<input type="number" max="50" name="attendees" placeholder="Number of Attendees">
+					</div>
+					<div>
+						<label for="date">Date</label>
+						<input type="text" name="date" placeholder="Date">
+					</div>
+					<div>
+						<label for="time">Time</label>
+						<input type="text" name="time" placeholder="Time">
+					</div>
+
+					<input class="button" type="submit">
+
+				</div> 
+
+			</div>
+		</form>
+	</div>
+
+
 </body>
 
+
+<!-- build:js /assets/scripts/App.js -->
 <script src="assets/temp/App.js"></script>
+<!-- endbuild -->
+
 </html>

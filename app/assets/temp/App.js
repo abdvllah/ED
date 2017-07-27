@@ -11283,11 +11283,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Modal = function () {
-	function Modal() {
+	function Modal(button, modal) {
 		_classCallCheck(this, Modal);
 
-		this.openModalButton = (0, _jquery2.default)('.open-modal');
-		this.modal = (0, _jquery2.default)('.modal');
+		console.log('modal-contractor');
+		this.openModalButton = button;
+		this.modal = modal;
 		this.formWrapper = (0, _jquery2.default)('.modal__form-wrapper');
 		this.events();
 	}
@@ -11648,14 +11649,15 @@ new _Slider2.default((0, _jquery2.default)('#testimonial-slider'));
 new _ContentChange2.default((0, _jquery2.default)('.team .pillow'), (0, _jquery2.default)('.team-member'));
 new _ContentChange2.default((0, _jquery2.default)('.events-page .icon-wrapper__icon'), (0, _jquery2.default)('.events-page .content'));
 
-// Handle Items anmination on reveal
-new _RevealOnScroll2.default();
-
 // Handle Model components
-new _Modal2.default();
+new _Modal2.default((0, _jquery2.default)('.open-modal'), (0, _jquery2.default)('.modal'));
+new _Modal2.default((0, _jquery2.default)('#open-book.open-modal'), (0, _jquery2.default)('#book-modal.modal'));
 
 // Generic Scripts
 new _Generic2.default();
+
+// Handle Items anmination on reveal
+new _RevealOnScroll2.default();
 
 // $(document).ready(function() {
 //     console.log("Document is ready");

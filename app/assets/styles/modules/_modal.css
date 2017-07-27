@@ -27,6 +27,10 @@
 		visibility: visible;
 		transform: scale(1);
 	}
+
+	&__title {
+		padding-top: 3%;
+	}
 	&__close {
 		position: absolute;
 		width: 30px;
@@ -50,7 +54,7 @@
 		overflow: hidden;
 
 		@mixin atMedium {
-			width: 60%;
+			width: auto;
 			left: 50%;
 		}
 	}

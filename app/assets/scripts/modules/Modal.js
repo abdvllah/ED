@@ -2,9 +2,10 @@ import $ from 'jquery';
 
 
 class Modal {
-	constructor() {
-		this.openModalButton = $('.open-modal');
-		this.modal = $('.modal');
+	constructor(button, modal) {
+		console.log('modal-contractor');
+		this.openModalButton = button;
+		this.modal = modal;
 		this.formWrapper = $('.modal__form-wrapper');
 		this.events();
 	}

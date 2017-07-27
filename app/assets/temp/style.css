@@ -1509,6 +1509,10 @@ form input[type="submit"] {
 		        transform: scale(1);
 	}
 
+.modal__title {
+		padding-top: 3%;
+	}
+
 .modal__close {
 		position: absolute;
 		width: 30px;
@@ -1536,7 +1540,7 @@ form input[type="submit"] {
 @media (min-width: 800px) {
 
 .modal__form-wrapper {
-			width: 60%;
+			width: auto;
 			left: 50%
 	}
 	}
@@ -2865,7 +2869,7 @@ form input[type="submit"] {
 	}
 
 .content-wrapper {
-	background-color: #FFF;
+	background-color: rgb(250,250,250);
 	padding: 30px;
 	margin: 0;
 	padding-bottom: 100px;

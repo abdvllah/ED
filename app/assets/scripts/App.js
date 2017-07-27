@@ -20,14 +20,17 @@ new Slider($('#testimonial-slider'));
 new ContentChange( $('.team .pillow'), $('.team-member') );
 new ContentChange( $('.events-page .icon-wrapper__icon'), $('.events-page .content') );
 
-// Handle Items anmination on reveal
-new RevealOnScroll();
-
 // Handle Model components
-new Modal();
+new Modal( $('.open-modal'), $('.modal') );
+new Modal( $('#open-book.open-modal'), $('#book-modal.modal') );
 
 // Generic Scripts
 new Generic();
+
+// Handle Items anmination on reveal
+new RevealOnScroll();
+
+
 
 // $(document).ready(function() {
 //     console.log("Document is ready");
