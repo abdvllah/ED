@@ -33,6 +33,7 @@
 @import "modules/_months-calendar";
 @import "modules/_filter";
 @import "modules/_mobile-filter";
+@import "modules/_search";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";

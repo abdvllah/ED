@@ -1491,7 +1491,7 @@ form input[type="submit"] {
 	        transform: scale(1.2);
 	color: #272727;
 	text-align: center;
-	cursor: url('../images/cursor-close.png'), auto;
+	cursor: url('../icons/cursor-close.png'), auto;
 }
 
 @media (min-width: 800px) {
@@ -1748,6 +1748,31 @@ form input[type="submit"] {
 			width: 100px;
 			padding: 5px;
 		}
+
+.search {
+	margin-left: 15%;
+	margin-top: 20px;
+	
+}
+
+.search__field{
+		display: inline-block;
+		vertical-align: top;
+		width: 150px;
+		height: 40px;
+		padding: 5px;
+	}
+
+.search__button {
+		display: inline-block;
+		vertical-align: top;
+		background: url('../icons/search.png') no-repeat;
+		background-size: contain;
+		border: none;
+		height: 40px;
+		width: 40px;
+		cursor: pointer;
+	}
 
 /* Home Page Sections Modules */
 

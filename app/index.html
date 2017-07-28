@@ -19,15 +19,19 @@
 		<div class="icon">
 			<div class="icon__middle"></div>
 		</div>
+
 		<nav class="nav">
 			<ul>
 				<li><a href="page-about.html">About</a></li>
 				<li><a href="page-events.html">Events</a></li>
 				<li><a href="page-sessions.html">Sesstions</a></li>
-				<li><a href="news">News</a></li>
+				<!-- <li><a href="news">News</a></li> -->
 				<li><a href="page-blog.html">Blog</a></li>
-				<li><a href="join-us">Join Us</a></li>
-				<li><a href="search">Search</a></li>
+				<!-- <li><a href="join-us">Join Us</a></li> -->
+				<li class="search">
+					<input class="search__field" type="text" placeholder="Search">
+					<button class="search__button"></button>
+				</li>
 			</ul>
 		</nav>
 
@@ -214,9 +218,7 @@
 				<div class="row__medium-8 row--padding">
 					<h3 class="team-member__name">Hossein Haider</h3>
 					<div class="team-member__info">
-						<p>Hossein Heydar is a passionate animator holding BFA in Film & Animation. With his excellent animation skills in advertising and creative arts, he is able to deliver an excellent solution to increase your brand awareness and boost engagement levels. He is currently working in Embrace Doha as Communications Manager.  
-
-</p>
+						<p>Hossein Heydar is a passionate animator holding BFA in Film & Animation. With his excellent animation skills in advertising and creative arts, he is able to deliver an excellent solution to increase your brand awareness and boost engagement levels. He is currently working in Embrace Doha as Communications Manager.</p>
 					</div>
 
 					<div class="quote team-member__quote">
@@ -362,7 +364,7 @@
 <footer class="site-footer">
 
 	<div class="modal">
-		<h3 class="title">Add Testimonial Form</h3>
+		<h3 class="modal__title title">Add Testimonial Form</h3>
 		<form action="add-testimonial.php">
 			<div class="flex-wrapper modal__form-wrapper">
 				<div>
@@ -382,6 +384,7 @@
 						<label for="nationality">Nationality</label>
 						<input type="text" name="nationality" placeholder="Your Nationality">
 					</div>
+					
 				</div> 
 
 				<div>
