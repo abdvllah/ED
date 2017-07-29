@@ -5,9 +5,11 @@
 	&__field{
 		display: inline-block;
 		vertical-align: top;
-		width: 150px;
+		width: 250px;
 		height: 40px;
 		padding: 5px;
+		background-color: rgba($black, .9);
+		color: #FFF;
 	}
 
 	&__button {
