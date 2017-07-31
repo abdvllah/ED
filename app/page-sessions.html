@@ -154,13 +154,12 @@
 				<div>
 					<div>
 						<label for="session">Session Name</label>
-						<!-- $dropDown = array(
-								'child_of' => 18,
-								'name' => 'catagory',
-								'class' => 'form-control',
-							);
-						?>
-						<?php wp_dropdown_pages($dropDown); ?> -->
+						<select name="session" required>
+							<option value="cultural">Cultural Session</option>
+							<option value="family">Family Session</option>
+							<option value="business">Business Etiquite & Protocol</option>
+							<option value="ramadan">Ramadan Induction</option>
+						</select>
 
 					</div>
 					<div>
@@ -175,6 +174,10 @@
 						<label for="email">Contact Email</label>
 						<input type="text" name="email" placeholder="Contact Email">
 					</div>
+					
+				</div>
+
+				<div>
 					<div>
 						<label for="number">Contact Number</label>
 						<input type="text" name="number" placeholder="Contact Number">
@@ -194,7 +197,7 @@
 
 					<input class="button" type="submit">
 
-				</div> 
+				</div>
 
 			</div>
 		</form>

@@ -30,6 +30,8 @@
 
 	&__title {
 		padding-top: 3%;
+		cursor: auto;
+
 	}
 	&__close {
 		position: absolute;
