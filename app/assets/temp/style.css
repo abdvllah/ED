@@ -486,6 +486,10 @@ ol {
 	text-align: left;
 }
 
+li, p {
+	line-height: 1.5;
+}
+
 h1,h2,h3,h4,h5 {
 	font-family: "raleway", sans-serif;
 }
@@ -1126,11 +1130,13 @@ polygon:hover {
 	padding-top: 5%;
 	position: relative;
 	margin: 0;
+
+	
 }
 
-.title:first-letter  {
+/*&:first-letter  {
 		font-size: 135%;
-	}
+	}*/
 
 .title--red {
 		color: #ad191d;
@@ -1138,13 +1144,6 @@ polygon:hover {
 
 .title--smaller {
 		font-size: 200%;
-	}
-
-@media (min-width: 800px) {
-
-.title {
-		font-size: 40px
-}
 	}
 
 .photo {
@@ -1514,9 +1513,22 @@ form input[type="submit"] {
 	}
 
 .modal__title {
-		padding-top: 3%;
 		cursor: auto;
+		font-size: 200%;
+		width: 70%;
+		padding-left: 20%;
+		margin: auto;
+		padding-top: 10%;
+	}
 
+@media (min-width: 800px) {
+
+.modal__title {
+			width: 100%;
+			padding-left: 0;
+			margin: 0;
+			padding-top: 3%
+	}
 	}
 
 .modal__close {
@@ -1782,6 +1794,66 @@ form input[type="submit"] {
 		cursor: pointer;
 	}
 
+.footer {
+	height: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.footer .social-media span {
+			display: inline-block;
+			background-color: gray;
+			height: 30px;
+			width: 30px;
+		}
+
+.footer .social-media__username {
+			color: #fff;
+			text-transform: lowercase;
+			margin-top: 5px;
+			font-size: 80%;
+		}
+
+@media (min-width: 800px) {
+
+.footer .social-media__username {
+				font-size: 100%
+		}
+	}
+
+.footer .address {
+		margin-top: 15px;
+
+	}
+
+@media (min-width: 800px) {
+
+.footer .address {
+			margin-top: 40px
+
+	}
+	}
+
+.footer .address span {
+			color: #FFF;
+			text-decoration: none;
+		}
+
+.footer .address span::after {
+				content: "";
+				display: inline-block;
+				width: 7px;
+				height: 8px;
+				background: #ad191d;
+				margin: 0 10px;
+				-webkit-transform: rotate(45deg);
+				        transform: rotate(45deg);
+			}
+
+.footer .address span:last-of-type::after {
+				display: none;
+			}
+
 /* Home Page Sections Modules */
 
 .large-hero {
@@ -1873,6 +1945,25 @@ form input[type="submit"] {
 	}
 	}
 
+.upcoming-events__triangle-pattern--small {
+		position: absolute;
+		width: 50%;
+		opacity: .5;
+		left: 5%;
+		bottom: 20px;
+		z-index: 3;
+	}
+
+@media (min-width: 800px) {
+
+.upcoming-events__triangle-pattern--small {
+			width: 30%;
+			opacity: .5;
+			left: 100px;
+			bottom: 0px
+	}
+	}
+
 .upcoming-events__title {
 		text-align: center;
 		color: rgb(156,23,26);
@@ -1933,12 +2024,13 @@ form input[type="submit"] {
 		right: 0;
 		margin: 0;
 		z-index: 1;
+		text-decoration: none;
 	}
 
 @media (min-width: 800px) {
 
 .upcoming-events__strip {
-			font-size: 30px;
+			font-size: 200%;
 			height: 100px;
 			padding: 30px 50px;
 			bottom: 10%;
@@ -1983,44 +2075,6 @@ form input[type="submit"] {
 	}
 	}
 
-.upcoming-events__triangle-pattern {
-		display: none;
-		z-index: 3;
-	}
-
-@media (min-width: 800px) {
-
-.upcoming-events__triangle-pattern {
-			display: block;
-			position: absolute;
-			width: 50%;
-			opacity: .5;
-			top: 110px;
-			left: -3.9%;
-			-webkit-transform: rotate(1deg);
-			        transform: rotate(1deg)
-	}
-	}
-
-.upcoming-events__triangle-pattern--small {
-		position: absolute;
-		width: 50%;
-		opacity: .5;
-		left: 5%;
-		bottom: 20px;
-		z-index: 3;
-	}
-
-@media (min-width: 800px) {
-
-.upcoming-events__triangle-pattern--small {
-			width: 30%;
-			opacity: .5;
-			left: 100px;
-			bottom: 0px
-	}
-	}
-
 .upcoming-events__background {
 
 		background: url('../images/upcoming.png')  no-repeat top left;
@@ -2035,6 +2089,7 @@ form input[type="submit"] {
 		-webkit-transition: all 2s ease-in-out;
 		transition: all 2s ease-in-out;
 		opacity: .8;
+
 	}
 
 @media (min-width: 800px) {
@@ -2046,12 +2101,9 @@ form input[type="submit"] {
 			height: 100%;
 			width: 100%;
 			opacity: 1
-	}
-	}
 
-.upcoming-events__background:hover {
-			background-image: url('../images/upcoming-b.png');
-		}
+	}
+	}
 
 .our-services {
 	position: relative;
@@ -2102,12 +2154,13 @@ form input[type="submit"] {
 		background-color: rgba(39,39,39, .77);
 		padding: 30px 0;
 		margin: 0;
+		text-decoration: none;
 	}
 
 @media (min-width: 800px) {
 
 .our-services__heading {
-		font-size: 50px;
+		font-size: 250%;
 		padding: 50px 0
 	}
 	}
@@ -2452,7 +2505,6 @@ form input[type="submit"] {
 @media (min-width: 800px) {
 
 .team__title {
-			font-size: 35px;
 			padding-top: 30px
 	}
 	}
@@ -2569,7 +2621,7 @@ form input[type="submit"] {
 		width: 100%;
 		height: 100%;
 		margin: 0px;
-		text-align: left;
+		text-align: justify;
 		color: #272727;
 		padding: 8px;
 		font-size: 100%;
@@ -2579,7 +2631,8 @@ form input[type="submit"] {
 
 .team-member__info {
 			padding: 10px 20px;
-			margin: 10px
+			margin: 10px;
+			width: 85%
 	}
 	}
 
@@ -2750,66 +2803,6 @@ form input[type="submit"] {
 	}
 	}
 
-.contact__footer {
-		height: 100%;
-		text-align: center;
-		margin-top: 50px;
-	}
-
-.contact__footer .social-media span {
-				display: inline-block;
-				background-color: gray;
-				height: 30px;
-				width: 30px;
-			}
-
-.contact__footer .social-media__username {
-				color: #FFF;
-				text-transform: lowercase;
-				margin-top: 5px;
-				font-size: 80%;
-			}
-
-@media (min-width: 800px) {
-
-.contact__footer .social-media__username {
-					font-size: 100%
-			}
-	}
-
-.contact__footer .address {
-			margin-top: 15px;
-
-		}
-
-@media (min-width: 800px) {
-
-.contact__footer .address {
-				margin-top: 40px
-
-		}
-	}
-
-.contact__footer .address span {
-				color: #FFF;
-				text-decoration: none;
-			}
-
-.contact__footer .address span::after {
-					content: "";
-					display: inline-block;
-					width: 7px;
-					height: 8px;
-					background: #ad191d;
-					margin: 0 10px;
-					-webkit-transform: rotate(45deg);
-					        transform: rotate(45deg);
-				}
-
-.contact__footer .address span:last-of-type::after {
-					display: none;
-				}
-
 .contact__form {
 		position: relative;
 		left: 0;
@@ -2862,7 +2855,7 @@ form input[type="submit"] {
 	}
 
 .about-page {
-	text-align: left;
+background-color: #FFF;
 }
 
 @media (min-width: 800px) {
@@ -2878,14 +2871,24 @@ form input[type="submit"] {
 
 .about-page .about {
 		width: 100%;
+		text-align: justify;
 	}
 
 @media (min-width: 800px) {
 
 .about-page .about {
-			width: 150%;
-			margin-left: -20%;
+			width: 100%;
 			margin-bottom: 50px
+	}
+	}
+
+@media (min-width: 800px) {
+
+.about-page .vision, .about-page .mission, .about-page .logo {
+			display: inline-block;
+			vertical-align: middle;
+			width: 32%;
+			padding-right: 4%
 	}
 	}
 
@@ -2896,10 +2899,26 @@ form input[type="submit"] {
 @media (min-width: 800px) {
 
 .about-page .logo {
-			display: block;
+			display: inline-block;
 			width: 200px
 	}
 	}
+
+.about-page .nat2030 {
+		text-align: left;
+		margin-top: 50px;
+	}
+
+.about-page .nat2030 img {
+			width: 200px;
+			margin: auto;
+			display: block;
+		}
+
+.about-page .nat2030 .title {
+			width: 80%;
+			margin: auto;
+		}
 
 .content-wrapper {
 	background-color: rgb(250,250,250);

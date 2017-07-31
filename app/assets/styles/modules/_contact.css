@@ -17,60 +17,6 @@
 		}
 	}
 
-	&__footer {
-		height: 100%;
-		text-align: center;
-		margin-top: 50px;
-
-		.social-media  {
-			span {
-				display: inline-block;
-				background-color: gray;
-				height: 30px;
-				width: 30px;
-			}
-
-			&__username {
-				color: #FFF;
-				text-transform: lowercase;
-				margin-top: 5px;
-				font-size: 80%;
-
-				@mixin atMedium {
-					font-size: 100%;
-				}
-			}
-		}
-
-		.address {
-			margin-top: 15px;
-
-			@mixin atMedium {
-				margin-top: 40px;
-			}
-
-			span {
-				color: #FFF;
-				text-decoration: none;
-
-				&::after {
-					content: "";
-					display: inline-block;
-					width: 7px;
-					height: 8px;
-					background: $red;
-					margin: 0 10px;
-					transform: rotate(45deg);
-				}
-			}
-			span:last-of-type {
-				&::after {
-					display: none;
-				}
-			}
-
-		}
-	}
 
 	&__form {
 		position: relative;

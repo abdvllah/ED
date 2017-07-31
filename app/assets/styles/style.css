@@ -34,6 +34,7 @@
 @import "modules/_filter";
 @import "modules/_mobile-filter";
 @import "modules/_search";
+@import "modules/_footer";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";

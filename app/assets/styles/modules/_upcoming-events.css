@@ -11,6 +11,25 @@
 		}
 	}
 
+	&__triangle-pattern--small {
+		position: absolute;
+		width: 50%;
+		opacity: .5;
+		left: 5%;
+		bottom: 20px;
+		z-index: 3;
+
+		@mixin atMedium {
+			width: 30%;
+			opacity: .5;
+			left: 100px;
+			bottom: 0px;
+		}
+	}
+
+
+
+
 	&__title {
 		text-align: center;
 		color: darken($red, 10%);
@@ -62,9 +81,10 @@
 		right: 0;
 		margin: 0;
 		z-index: 1;
+		text-decoration: none;
 
 		@mixin atMedium {
-			font-size: 30px;
+			font-size: 200%;
 			height: 100px;
 			padding: 30px 50px;
 			bottom: 10%;
@@ -102,38 +122,6 @@
 		}
 	}
 
-	&__triangle-pattern {
-		display: none;
-		z-index: 3;
-
-		@mixin atMedium {
-			display: block;
-			position: absolute;
-			width: 50%;
-			opacity: .5;
-			top: 110px;
-			left: -3.9%;
-			transform: rotate(1deg); 
-		}
-	}
-
-
-	&__triangle-pattern--small {
-		position: absolute;
-		width: 50%;
-		opacity: .5;
-		left: 5%;
-		bottom: 20px;
-		z-index: 3;
-
-		@mixin atMedium {
-			width: 30%;
-			opacity: .5;
-			left: 100px;
-			bottom: 0px;
-		}
-	}
-
 	&__background {
 
 		background: url('../images/upcoming.png')  no-repeat top left;
@@ -157,9 +145,6 @@
 			opacity: 1;
 		}
 
-		&:hover {
-			background-image: url('../images/upcoming-b.png');
-		}
 	}
 
 }

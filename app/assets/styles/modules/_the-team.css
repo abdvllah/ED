@@ -7,7 +7,6 @@
 		margin:0;
 
 		@mixin atMedium {
-			font-size: 35px;
 			padding-top: 30px;
 		}
 	}

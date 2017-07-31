@@ -1,5 +1,5 @@
 .about-page {
-	text-align: left;
+background-color: #FFF;
 
 	@mixin atMedium {
 		background: url('../images/about-bg.png') top -30% left no-repeat;
@@ -11,11 +11,21 @@
 
 	.about {
 		width: 100%;
+		text-align: justify;
 
 		@mixin atMedium {
-			width: 150%;
-			margin-left: -20%;
+			width: 100%;
 			margin-bottom: 50px;
+		}
+	}
+
+	.vision, .mission, .logo {
+
+		@mixin atMedium {
+			display: inline-block;
+			vertical-align: middle;
+			width: 32%;
+			padding-right: 4%;
 		}
 	}
 
@@ -23,8 +33,24 @@
 		display: none;
 
 		@mixin atMedium {
-			display: block;
+			display: inline-block;
 			width: 200px;
+		}
+	}
+
+	.nat2030 {
+		text-align: left;
+		margin-top: 50px;
+
+		img {
+			width: 200px;
+			margin: auto;
+			display: block;
+		}
+
+		.title {
+			width: 80%;
+			margin: auto;
 		}
 	}
 }
