@@ -2,9 +2,10 @@
 background-color: #FFF;
 
 	@mixin atMedium {
-		background: url('../images/about-bg.png') top -30% left no-repeat;
+		background: url('../images/about-back1.png') bottom 10% right no-repeat,
+		url('../images/about-back2.png') top 30% left no-repeat;
 		background-color: #FFF;
-		background-size: cover;
+		background-size: 25% auto;
 
 		text-align: center;
 	}

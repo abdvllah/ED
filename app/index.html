@@ -75,7 +75,7 @@
 			<h2 class="upcoming-events__title title">Upcoming Events</h2>
 			
 			<div class="upcoming-events__image">
-				<a href="page-events.html">
+				<a href="page-upcoming.html">
 					<img class="lazyload" data-src="assets/images/upcoming-event.jpg" alt="">
 					<div class="upcoming-events__image__caption">April 12 | Souq Waqif Tour</div>
 				</a>
@@ -318,7 +318,7 @@
 			</div>
 		</div>
 
-		<a class="button team__button" href="">Join Us</a>
+		<a class="button team__button" href="page-join-us.html">Join Us</a>
 
 </section>
 
@@ -365,45 +365,42 @@
 
 </section> <!-- End Contact -->
 
+<div class="modal">
+	<h3 class="modal__title title">Add Testimonial Form</h3>
+	<form action="add-testimonial.php">
+		<div class="flex-wrapper modal__form-wrapper">
+			<div>
+				<div>
+					<label for="name">Name</label>
+					<input type="text" name="name" placeholder="Your Name">
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="text" name="email" placeholder="Your Email">
+				</div>
+				<div>
+					<label for="occupation">Occupation</label>
+					<input type="text" name="occupation" placeholder="Your Occupation">
+				</div>
+				<div>
+					<label for="nationality">Nationality</label>
+					<input type="text" name="nationality" placeholder="Your Nationality">
+				</div>
+				
+			</div> 
+
+			<div>
+				<div>
+					<label for="message">Message</label>
+					<textarea name="message" id="" placeholder="Your Message..." ></textarea>
+				</div>
+				<input class="button" type="submit">
+			</div>
+		</div>
+	</form>
+</div> <!-- End Modal -->
 
 <footer class="site-footer">
-
-	<div class="modal">
-		<h3 class="modal__title title">Add Testimonial Form</h3>
-		<form action="add-testimonial.php">
-			<div class="flex-wrapper modal__form-wrapper">
-				<div>
-					<div>
-						<label for="name">Name</label>
-						<input type="text" name="name" placeholder="Your Name">
-					</div>
-					<div>
-						<label for="email">Email</label>
-						<input type="text" name="email" placeholder="Your Email">
-					</div>
-					<div>
-						<label for="occupation">Occupation</label>
-						<input type="text" name="occupation" placeholder="Your Occupation">
-					</div>
-					<div>
-						<label for="nationality">Nationality</label>
-						<input type="text" name="nationality" placeholder="Your Nationality">
-					</div>
-					
-				</div> 
-
-				<div>
-					<div>
-						<label for="message">Message</label>
-						<textarea name="message" id="" placeholder="Your Message..." ></textarea>
-					</div>
-					<input class="button" type="submit">
-				</div>
-			</div>
-		</form>
-
-
-	</div>
 
 </footer>
 </body>

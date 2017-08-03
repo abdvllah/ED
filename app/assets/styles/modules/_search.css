@@ -5,11 +5,15 @@
 	&__field{
 		display: inline-block;
 		vertical-align: top;
-		width: 250px;
+		width: 100px;
 		height: 40px;
 		padding: 5px;
 		background-color: rgba($black, .9);
 		color: #FFF;
+
+		@mixin atMedium {
+			width: 250px;
+		}
 	}
 
 	&__button {

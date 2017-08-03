@@ -494,6 +494,10 @@ h1,h2,h3,h4,h5 {
 	font-family: "raleway", sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
 polygon:hover {
 	fill: #ad191d;
 }
@@ -1146,6 +1150,11 @@ polygon:hover {
 		font-size: 200%;
 	}
 
+.title--small-padding-top {
+		padding-top: 2%;
+		padding-bottom: 5%;
+	}
+
 .photo {
 	width: 120px;
 	height: 120px;
@@ -1274,9 +1283,20 @@ form textarea {
 	}
 	}
 
+form .narrow {
+		width: 300px;
+		height: 150px;
+		margin: 10px;
+	}
+
 form input[type="submit"] {
 		border: none;
 	}
+
+form .checkbox input {
+			width: 20px;
+			height: 20px;
+		}
 
 .heading {
 	font-size: 200%;
@@ -1299,6 +1319,7 @@ form input[type="submit"] {
 	}
 
 .button {
+	display: block;
 	background: url('../images/button.png') top left no-repeat;
 	background-size: cover;
 	background-color: #FFF;
@@ -1333,6 +1354,11 @@ form input[type="submit"] {
 .button--center {
 		display: block;
 		margin: 25px auto;
+	}
+
+.button--red {
+		background-color: #ad191d;
+		color: #FFF;
 	}
 
 .flex-wrapper {
@@ -1626,7 +1652,7 @@ form input[type="submit"] {
 @media (min-width: 800px) {
 
 .event-thumb:first-of-type {
-			margin: inherit
+			margin: 1%
 	}
 	}
 
@@ -1652,6 +1678,7 @@ form input[type="submit"] {
 		background-color: #FFF;
 		height: 200px;
 		width: 100%;
+		margin-bottom: 10px;
 	}
 
 .event-thumb__details {
@@ -1776,11 +1803,18 @@ form input[type="submit"] {
 .search__field{
 		display: inline-block;
 		vertical-align: top;
-		width: 250px;
+		width: 100px;
 		height: 40px;
 		padding: 5px;
 		background-color: rgba(39,39,39, .9);
 		color: #FFF;
+	}
+
+@media (min-width: 800px) {
+
+.search__field{
+			width: 250px
+	}
 	}
 
 .search__button {
@@ -2861,9 +2895,10 @@ background-color: #FFF;
 @media (min-width: 800px) {
 
 .about-page {
-		background: url('../images/about-bg.png') top -30% left no-repeat;
+		background: url('../images/about-back1.png') bottom 10% right no-repeat,
+		url('../images/about-back2.png') top 30% left no-repeat;
 		background-color: #FFF;
-		background-size: cover;
+		background-size: 25% auto;
 
 		text-align: center
 }
@@ -3096,7 +3131,31 @@ background-color: #FFF;
 			background-image: url('../icons/ramadan.svg');
 		}
 
-.icon-wrapper .cultural, .icon-wrapper .family, .icon-wrapper .business, .icon-wrapper .ramadan {
+.icon-wrapper .national {
+		 background: url('../icons/national-b.svg') no-repeat;
+	}
+
+.icon-wrapper .national.active {
+		 	background-image: url('../icons/national.svg');
+		 }
+
+.icon-wrapper .national {
+		 background: url('../icons/national-b.svg') no-repeat;
+	}
+
+.icon-wrapper .national.active {
+		 	background-image: url('../icons/national.svg');
+		 }
+
+.icon-wrapper .cul-events {
+		background: url('../icons/cul-events-b.svg') no-repeat;
+	}
+
+.icon-wrapper .cul-events.active {
+			background-image: url('../icons/cul-events.svg');
+		}
+
+.icon-wrapper .cultural, .icon-wrapper .family, .icon-wrapper .business, .icon-wrapper .ramadan, .icon-wrapper .national, .icon-wrapper .cul-events {
 		background-size: auto 70%;
 		background-position: center center;
 		background-color: rgb(61,61,61);
@@ -3104,7 +3163,7 @@ background-color: #FFF;
 
 @media (min-width: 800px) {
 
-.icon-wrapper .cultural, .icon-wrapper .family, .icon-wrapper .business, .icon-wrapper .ramadan {
+.icon-wrapper .cultural, .icon-wrapper .family, .icon-wrapper .business, .icon-wrapper .ramadan, .icon-wrapper .national, .icon-wrapper .cul-events {
 			background-size: auto 90%;
 			background-color: transparent
 	}

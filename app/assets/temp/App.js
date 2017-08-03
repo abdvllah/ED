@@ -11286,7 +11286,6 @@ var Modal = function () {
 	function Modal(button, modal) {
 		_classCallCheck(this, Modal);
 
-		console.log('modal-contractor');
 		this.openModalButton = button;
 		this.modal = modal;
 		this.formWrapper = (0, _jquery2.default)('.modal__form-wrapper');
@@ -11300,6 +11299,8 @@ var Modal = function () {
 			// Clicking open modal button
 			this.openModalButton.click(function () {
 				that.modal.addClass('modal--visible');
+				var who = (0, _jquery2.default)(this).attr('data-who');
+				console.log(who);
 				return false;
 			});
 

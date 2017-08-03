@@ -1,4 +1,5 @@
 .button {
+	display: block;
 	background: url('../images/button.png') top left no-repeat;
 	background-size: cover;
 	background-color: #FFF;
@@ -28,5 +29,10 @@
 	&--center {
 		display: block;
 		margin: 25px auto;
+	}
+
+	&--red {
+		background-color: $red;
+		color: #FFF;
 	}
 }

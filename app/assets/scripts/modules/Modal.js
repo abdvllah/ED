@@ -3,7 +3,6 @@ import $ from 'jquery';
 
 class Modal {
 	constructor(button, modal) {
-		console.log('modal-contractor');
 		this.openModalButton = button;
 		this.modal = modal;
 		this.formWrapper = $('.modal__form-wrapper');
@@ -15,6 +14,8 @@ class Modal {
 		// Clicking open modal button
 		this.openModalButton.click(function() {
 			that.modal.addClass('modal--visible');
+			var who = $(this).attr('data-who');
+			console.log(who);
 			return false;
 		});
 

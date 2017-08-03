@@ -132,7 +132,34 @@
 		}
 	}
 
-	.cultural, .family, .business, .ramadan {
+	.national {
+		 background: url('../icons/national-b.svg') no-repeat;
+		 
+
+		 &.active {
+		 	background-image: url('../icons/national.svg');
+		 }
+	}
+
+	.national {
+		 background: url('../icons/national-b.svg') no-repeat;
+		 
+
+		 &.active {
+		 	background-image: url('../icons/national.svg');
+		 }
+	}
+
+	.cul-events {
+		background: url('../icons/cul-events-b.svg') no-repeat;
+		
+
+		&.active {
+			background-image: url('../icons/cul-events.svg');
+		}
+	}
+
+	.cultural, .family, .business, .ramadan, .national, .cul-events {
 		background-size: auto 70%;
 		background-position: center center;
 		background-color: lighten($black, .1);
