@@ -502,14 +502,15 @@ polygon:hover {
 	fill: #ad191d;
 }
 
+/*
 .background-image {
 	background-position: center center;
 	background-size: 50% 50%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-color: #272727;
+	background-color: $black;
 	height: 100%;
-}
+}*/
 
 /* Animations Modules */
 
@@ -1050,6 +1051,7 @@ polygon:hover {
 .wrapper {
 	position: relative;
 	padding: 3%;
+	
 }
 
 @media (min-width: 800px) {
@@ -1063,6 +1065,19 @@ polygon:hover {
 
 .wrapper--narrow {
 			padding: 3% 25%
+	}
+	}
+
+.wrapper--margin-top {
+		margin-top: 10px;
+		padding: 10px;
+	}
+
+@media (min-width: 800px) {
+
+.wrapper--margin-top {
+			margin-top: 100px;
+			padding: 30px
 	}
 	}
 
@@ -1271,7 +1286,7 @@ form textarea {
 		height: 150px;
 		padding: 10px;
 		margin: 5px 0;
-		border: none;
+		border: 1px solid #cfcfcf;
 		font-size: 100%;
 	}
 
@@ -1284,9 +1299,18 @@ form textarea {
 	}
 
 form .narrow {
-		width: 300px;
+		width: 100%;
 		height: 150px;
-		margin: 10px;
+		margin: 5px 0;
+	}
+
+@media (min-width: 800px) {
+
+form .narrow {
+			width: 300px;
+			height: 150px;
+			margin: 10px
+	}
 	}
 
 form input[type="submit"] {
@@ -1371,14 +1395,20 @@ form .checkbox input {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-ms-flex-pack: distribute;
-		    justify-content: space-around
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-align: left;
+		    -ms-flex-align: left;
+		        align-items: left;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between
 }
 	}
 
 .flex-wrapper__child {
-		-ms-flex-preferred-size: 20%;
-		    flex-basis: 20%;
+		-ms-flex-preferred-size: 30%;
+		    flex-basis: 30%;
 	}
 
 .flex-wrapper--narrow-height {
@@ -1887,6 +1917,96 @@ form .checkbox input {
 .footer .address span:last-of-type::after {
 				display: none;
 			}
+
+.gallery {
+	margin-top: 50px;
+}
+
+.gallery__image {
+		position: relative;
+		margin: 1%;
+		display: inline-block;
+		vertical-align: top;
+		width: 30%;
+	}
+
+.gallery__image img {
+			width: 100%;
+		}
+
+.gallery__caption {
+		position: absolute;
+		bottom: 1%;
+		right: 0;
+		left: 0;
+		padding: 10px;
+		background-color: rgba(173,25,29, .7);
+		color: #FFF;
+		text-align: center;
+	}
+
+.gallery--side {
+		margin-top: 10px;
+	}
+
+@media (min-width: 800px) {
+
+.gallery--side {
+			margin-top: -5%
+	}
+	}
+
+.gallery--side .gallery__image {
+			width: 100%;
+		}
+
+.content-wrapper {
+	background-color: rgba(255,255,255, .98);
+	padding: 30px;
+	margin: 0;
+	padding-bottom: 100px;
+}
+
+@media (min-width: 800px) {
+
+.content-wrapper {
+		padding-bottom: 30px
+}
+	}
+
+.content-wrapper .content {
+		display: none;
+		padding: 10px;
+	}
+
+.content-wrapper .content.active {
+		display: block;
+	}
+
+.background-pattern {
+	background-image: url('../icons/back-pattern.svg');
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+.info {
+
+	margin: 20px 0;
+	padding-left: 10px;
+}
+
+.info__item {
+		padding: 5px;
+		font-weight: 100;
+		line-height: 2;
+	}
+
+.info__icon {
+		margin-right: 10px;
+		display: inline-block;
+		vertical-align: top;
+	}
 
 /* Home Page Sections Modules */
 
@@ -2868,26 +2988,6 @@ form .checkbox input {
 		display: block;
 	}
 
-.events-page {
-	background-image: url('../icons/back-pattern.svg');
-	background-size: 70%;
-	background-repeat: no-repeat;
-	background-position: bottom right;
-}
-
-.events-page .details-wrapper {
-		margin-top: 10px;
-		padding: 10px;
-	}
-
-@media (min-width: 800px) {
-
-.events-page .details-wrapper {
-			margin-top: 100px;
-			padding: 30px
-	}
-	}
-
 .about-page {
 background-color: #FFF;
 }
@@ -2954,29 +3054,6 @@ background-color: #FFF;
 			width: 80%;
 			margin: auto;
 		}
-
-.content-wrapper {
-	background-color: rgb(250,250,250);
-	padding: 30px;
-	margin: 0;
-	padding-bottom: 100px;
-}
-
-@media (min-width: 800px) {
-
-.content-wrapper {
-		padding-bottom: 30px
-}
-	}
-
-.content-wrapper .content {
-		display: none;
-		padding: 10px;
-	}
-
-.content-wrapper .content.active {
-		display: block;
-	}
 
 .icon-wrapper {
 	text-align: center;
@@ -3196,7 +3273,14 @@ background-color: #FFF;
 }
 
 .detail__icon {
-		height: 50px;
+		height: 40px;
+	}
+
+@media (min-width: 800px) {
+
+.detail__icon {
+			height: 50px
+	}
 	}
 
 .detail__title {

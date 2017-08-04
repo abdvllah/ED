@@ -3,11 +3,13 @@
 	
 	@mixin atMedium {
 		display: flex;
-		justify-content: space-around;
+		flex-wrap: wrap;
+		align-items: left;
+		justify-content: space-between;
 	}
 
 	&__child {
-		flex-basis: 20%;
+		flex-basis: 30%;
 	}
 
 	&--narrow-height {

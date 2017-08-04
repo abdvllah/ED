@@ -1,0 +1,38 @@
+.gallery {
+	margin-top: 50px;
+
+	&__image {
+		position: relative;
+		margin: 1%;
+		display: inline-block;
+		vertical-align: top;
+		width: 30%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__caption {
+		position: absolute;
+		bottom: 1%;
+		right: 0;
+		left: 0;
+		padding: 10px;
+		background-color: rgba($red, .7);
+		color: #FFF;
+		text-align: center;
+	}
+
+	&--side {
+		margin-top: 10px;
+
+		@mixin atMedium {
+			margin-top: -5%;
+		}
+
+		.gallery__image {
+			width: 100%;
+		}
+	}
+}

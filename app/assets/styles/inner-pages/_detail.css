@@ -5,7 +5,11 @@
 	margin: 20px 10px;
 
 	&__icon {
-		height: 50px;
+		height: 40px;
+
+		@mixin atMedium {
+			height: 50px
+		}
 	}
 
 	&__title {

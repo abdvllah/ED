@@ -28,7 +28,7 @@ form {
 		height: 150px;
 		padding: 10px;
 		margin: 5px 0;
-		border: none;
+		border: 1px solid $backGray;
 		font-size: 100%;
 
 		@mixin atMedium {
@@ -38,9 +38,15 @@ form {
 	}
 
 	.narrow {
-		width: 300px;
+		width: 100%;
 		height: 150px;
-		margin: 10px;
+		margin: 5px 0;
+
+		@mixin atMedium {
+			width: 300px;
+			height: 150px;
+			margin: 10px;
+		}
 	}
 
 	input[type="submit"] {
