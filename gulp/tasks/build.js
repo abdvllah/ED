@@ -32,6 +32,8 @@ gulp.task('copyGeneralFiles', ['deletDistFolder'], function() {
 	'!./app/assets/styles/**',
 	'!./app/assets/temp',
 	'!./app/assets/temp/**'
+	'!./app/assets/icons/'
+	'!./app/assets/icons/**'
 	];
 
 	return gulp.src(pathsToCopy)
@@ -40,11 +42,11 @@ gulp.task('copyGeneralFiles', ['deletDistFolder'], function() {
 
 gulp.task('optimizeImages', ['deletDistFolder'], function() {
 	return gulp.src(['./app/assets/images/**/*'])
-	// .pipe(imagemin({
-	// 	progressive: true,
-	// 	interlaced: true,
-	// 	multipass: true
-	// }))
+	.pipe(imagemin({
+		progressive: true,
+		interlaced: true,
+		multipass: true
+	}))
 	.pipe(gulp.dest("./dist/assets/images"));
 });
 
