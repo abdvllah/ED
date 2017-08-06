@@ -40,7 +40,7 @@
 		<img class="page-header__image" src="assets/images/events-header.png" alt="">
 	</header>
 
-	<section class="background-pattern row">
+	<section id="content-change" class="background-pattern row">
 
 			<div class="icon-wrapper row__medium-4">
 				<div class="icon-wrapper__icon active national" data-who="national">
@@ -136,7 +136,7 @@
 
 				</div> <!-- End Wrapper -->
 
-				<a id="open-book" class="button button--red open-modal"  href="#">Book</a>
+				<a id="open-book" class="button button--red button--shift-up-center open-modal"  href="#">Book</a>
 
 			</div>
 
@@ -149,7 +149,7 @@
 </footer>
 
 <div id="book-modal" class="modal">
-	<h3 class="modal__title title">Book Event Form</h3>
+	<h3 class="modal__title title">Book Event</h3>
 		<form action="book-session.php">
 			<div class="flex-wrapper modal__form-wrapper">
 				<div>
@@ -183,7 +183,7 @@
 					</div>
 					<div>
 						<label for="date">Date</label>
-						<input type="text" name="date" placeholder="Prefered Date">
+						<input id="datepicker" type="text" name="date" placeholder="Prefered Date">
 					</div>
 					<div>
 						<label for="time">Time</label>

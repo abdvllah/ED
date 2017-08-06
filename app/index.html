@@ -149,7 +149,7 @@
 				</div>
 
 				<button class="next"></button>
-				<a href="#" class="button clients__large__button open-modal">Add Testimonial</a>
+				<a href="#" class="open-testimonial button clients__large__button open-modal">Add Testimonial</a>
 
 			</div>
 		</div>
@@ -330,18 +330,18 @@
 			<div class="contact_input">
 				<div class="contact__form__input">
 					<label for="name">Name</label>
-					<input type="text" name="name" placeholder="Your Name">
+					<input type="text" name="name" placeholder="Your Name" required>
 				</div>
 				<div class="contact__form__input">
 					<label for="email">Email</label>
-					<input type="text" name="email" placeholder="Your Email">
+					<input type="text" name="email" placeholder="Your Email" required>
 				</div>
 			</div> 
 
 			<div class="contact__message">
 				<div class="contact__form__textarea">
 					<label for="message">Message</label>
-					<textarea name="message" id="" placeholder="Your Message..."></textarea>
+					<textarea name="message" id="" placeholder="Your Message..." required></textarea>
 				</div>
 				<input class="button contact__form__button" type="submit">
 			</div>
@@ -365,18 +365,18 @@
 
 </section> <!-- End Contact -->
 
-<div class="modal">
+<div id="testimonial-model" class="modal">
 	<h3 class="modal__title title">Add Testimonial Form</h3>
 	<form action="add-testimonial.php">
 		<div class="flex-wrapper modal__form-wrapper">
 			<div class="flex-wrapper__child">
 				<div>
 					<label for="name">Name</label>
-					<input type="text" name="name" placeholder="Your Name">
+					<input type="text" name="name" placeholder="Your Name" required>
 				</div>
 				<div>
 					<label for="email">Email</label>
-					<input type="text" name="email" placeholder="Your Email">
+					<input type="text" name="email" placeholder="Your Email" required>
 				</div>
 				<div>
 					<label for="occupation">Occupation</label>
@@ -384,7 +384,7 @@
 				</div>
 				<div>
 					<label for="nationality">Nationality</label>
-					<input type="text" name="nationality" placeholder="Your Nationality">
+					<input type="text" name="nationality" placeholder="Your Nationality" required>
 				</div>
 				
 			</div> 
@@ -392,13 +392,14 @@
 			<div class="flex-wrapper__child">
 				<div>
 					<label for="message">Message</label>
-					<textarea name="message" id="" placeholder="Your Message..." ></textarea>
+					<textarea name="message" id="" placeholder="Your Message..." required></textarea>
 				</div>
 				<input class="button" type="submit">
 			</div>
 		</div>
 	</form>
-</div> <!-- End Modal -->
+</div> <!-- End Testimonial Modal -->
+
 
 <footer class="site-footer">
 

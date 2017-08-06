@@ -42,23 +42,12 @@
 		&::after {
 			content: "";
 			position: absolute;
-			/*top: -50%;
-			right: 50%;
-			transform: translateX(50%);
-			visibility: hidden;
-			opacity: 0;
-			width: 0;
-			height: 0;
-			border-bottom: 20px solid $red;
-			border-top: none;
-			border-left: 15px solid transparent;
-			border-right: 15px solid transparent;*/
 			visibility: hidden;
 			transition: all .3s ease;
 
 			@mixin atMedium {
 				top: 40%;
-				right: 0%;;
+				right: -8%;
 				visibility: hidden;
 				opacity: 0;
 				width: 0;

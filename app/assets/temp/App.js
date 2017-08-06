@@ -11299,8 +11299,8 @@ var Modal = function () {
 			// Clicking open modal button
 			this.openModalButton.click(function () {
 				that.modal.addClass('modal--visible');
-				var who = (0, _jquery2.default)(this).attr('data-who');
-				console.log(who);
+				// var who = $(this).attr('data-who');
+				// console.log(who);
 				return false;
 			});
 
@@ -11648,23 +11648,22 @@ new _Slider2.default((0, _jquery2.default)('#testimonial-slider'));
 
 // Script for change content in div when clicking on control
 new _ContentChange2.default((0, _jquery2.default)('.team .pillow'), (0, _jquery2.default)('.team-member'));
-new _ContentChange2.default((0, _jquery2.default)('.events-page .icon-wrapper__icon'), (0, _jquery2.default)('.events-page .content'));
+new _ContentChange2.default((0, _jquery2.default)('#content-change .icon-wrapper__icon'), (0, _jquery2.default)('#content-change .content'));
 
 // Handle Model components
 new _Modal2.default((0, _jquery2.default)('.open-modal'), (0, _jquery2.default)('.modal'));
-new _Modal2.default((0, _jquery2.default)('#open-book.open-modal'), (0, _jquery2.default)('#book-modal.modal'));
+// new Modal( $('#open-book.open-modal'), $('#book-modal.modal') );
 
 // Generic Scripts
 new _Generic2.default();
 
-// Handle Items anmination on reveal
-new _RevealOnScroll2.default();
-
-// $(document).ready(function() {
-//     console.log("Document is ready");
-
-// });
-
+(0, _jquery2.default)(document).ready(function () {
+    console.log("Document is ready");
+    (0, _jquery2.default)("#datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true
+    });
+});
 
 // Activating hover for touch screens
 (0, _jquery2.default)('*').on("touchstart", function (e) {
@@ -11680,6 +11679,9 @@ new _RevealOnScroll2.default();
         // return false; //extra, and to make sure the function has consistent return points
     }
 });
+
+// Handle Items anmination on reveal
+new _RevealOnScroll2.default();
 
 /***/ }),
 /* 11 */,

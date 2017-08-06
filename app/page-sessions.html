@@ -40,7 +40,7 @@
 		<img class="page-header__image" src="assets/images/sessions-header.png" alt="">
 	</header>
 
-	<section class="background-pattern row">
+	<section id="content-change" class="background-pattern row">
 
 			<div class="icon-wrapper row__medium-4">
 				<div class="icon-wrapper__icon active cultural" data-who="cultural">
@@ -315,7 +315,7 @@
 					</div>
 				</div> <!-- End Wrapper -->
 
-				<a id="open-book" class="button button--red open-modal"  href="#">Book</a>
+				<a id="open-book" class="button button--red button--shift-up-center open-modal"  href="#">Book</a>
 
 			</div>
 
@@ -328,7 +328,7 @@
 </footer>
 
 <div id="book-modal" class="modal">
-	<h3 class="modal__title title">Book Session Form</h3>
+	<h3 class="modal__title title">Book Session</h3>
 		<form action="book-session.php">
 			<div class="flex-wrapper modal__form-wrapper">
 				<div>
@@ -356,7 +356,7 @@
 
 					<div>
 						<label for="requestor">Requestor Name</label>
-						<input type="text" name="requestor" placeholder="Your Name">
+						<input type="text" name="requestor" placeholder="Your Name" required>
 					</div>
 
 					<div>
@@ -365,7 +365,7 @@
 					</div>
 					<div>
 						<label for="date">Date</label>
-						<input type="text" name="date" placeholder="Prefered Date">
+						<input id="datepicker" type="text" name="date" placeholder="Prefered Date">
 					</div>
 					<div>
 						<label for="time">Time</label>
@@ -378,15 +378,15 @@
 				<div>
 					<div>
 						<label for="name">Contact Name</label>
-						<input type="text" name="name" placeholder="Contact Person Name">
+						<input type="text" name="name" placeholder="Contact Person Name" required>
 					</div>
 					<div>
 						<label for="email">Contact Email</label>
-						<input type="text" name="email" placeholder="Contact Email">
+						<input type="text" name="email" placeholder="Contact Email" required>
 					</div>
 					<div>
 						<label for="number">Contact Number</label>
-						<input type="text" name="number" placeholder="Contact Number">
+						<input type="text" name="number" placeholder="Contact Number" required>
 					</div>
 
 					<div>

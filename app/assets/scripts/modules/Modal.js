@@ -14,8 +14,8 @@ class Modal {
 		// Clicking open modal button
 		this.openModalButton.click(function() {
 			that.modal.addClass('modal--visible');
-			var who = $(this).attr('data-who');
-			console.log(who);
+			// var who = $(this).attr('data-who');
+			// console.log(who);
 			return false;
 		});
 

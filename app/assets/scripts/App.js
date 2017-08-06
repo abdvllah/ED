@@ -18,24 +18,24 @@ new Slider($('#testimonial-slider'));
 
 // Script for change content in div when clicking on control
 new ContentChange( $('.team .pillow'), $('.team-member') );
-new ContentChange( $('.events-page .icon-wrapper__icon'), $('.events-page .content') );
+new ContentChange( $('#content-change .icon-wrapper__icon'), $('#content-change .content') );
 
 // Handle Model components
 new Modal( $('.open-modal'), $('.modal') );
-new Modal( $('#open-book.open-modal'), $('#book-modal.modal') );
+// new Modal( $('#open-book.open-modal'), $('#book-modal.modal') );
 
 // Generic Scripts
 new Generic();
 
-// Handle Items anmination on reveal
-new RevealOnScroll();
 
-
-
-// $(document).ready(function() {
-//     console.log("Document is ready");
+$(document).ready(function() {
+    console.log("Document is ready");
+    $("#datepicker").datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
     
-// });
+});
 
 
 // Activating hover for touch screens
@@ -51,3 +51,7 @@ $('*').on("touchstart", function (e) {
         // return false; //extra, and to make sure the function has consistent return points
     }
 });
+
+
+// Handle Items anmination on reveal
+new RevealOnScroll();

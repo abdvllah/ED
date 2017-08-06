@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "vendor/_jquery-ui";
 
 /* Global */
 @import "base/_variables";
