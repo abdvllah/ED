@@ -1901,7 +1901,7 @@ polygon:hover {
 
 .title {
 	color: #FFF;
-	font-size: 300%;
+	font-size: 250%;
 	font-weight: bold;
 	text-transform: uppercase;
 	padding-top: 5%;
@@ -1910,6 +1910,15 @@ polygon:hover {
 
 	
 }
+
+@media (min-width: 800px) {
+
+.title {
+		font-size: 300%
+
+	
+}
+	}
 
 /*&:first-letter  {
 		font-size: 135%;
@@ -2319,10 +2328,14 @@ form .checkbox input {
 	background: url('../images/side-patt.png') top left no-repeat;
 	background-size: contain;
 	background-color: rgba(207,207,207, .97);
-	top: 0;
+	/*top: 0;
 	bottom: 0;
 	right: 0;
-	left: 0;
+	left: 0;*/
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left:0;
 	opacity: 0;
 	visibility: hidden;
 	-webkit-transition: all .3s ease-out;
@@ -2332,6 +2345,7 @@ form .checkbox input {
 	color: #272727;
 	text-align: center;
 	cursor: url('../icons/cursor-close.png'), auto;
+	overflow: scroll;
 }
 
 @media (min-width: 800px) {
@@ -2351,7 +2365,7 @@ form .checkbox input {
 
 .modal__title {
 		cursor: auto;
-		font-size: 200%;
+		font-size: 150%;
 		width: 70%;
 		padding-left: 20%;
 		margin: auto;
@@ -2361,6 +2375,7 @@ form .checkbox input {
 @media (min-width: 800px) {
 
 .modal__title {
+			font-size: 200%;
 			width: 100%;
 			padding-left: 0;
 			margin: 0;
@@ -2382,14 +2397,14 @@ form .checkbox input {
 		width: 65%;
 		padding: 30px;
 		margin: auto;
-		position: fixed;
+		position: absolute;
 		text-align: right;
 		top: 50%;
 		left: 60%;
 		-webkit-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
 		cursor: auto;
-		overflow: hidden;
+		overflow: auto;
 	}
 
 @media (min-width: 800px) {
@@ -3452,7 +3467,7 @@ form .checkbox input {
 	}
 
 .team__content {
-		height: 60%;
+		height: 65%;
 		padding: 2% 0;
 		overflow: hidden;
 	}
@@ -3480,7 +3495,8 @@ form .checkbox input {
 
 .team__nav {
 			width: 90%;
-			height: 100%
+			height: 100%;
+			top: 15px
 	}
 	}
 
@@ -3566,7 +3582,7 @@ form .checkbox input {
 		text-align: justify;
 		color: #272727;
 		padding: 8px;
-		font-size: 100%;
+		font-size: 80%;
 	}
 
 @media (min-width: 800px) {
@@ -3830,6 +3846,7 @@ background-color: #FFF;
 .about-page .nat2030 {
 		text-align: left;
 		margin-top: 50px;
+		
 	}
 
 .about-page .nat2030 img {
@@ -3838,10 +3855,12 @@ background-color: #FFF;
 			display: block;
 		}
 
-.about-page .nat2030 .title {
-			width: 80%;
-			margin: auto;
-		}
+@media (min-width: 800px) {
+			.about-page .nat2030 .title {
+				width: 80%;
+				margin: auto;
+			}
+	}
 
 .icon-wrapper {
 	text-align: center;

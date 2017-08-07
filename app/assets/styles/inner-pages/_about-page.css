@@ -49,9 +49,13 @@ background-color: #FFF;
 			display: block;
 		}
 
-		.title {
-			width: 80%;
-			margin: auto;
+
+		@mixin atMedium {
+			.title {
+				width: 80%;
+				margin: auto;
+			}
 		}
+		
 	}
 }

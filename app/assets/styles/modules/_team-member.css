@@ -42,7 +42,7 @@
 		text-align: justify;
 		color: $black;
 		padding: 8px;
-		font-size: 100%;
+		font-size: 80%;
 
 		@mixin atMedium {
 			padding: 10px 20px;
