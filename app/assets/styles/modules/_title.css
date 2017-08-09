@@ -21,6 +21,16 @@
 	&--smaller {
 		font-size: 200%;
 	}
+	&--center {
+		text-align: center;
+	}
+	&--margin-bottom {
+		margin-bottom: 20px;
+
+		@mixin atMedium {
+			margin-bottom: 100px;
+		}
+	}
 
 	&--small-padding-top {
 		padding-top: 2%;

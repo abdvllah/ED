@@ -2,7 +2,6 @@
 
 	&__wrapper {
 		position: relative;
-		height: 100%;
 		z-index: 3;
 
 		@mixin atMedium {
@@ -38,6 +37,7 @@
 		@mixin atMedium {
 			text-align: left;
 		}
+
 	}
 
 	&__image {
@@ -59,10 +59,15 @@
 			font-size: 150%;
 			position: absolute;
 			bottom: 10%;
+			transition: all .4s ease;
 
 			@mixin atMedium {
 				padding: 15px;
 				font-size: 24px;
+			}
+
+			&:hover {
+				background-color: $red;
 			}
 		}
 
@@ -70,7 +75,7 @@
 
 	&__strip {
 		width: 100%;
-		background-color: $red;
+		background-color: darken($red, 20%);
 		color: #FFF;
 		padding: 20px 35px;
 		font-size: 150%;
@@ -89,6 +94,10 @@
 			padding: 30px 50px;
 			bottom: 10%;
 			z-index: 1;
+		}
+
+		&:hover {
+			background-color: $red;
 		}
 
 		&::after {
@@ -124,7 +133,7 @@
 
 	&__background {
 
-		background: url('../images/upcoming.png')  no-repeat top left;
+		background: url('../images/upcoming-b.png')  no-repeat top left;
 		background-size: contain;
 
 		position: absolute;
@@ -141,7 +150,7 @@
 			top: 0;
 			left: 0;
 			height: 100%;
-			width: 100%;
+			width: 60%;
 			opacity: 1;
 		}
 

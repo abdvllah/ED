@@ -40,6 +40,7 @@
 @import "modules/_content-wrapper";
 @import "modules/_background-pattern";
 @import "modules/_info";
+@import "modules/_banner-image";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";

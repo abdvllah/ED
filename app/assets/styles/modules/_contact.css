@@ -3,24 +3,5 @@
 		background: url('../images/contact-back.png') top right no-repeat;
 		background-size: contain;
 		background-color: lighten($black, .5);
-	}
-	
-
-	&__title {
-		text-align: center;
-		margin-bottom: 20px;
-
-		@mixin atMedium {
-			font-size: 35px;
-			margin-bottom: 100px;
-			font-size: 40px;
-		}
-	}
-
-
-	&__form {
-		position: relative;
-		left: 0;
-	}
-			
+	}		
 }

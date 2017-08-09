@@ -1252,8 +1252,16 @@ h1,h2,h3,h4,h5 {
 	font-family: "raleway", sans-serif;
 }
 
-a {
+a:link, a:visited {
 	text-decoration: none;
+}
+
+a:hover {
+
+}
+
+a:active {
+
 }
 
 polygon:hover {
@@ -1777,7 +1785,7 @@ polygon:hover {
 .nav ul li > a {
 			display: inline-block;
 			vertical-align: middle;
-			width: 100px;
+			width: 130px;
 			height: 30px;
 			padding: 5px;
 			margin-bottom: 15px;
@@ -1930,6 +1938,21 @@ polygon:hover {
 
 .title--smaller {
 		font-size: 200%;
+	}
+
+.title--center {
+		text-align: center;
+	}
+
+.title--margin-bottom {
+		margin-bottom: 20px;
+	}
+
+@media (min-width: 800px) {
+
+.title--margin-bottom {
+			margin-bottom: 100px
+	}
 	}
 
 .title--small-padding-top {
@@ -2190,9 +2213,8 @@ form .checkbox input {
 		-webkit-box-align: left;
 		    -ms-flex-align: left;
 		        align-items: left;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between
+		-ms-flex-pack: distribute;
+		    justify-content: space-around
 }
 	}
 
@@ -2467,20 +2489,26 @@ form .checkbox input {
 .event-thumb {
 	margin: 50px auto;
 	width: 80%;
+	padding: 20px;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 
 	
 }
 
-.event-thumb:first-of-type {
+.event-thumb:hover {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+		background-color: rgba(255,255,255,.3);
+	}
+
+/*&:first-of-type {
 		margin-top: 150px;
-	}
 
-@media (min-width: 800px) {
-
-.event-thumb:first-of-type {
-			margin: 1%
-	}
-	}
+		@mixin atMedium {
+			margin: 1%;
+		}
+	}*/
 
 @media (min-width: 800px) {
 
@@ -2496,7 +2524,7 @@ form .checkbox input {
 		text-align: left;
 		font-weight: 200;
 		font-size: 150%;
-		color: #272727;
+		color: #ad191d;
 		margin: 15px 0;
 	}
 
@@ -2505,10 +2533,14 @@ form .checkbox input {
 		height: 200px;
 		width: 100%;
 		margin-bottom: 10px;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
 	}
 
 .event-thumb__details {
 		padding: 10px;
+		color: #272727;
 	}
 
 .event-thumb__date {
@@ -2543,38 +2575,33 @@ form .checkbox input {
 			background-color: #ad191d;
 		}
 
-.filter {
-	display: none;
-	
-}
-
 @media (min-width: 800px) {
 
 .filter {
-		display: block
+		float: right
 	
 }
-
-		.filter__wrapper {
-			background-color: #272727;
-			text-align: center;
-		}
-
-		.filter__item {
-			font-weight: bold;
-			display: inline-block;
-			padding: 10px;
-			color: #FFF;
-			width: 50%;
-		}
-
-
-			.filter__item:hover, .filter__item .active {
-				background-color: #ad191d;
-			}
 	}
 
+.filter__wrapper {
+		background-color: #272727;
+		text-align: center;
+	}
+
+.filter__item {
+		font-weight: bold;
+		display: inline-block;
+		padding: 10px;
+		color: #FFF;
+		width: 50%;
+	}
+
+.filter__item:hover, .filter__item .active {
+			background-color: #ad191d;
+		}
+
 .mobile-filter {
+	display: none;
 	width: 90%;
 	margin: 1% 5%;
 	position: absolute;
@@ -2655,10 +2682,17 @@ form .checkbox input {
 	}
 
 .footer {
-	height: 100%;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 20px;
+	padding: 20px 5px;
 }
+
+@media (min-width: 800px) {
+
+.footer {
+		margin-top: 50px
+}
+	}
 
 .footer .social-media span {
 			display: inline-block;
@@ -2724,6 +2758,10 @@ form .checkbox input {
 		display: inline-block;
 		vertical-align: top;
 		width: 100%;
+		-webkit-transition: all .4s ease;
+		transition: all .4s ease;
+
+		
 	}
 
 .gallery__image img {
@@ -2734,7 +2772,15 @@ form .checkbox input {
 
 .gallery__image {
 			width: 30%
+
+		
 	}
+
+			.gallery__image:hover {
+				-webkit-transform: scale(1.1);
+				        transform: scale(1.1);
+				z-index: 3;
+			}
 	}
 
 .gallery__caption {
@@ -2810,6 +2856,14 @@ form .checkbox input {
 		display: inline-block;
 		vertical-align: top;
 	}
+
+.banner-image {
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
 
 /* Home Page Sections Modules */
 
@@ -2890,7 +2944,6 @@ form .checkbox input {
 
 .upcoming-events__wrapper {
 		position: relative;
-		height: 100%;
 		z-index: 3;
 	}
 
@@ -2925,12 +2978,14 @@ form .checkbox input {
 		text-align: center;
 		color: rgb(156,23,26);
 		padding-bottom: 20px;
+
 	}
 
 @media (min-width: 800px) {
 
 .upcoming-events__title {
 			text-align: left
+
 	}
 	}
 
@@ -2958,6 +3013,8 @@ form .checkbox input {
 			font-size: 150%;
 			position: absolute;
 			bottom: 10%;
+			-webkit-transition: all .4s ease;
+			transition: all .4s ease;
 		}
 
 @media (min-width: 800px) {
@@ -2968,9 +3025,13 @@ form .checkbox input {
 		}
 	}
 
+.upcoming-events__image__caption:hover {
+				background-color: #ad191d;
+			}
+
 .upcoming-events__strip {
 		width: 100%;
-		background-color: #ad191d;
+		background-color: rgb(138,20,23);
 		color: #FFF;
 		padding: 20px 35px;
 		font-size: 150%;
@@ -2994,6 +3055,10 @@ form .checkbox input {
 			z-index: 1
 	}
 	}
+
+.upcoming-events__strip:hover {
+			background-color: #ad191d;
+		}
 
 .upcoming-events__strip::after {
 			content: "";
@@ -3034,7 +3099,7 @@ form .checkbox input {
 
 .upcoming-events__background {
 
-		background: url('../images/upcoming.png')  no-repeat top left;
+		background: url('../images/upcoming-b.png')  no-repeat top left;
 		background-size: contain;
 
 		position: absolute;
@@ -3056,7 +3121,7 @@ form .checkbox input {
 			top: 0;
 			left: 0;
 			height: 100%;
-			width: 100%;
+			width: 60%;
 			opacity: 1
 
 	}
@@ -3112,6 +3177,8 @@ form .checkbox input {
 		padding: 30px 0;
 		margin: 0;
 		text-decoration: none;
+		-webkit-transition: all .4s ease;
+		transition: all .4s ease;
 	}
 
 @media (min-width: 800px) {
@@ -3123,7 +3190,7 @@ form .checkbox input {
 	}
 
 .our-services__heading:hover {
-			background-color: rgba(39,39,39, .7);
+			background-color: #272727;
 		}
 
 .our-services__heading:first-of-type {
@@ -3745,25 +3812,6 @@ form .checkbox input {
 		background: url('../images/contact-back.png') top right no-repeat;
 		background-size: contain;
 		background-color: rgb(147,147,147);
-	}
-
-.contact__title {
-		text-align: center;
-		margin-bottom: 20px;
-	}
-
-@media (min-width: 800px) {
-
-.contact__title {
-			font-size: 35px;
-			margin-bottom: 100px;
-			font-size: 40px
-	}
-	}
-
-.contact__form {
-		position: relative;
-		left: 0;
 	}
 
 /* Inner Page Modules */
