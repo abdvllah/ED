@@ -15,9 +15,10 @@
 		padding: 10px;
 		color: #FFF;
 		width: 50%;
+		cursor: pointer;
 
 
-		&:hover, .active {
+		&:hover, &.active {
 			background-color: $red;
 		}
 	}

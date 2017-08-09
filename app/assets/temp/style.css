@@ -2569,10 +2569,12 @@ form .checkbox input {
 		color: #272727;
 		margin: 0.5%;
 		width: 32%;
+		cursor: pointer;
 	}
 
-.months-calendar__month:hover, .months-calendar__month .active {
+.months-calendar__month:hover, .months-calendar__month.active {
 			background-color: #ad191d;
+			color: #FFF;
 		}
 
 @media (min-width: 800px) {
@@ -2594,9 +2596,10 @@ form .checkbox input {
 		padding: 10px;
 		color: #FFF;
 		width: 50%;
+		cursor: pointer;
 	}
 
-.filter__item:hover, .filter__item .active {
+.filter__item:hover, .filter__item.active {
 			background-color: #ad191d;
 		}
 
@@ -2861,9 +2864,55 @@ form .checkbox input {
 	width: 100%;
 	height: 300px;
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 50% 0%;
 	background-size: 100% auto;
+	-webkit-transition: 1s all ease;
+	transition: 1s all ease;
 }
+
+.banner-image:hover {
+		background-position: 50% 100%;
+	}
+
+.breadcrumb {
+	padding: 20px;
+	background-color: rgb(166,166,166);
+	margin-bottom: 10px;
+	color: #FFF;
+
+}
+
+@media (min-width: 800px) {
+
+.breadcrumb {
+		margin-bottom: 20px
+
+}
+	}
+
+.breadcrumb li {
+		display: inline-block;
+		text-decoration: underline;
+	}
+
+.breadcrumb li a {
+			color: #FFF;
+		}
+
+.breadcrumb li.active {
+			text-decoration: none;
+		}
+
+.breadcrumb li:after {
+			content: "▸";
+			display: inline-block;
+			padding: 0 5px;
+		}
+
+.breadcrumb li:last-of-type:after {
+				content: "";
+				display: inline-block;
+			}
 
 /* Home Page Sections Modules */
 

@@ -2,6 +2,11 @@
 	width: 100%;
 	height: 300px;
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 50% 0%;
 	background-size: 100% auto;
+	transition: 1s all ease;
+
+	&:hover {
+		background-position: 50% 100%;
+	}
 }

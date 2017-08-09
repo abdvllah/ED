@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 11);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11174,6 +11174,97 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+var Filter = function () {
+	function Filter(element) {
+		_classCallCheck(this, Filter);
+
+		this.element = element;
+		//console.log(this.element);
+		// this.filterClick();
+		this.getSearchParams();
+	}
+
+	_createClass(Filter, [{
+		key: 'filterClick',
+		value: function filterClick() {
+			var that = this;
+			this.element.on('click', function () {
+				var thisElement = this;
+				(0, _jquery2.default)(that.element).removeClass('active');
+				(0, _jquery2.default)(thisElement).addClass('active');
+
+				var who = (0, _jquery2.default)(thisElement).attr('data-who');
+				console.log(who);
+
+				var filter = (0, _jquery2.default)(thisElement).attr('data-filter');
+
+				var param = document.location.search.substr(0);
+				console.log(param);
+
+				if (filter == 'month') {
+					// $.get("http://localhost:3000/page-upcoming.html?month=" + who);
+					// window.location.href = "http://localhost:3000/page-upcoming.html?month=" + who;
+					// document.location.replace("http://localhost:3000/page-upcoming.html?month=" + who);
+					document.location.search = "month=" + who;
+				} else if (filter == 'type') {
+					// document.location.replace("http://localhost:3000/page-upcoming.html?type=" + who);
+					document.location.search = "type=" + who;
+				}
+
+				// $.get("http://localhost:3000/page-upcoming.html?" + )
+
+				// console.log(thisElement);
+				// $(that.element).removeClass('active');
+				// $(this).addClass('active');
+			});
+		} // End Filter Click Function
+
+	}, {
+		key: 'getSearchParams',
+		value: function getSearchParams() {
+			// Get the string
+
+			// Split the string
+
+			// return array
+		}
+	}, {
+		key: 'putSearchParams',
+		value: function putSearchParams() {
+			// Check if there is more thant param
+
+			// Concatanate the string
+
+			// Put it in Url
+		}
+	}]);
+
+	return Filter;
+}();
+
+exports.default = Filter;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 var Generic = function () {
 	function Generic() {
 		_classCallCheck(this, Generic);
@@ -11190,13 +11281,13 @@ var Generic = function () {
 			var sponsersWidth = sponsersItem.width() * (sponsersItem.length + 1) + 50;
 			(0, _jquery2.default)('.sponsers').css('width', sponsersWidth);
 		}
-	}, {
-		key: 'closeNav',
-		value: function closeNav() {
-			(0, _jquery2.default)(document.body).click(function () {
-				console.log('click on body');
-			});
-		}
+
+		// closeNav() {
+		// 	$(document.body).click(function() {
+		// 		console.log('click on body');
+		// 	});
+		// }
+
 
 		// changeImageOnHover() {
 		// 	$('.upcoming-events__background').hover(function() {
@@ -11214,7 +11305,7 @@ var Generic = function () {
 exports.default = Generic;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11262,7 +11353,7 @@ var MobileMenu = function () {
 exports.default = MobileMenu;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11323,7 +11414,7 @@ var Modal = function () {
 exports.default = Modal;
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11339,7 +11430,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _jqueryScrollify = __webpack_require__(12);
+var _jqueryScrollify = __webpack_require__(13);
 
 var _jqueryScrollify2 = _interopRequireDefault(_jqueryScrollify);
 
@@ -11410,7 +11501,7 @@ var PageScroll = function () {
 exports.default = PageScroll;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11517,7 +11608,7 @@ var RevealOnScroll = function () {
 exports.default = RevealOnScroll;
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11533,7 +11624,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _jqueryUiBundle = __webpack_require__(13);
+var _jqueryUiBundle = __webpack_require__(14);
 
 var _jqueryUiBundle2 = _interopRequireDefault(_jqueryUiBundle);
 
@@ -11596,8 +11687,8 @@ var Slider = function () {
 exports.default = Slider;
 
 /***/ }),
-/* 9 */,
-/* 10 */
+/* 10 */,
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11607,23 +11698,23 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _Generic = __webpack_require__(3);
+var _Generic = __webpack_require__(4);
 
 var _Generic2 = _interopRequireDefault(_Generic);
 
-var _MobileMenu = __webpack_require__(4);
+var _MobileMenu = __webpack_require__(5);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _PageScroll = __webpack_require__(6);
+var _PageScroll = __webpack_require__(7);
 
 var _PageScroll2 = _interopRequireDefault(_PageScroll);
 
-var _RevealOnScroll = __webpack_require__(7);
+var _RevealOnScroll = __webpack_require__(8);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
-var _Slider = __webpack_require__(8);
+var _Slider = __webpack_require__(9);
 
 var _Slider2 = _interopRequireDefault(_Slider);
 
@@ -11631,9 +11722,13 @@ var _ContentChange = __webpack_require__(2);
 
 var _ContentChange2 = _interopRequireDefault(_ContentChange);
 
-var _Modal = __webpack_require__(5);
+var _Modal = __webpack_require__(6);
 
 var _Modal2 = _interopRequireDefault(_Modal);
+
+var _Filter = __webpack_require__(3);
+
+var _Filter2 = _interopRequireDefault(_Filter);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11653,6 +11748,10 @@ new _ContentChange2.default((0, _jquery2.default)('#content-change .icon-wrapper
 // Handle Model components
 new _Modal2.default((0, _jquery2.default)('.open-modal'), (0, _jquery2.default)('.modal'));
 // new Modal( $('#open-book.open-modal'), $('#book-modal.modal') );
+
+// Activate Filter Script
+new _Filter2.default((0, _jquery2.default)('.months-calendar__month'));
+new _Filter2.default((0, _jquery2.default)('.filter__item'));
 
 // Generic Scripts
 new _Generic2.default();
@@ -11684,8 +11783,8 @@ new _Generic2.default();
 new _RevealOnScroll2.default();
 
 /***/ }),
-/* 11 */,
-/* 12 */
+/* 12 */,
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -12524,7 +12623,7 @@ if touchScroll is false - update index
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! jQuery UI - v1.12.1 - 2017-03-19

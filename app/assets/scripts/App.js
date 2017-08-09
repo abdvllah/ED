@@ -6,6 +6,7 @@ import RevealOnScroll from './modules/RevealOnScroll';
 import Slider from './modules/Slider';
 import ContentChange from './modules/ContentChange';
 import Modal from './modules/Modal';
+import Filter from './modules/Filter';
 
 // Handle Site Navigation
 new MobileMenu();
@@ -23,6 +24,10 @@ new ContentChange( $('#content-change .icon-wrapper__icon'), $('#content-change 
 // Handle Model components
 new Modal( $('.open-modal'), $('.modal') );
 // new Modal( $('#open-book.open-modal'), $('#book-modal.modal') );
+
+// Activate Filter Script
+new Filter( $('.months-calendar__month') );
+new Filter( $('.filter__item') );
 
 // Generic Scripts
 new Generic();

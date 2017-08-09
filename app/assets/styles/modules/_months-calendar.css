@@ -17,9 +17,11 @@
 		color: $black;
 		margin: 0.5%;
 		width: 32%;
+		cursor: pointer;
 
-		&:hover, .active {
+		&:hover, &.active {
 			background-color: $red;
+			color: #FFF;
 		}
 	}
 }

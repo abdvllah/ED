@@ -13,11 +13,11 @@ class Generic {
 		$('.sponsers').css('width', sponsersWidth);
 	}
 
-	closeNav() {
-		$(document.body).click(function() {
-			console.log('click on body');
-		});
-	}
+	// closeNav() {
+	// 	$(document.body).click(function() {
+	// 		console.log('click on body');
+	// 	});
+	// }
 
 
 	// changeImageOnHover() {
