@@ -11143,9 +11143,6 @@ var ContentChange = function () {
 				// console.log(who);
 			});
 		}
-	}, {
-		key: 'makeActive',
-		value: function makeActive() {}
 	}]);
 
 	return ContentChange;
@@ -11175,48 +11172,82 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Filter = function () {
-	function Filter(element) {
+	// The object will take two arguments
+	// First: The filter Item to be clickd
+	// Second: The affected filter results
+	function Filter(filterItem, results) {
 		_classCallCheck(this, Filter);
 
-		this.element = element;
-		//console.log(this.element);
-		// this.filterClick();
-		this.getSearchParams();
+		this.filterItem = filterItem;
+		this.results = results;
+		//console.log(this.filterItem);
+		this.filterClick();
+		// this.getSearchParams();
 	}
 
 	_createClass(Filter, [{
 		key: 'filterClick',
 		value: function filterClick() {
 			var that = this;
-			this.element.on('click', function () {
-				var thisElement = this;
-				(0, _jquery2.default)(that.element).removeClass('active');
-				(0, _jquery2.default)(thisElement).addClass('active');
+			this.filterItem.on('click', function () {
+				var thisfilterItem = this;
+				(0, _jquery2.default)(that.filterItem).removeClass('active');
+				(0, _jquery2.default)(thisfilterItem).addClass('active');
 
-				var who = (0, _jquery2.default)(thisElement).attr('data-who');
-				console.log(who);
+				var who = (0, _jquery2.default)(thisfilterItem).attr('data-who');
+				// console.log(who);
 
-				var filter = (0, _jquery2.default)(thisElement).attr('data-filter');
 
-				var param = document.location.search.substr(0);
-				console.log(param);
+				// Hide all results initially
+				that.results.parent().hide();
 
-				if (filter == 'month') {
-					// $.get("http://localhost:3000/page-upcoming.html?month=" + who);
-					// window.location.href = "http://localhost:3000/page-upcoming.html?month=" + who;
-					// document.location.replace("http://localhost:3000/page-upcoming.html?month=" + who);
-					document.location.search = "month=" + who;
-				} else if (filter == 'type') {
-					// document.location.replace("http://localhost:3000/page-upcoming.html?type=" + who);
-					document.location.search = "type=" + who;
-				}
+				// Go through each result item
+				that.results.each(function () {
 
-				// $.get("http://localhost:3000/page-upcoming.html?" + )
+					// point to current
+					var current = (0, _jquery2.default)(this);
 
-				// console.log(thisElement);
-				// $(that.element).removeClass('active');
-				// $(this).addClass('active');
+					// get the month data
+					var resultMonth = current.attr('data-month');
+					// get the type data
+					var resultType = current.attr('data-type');
+
+					// If the event month mached the clicked month, then show it
+					if (resultMonth == who) {
+						current.parent().fadeIn(1000);
+					}
+
+					// If the event month mached the clicked type, then show it
+					if (resultType == who) {
+						current.parent().fadeIn(1000);
+					}
+				}); // End results each
 			});
+
+			// var filter = $(thisElement).attr('data-filter');
+
+			// var param = document.location.search.substr(0);
+			// console.log(param);
+
+			// if(filter == 'month') {
+			// $.get("http://localhost:3000/page-upcoming.html?month=" + who);
+			// window.location.href = "http://localhost:3000/page-upcoming.html?month=" + who;
+			// document.location.replace("http://localhost:3000/page-upcoming.html?month=" + who);
+			// 	document.location.search = "month=" + who;
+			// }
+			// else if(filter == 'type') {
+			// document.location.replace("http://localhost:3000/page-upcoming.html?type=" + who);
+			// 	document.location.search = "type=" + who;
+			// }
+
+
+			// $.get("http://localhost:3000/page-upcoming.html?" + )
+
+			// console.log(thisElement);
+			// $(that.element).removeClass('active');
+			// $(this).addClass('active');
+
+			return false;
 		} // End Filter Click Function
 
 	}, {
@@ -11231,7 +11262,7 @@ var Filter = function () {
 	}, {
 		key: 'putSearchParams',
 		value: function putSearchParams() {
-			// Check if there is more thant param
+			// Check if there is more than one param
 
 			// Concatanate the string
 
@@ -11270,7 +11301,7 @@ var Generic = function () {
 		_classCallCheck(this, Generic);
 
 		this.setParentWidth();
-		this.closeNav();
+		// this.closeNav();
 		// this.changeImageOnHover();
 	}
 
@@ -11750,8 +11781,8 @@ new _Modal2.default((0, _jquery2.default)('.open-modal'), (0, _jquery2.default)(
 // new Modal( $('#open-book.open-modal'), $('#book-modal.modal') );
 
 // Activate Filter Script
-new _Filter2.default((0, _jquery2.default)('.months-calendar__month'));
-new _Filter2.default((0, _jquery2.default)('.filter__item'));
+new _Filter2.default((0, _jquery2.default)('.months-calendar__month, .filter__item'), (0, _jquery2.default)('.event-thumb'));
+// new Filter( $('.filter__item'), $('.event-thumb') );
 
 // Generic Scripts
 new _Generic2.default();

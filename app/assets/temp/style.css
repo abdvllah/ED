@@ -1817,6 +1817,7 @@ polygon:hover {
 .wrapper {
 	position: relative;
 	padding: 3%;
+	min-height: 1000px;
 	
 }
 

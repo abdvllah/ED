@@ -3,7 +3,7 @@ import $ from 'jquery';
 class Generic {
 	constructor() {
 		this.setParentWidth();
-		this.closeNav();
+		// this.closeNav();
 		// this.changeImageOnHover();
 	}
 

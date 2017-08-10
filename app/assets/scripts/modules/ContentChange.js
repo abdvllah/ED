@@ -30,10 +30,6 @@ class ContentChange {
 		});
 	}
 
-	makeActive() {
-
-	}
-
 }
 
 export default ContentChange;

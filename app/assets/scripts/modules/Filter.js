@@ -1,38 +1,74 @@
 import $ from 'jquery';
 
 class Filter {
-	constructor(element) {
-		this.element = element;
-		//console.log(this.element);
-		// this.filterClick();
-		this.getSearchParams();
+	// The object will take two arguments
+	// First: The filter Item to be clickd
+	// Second: The affected filter results
+	constructor(filterItem, results) {
+		this.filterItem = filterItem;
+		this.results = results;
+		//console.log(this.filterItem);
+		this.filterClick();
+		// this.getSearchParams();
 	}
 
 	filterClick() {
 		var that = this;
-		this.element.on('click', function() {
-			var thisElement = this;
-			$(that.element).removeClass('active');
-			$(thisElement).addClass('active');
+		this.filterItem.on('click', function() {
+			var thisfilterItem = this;
+			$(that.filterItem).removeClass('active');
+			$(thisfilterItem).addClass('active');
 
-			var who = $(thisElement).attr('data-who');
-			console.log(who);
+			var who = $(thisfilterItem).attr('data-who');
+			// console.log(who);
 
-			var filter = $(thisElement).attr('data-filter');
 
-			var param = document.location.search.substr(0);
-			console.log(param);
+			// Hide all results initially
+			that.results.parent().hide();
 
-			if(filter == 'month') {
+			// Go through each result item
+			that.results.each(function() {
+
+				// point to current
+				var current = $(this);
+
+				// get the month data
+				var resultMonth = current.attr('data-month');
+				// get the type data
+				var resultType = current.attr('data-type');
+
+				// If the event month mached the clicked month, then show it
+				if(resultMonth == who) {
+					current.parent().fadeIn(1000);
+				}
+
+				// If the event month mached the clicked type, then show it
+				if (resultType == who) {
+					current.parent().fadeIn(1000);
+				}
+  
+
+			}); // End results each
+
+		});
+
+
+
+			// var filter = $(thisElement).attr('data-filter');
+
+			// var param = document.location.search.substr(0);
+			// console.log(param);
+
+			// if(filter == 'month') {
 				// $.get("http://localhost:3000/page-upcoming.html?month=" + who);
 				// window.location.href = "http://localhost:3000/page-upcoming.html?month=" + who;
 				// document.location.replace("http://localhost:3000/page-upcoming.html?month=" + who);
-				document.location.search = "month=" + who;
-			}
-			else if(filter == 'type') {
+			// 	document.location.search = "month=" + who;
+			// }
+			// else if(filter == 'type') {
 				// document.location.replace("http://localhost:3000/page-upcoming.html?type=" + who);
-				document.location.search = "type=" + who;
-			}
+			// 	document.location.search = "type=" + who;
+			// }
 
 
 
@@ -42,7 +78,7 @@ class Filter {
 			// $(that.element).removeClass('active');
 			// $(this).addClass('active');
 
-		});
+			return false;
 	} // End Filter Click Function
 
 	getSearchParams() {
@@ -54,7 +90,7 @@ class Filter {
 	}
 
 	putSearchParams() {
-		// Check if there is more thant param
+		// Check if there is more than one param
 
 		// Concatanate the string
 

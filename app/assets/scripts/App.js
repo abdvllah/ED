@@ -26,8 +26,8 @@ new Modal( $('.open-modal'), $('.modal') );
 // new Modal( $('#open-book.open-modal'), $('#book-modal.modal') );
 
 // Activate Filter Script
-new Filter( $('.months-calendar__month') );
-new Filter( $('.filter__item') );
+new Filter( $('.months-calendar__month, .filter__item'), $('.event-thumb') );
+// new Filter( $('.filter__item'), $('.event-thumb') );
 
 // Generic Scripts
 new Generic();
