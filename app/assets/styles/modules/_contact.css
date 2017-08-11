@@ -1,7 +1,13 @@
 .contact {
 	&.lazyloaded {
-		background: url('../images/contact-back.png') top right no-repeat;
+		background: url('../images/contact-back.jp2') bottom right no-repeat;
 		background-size: contain;
 		background-color: lighten($black, .5);
-	}		
+
+		@mixin atMedium {
+			background: url('../images/contact-back-hi.jp2') top right no-repeat;
+			background-size: contain;
+			background-color: lighten($black, .5);
+		}
+	}
 }

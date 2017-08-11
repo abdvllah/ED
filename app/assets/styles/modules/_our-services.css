@@ -1,6 +1,6 @@
 .our-services {
 	&.lazyloaded {
-		background: url('../images/our-services-l.png') no-repeat top 30% left, url('../images/our-services-r.png') no-repeat bottom right;
+		background: url('../images/our-services-l.jp2') no-repeat top 30% left, url('../images/our-services-r.jp2') no-repeat bottom right;
 		background-size: 70% auto;
 		background-color: $black;
 	}
@@ -11,7 +11,7 @@
 
 	@mixin atMedium {
 		&.lazyloaded {
-			background: url('../images/our-services-l.png') no-repeat top left, url('../images/our-services-r.png') no-repeat top right;
+			background: url('../images/our-services-l-hi.jp2') no-repeat top left, url('../images/our-services-r-hi.jp2') no-repeat top right;
 			background-size: contain;
 			background-color: $black;
 		}

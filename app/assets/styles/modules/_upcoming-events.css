@@ -132,9 +132,13 @@
 	}
 
 	&__background {
-
-		background: url('../images/upcoming-b.png')  no-repeat top left;
+		background: url('../images/upcoming-b.jp2')  no-repeat top left;
 		background-size: contain;
+
+		@mixin atMedium {
+			background: url('../images/upcoming-b-hi.jp2')  no-repeat top left;
+			background-size: contain;
+		}
 
 		position: absolute;
 		bottom: 0;

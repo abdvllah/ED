@@ -1,5 +1,5 @@
 .large-hero {
-	background-image: url('../images/hero.png');
+	background-image: url('../images/hero.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -8,6 +8,7 @@
 
 
 	@mixin atMedium {
+		background-image: url('../images/hero-hi.jpg');
 		background-attachment: fixed;
 		background-position: 50% 50%;
 	}
