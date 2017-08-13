@@ -2,15 +2,18 @@
 	background-color: #FFF;
 	height: 450px;
 	margin: 20px 0;
+	position: relative;
 
 	@mixin atMedium {
 		margin: 1%;
 	}
 
 	&__image {
-		background-color: $black;
 		height: 70%;
 		width: 100%;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
 	}
 
 	&__info {
@@ -41,5 +44,12 @@
 			font-weight: bold;
 			text-decoration: underline;
 		}
+	}
+
+	&__button {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		width: 130px;
 	}
 }

@@ -28,7 +28,7 @@
 			display: block;
 			width: auto;
 			border: none;
-			height: 90px;
+			height: 70px;
 			margin: 100px 50px;
 			padding: 15px;
 			position: relative;
@@ -168,8 +168,9 @@
 		display: none;
 
 		@mixin atMedium {
-			font-size: 150%;
-			padding-top: 15px;
+			font-size: 120%;
+			padding-top: 25px;
+			font-weight: 100;
 			display: inline-block;
 		}
 		
