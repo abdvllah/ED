@@ -1,0 +1,49 @@
+.post {
+	padding: 20px;
+	border: 1px solid $backGray;
+	width: 100%;
+	margin: 20px auto;
+
+	@mixin atMedium {
+		padding: 50px;
+		border: 1px solid $backGray;
+		width: 80%;
+		margin: 50px auto;
+	}
+
+	&--single {
+		padding: 0;
+		border:none;
+		margin:0;
+		width: 100%;
+	}
+
+	&__banner {
+
+	}
+
+	&__title {
+		font-size: 250%;
+	}
+
+	&__info {
+
+	}
+
+	&__date {
+
+	}
+
+	&__author {
+		text-decoration: underline;
+	}
+
+	&__tags {
+
+		a {
+			text-decoration: underline;
+			color: lighten($red, .5);
+		}
+	}
+
+}

@@ -42,6 +42,7 @@
 @import "modules/_info";
 @import "modules/_banner-image";
 @import "modules/_breadcrumb";
+@import "modules/_post";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";

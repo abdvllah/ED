@@ -1252,8 +1252,9 @@ h1,h2,h3,h4,h5 {
 	font-family: "raleway", sans-serif;
 }
 
-a:link, a:visited {
+a {
 	text-decoration: none;
+	color: #272727;
 }
 
 a:hover {
@@ -2485,9 +2486,11 @@ form .checkbox input {
 		padding-left: 20px;
 	}
 
-.thumbnail__author span {
+.thumbnail__author a {
 			font-weight: bold;
 			text-decoration: underline;
+			color: rgb(82,82,82);
+
 		}
 
 .thumbnail__button {
@@ -2877,8 +2880,8 @@ form .checkbox input {
 	background-repeat: no-repeat;
 	background-position: 0% 50%;
 	background-size: auto 100%;
-	-webkit-transition: 1s all ease;
-	transition: 1s all ease;
+	-webkit-transition: 2s all ease;
+	transition: 2s all ease;
 
 }
 
@@ -2940,6 +2943,57 @@ form .checkbox input {
 				content: "";
 				display: inline-block;
 			}
+
+.post {
+	padding: 20px;
+	border: 1px solid #cfcfcf;
+	width: 100%;
+	margin: 20px auto;
+
+}
+
+@media (min-width: 800px) {
+
+.post {
+		padding: 50px;
+		border: 1px solid #cfcfcf;
+		width: 80%;
+		margin: 50px auto
+
+}
+	}
+
+.post--single {
+		padding: 0;
+		border:none;
+		margin:0;
+		width: 100%;
+	}
+
+.post__banner {
+
+	}
+
+.post__title {
+		font-size: 250%;
+	}
+
+.post__info {
+
+	}
+
+.post__date {
+
+	}
+
+.post__author {
+		text-decoration: underline;
+	}
+
+.post__tags a {
+			text-decoration: underline;
+			color: rgb(214,140,142);
+		}
 
 /* Home Page Sections Modules */
 
@@ -3254,7 +3308,6 @@ form .checkbox input {
 		top: 50%;
 		-webkit-transform: translateY(-50%);
 		        transform: translateY(-50%); 
-		color: #FFF;
 		font-size: 250%;
 		font-weight: 100;
 		text-transform: capitalize;
@@ -3283,6 +3336,7 @@ form .checkbox input {
 			padding-left: 10%;
 			padding-right: 50%;
 			top: 40%;
+			color: #FFF;
 		}
 
 @media (min-width: 800px) {
@@ -3298,6 +3352,7 @@ form .checkbox input {
 			padding-right: 10%;
 			padding-left: 50%;
 			top: 80%;
+			color: #FFF;
 		}
 
 @media (min-width: 800px) {

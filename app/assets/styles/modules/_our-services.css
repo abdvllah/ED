@@ -32,7 +32,6 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%); 
-		color: #FFF;
 		font-size: 250%;
 		font-weight: 100;
 		text-transform: capitalize;
@@ -56,6 +55,7 @@
 			padding-left: 10%;
 			padding-right: 50%;
 			top: 40%;
+			color: #FFF;
 
 			@mixin atMedium {
 				padding-right: 25%;
@@ -68,6 +68,7 @@
 			padding-right: 10%;
 			padding-left: 50%;
 			top: 80%;
+			color: #FFF;
 
 			@mixin atMedium {
 				padding-left: 25%;

@@ -40,9 +40,12 @@
 		color: lighten($black, .5);
 		padding-left: 20px;
 
-		span {
+
+		a {
 			font-weight: bold;
 			text-decoration: underline;
+			color: lighten($black, .2);
+
 		}
 	}
 
