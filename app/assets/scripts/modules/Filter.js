@@ -7,9 +7,8 @@ class Filter {
 	constructor(filterItem, results) {
 		this.filterItem = filterItem;
 		this.results = results;
-		//console.log(this.filterItem);
 		this.filterClick();
-		// this.getSearchParams();
+		this.clearClick();
 	}
 
 	filterClick() {
@@ -53,7 +52,6 @@ class Filter {
 		});
 
 
-
 			// var filter = $(thisElement).attr('data-filter');
 
 			// var param = document.location.search.substr(0);
@@ -80,6 +78,15 @@ class Filter {
 
 			return false;
 	} // End Filter Click Function
+
+
+	clearClick() {
+		var that = this;
+		$('.filter button').click(function() {
+			$(that.filterItem).removeClass('active');
+			that.results.parent().show();
+		});
+	}
 
 	getSearchParams() {
 		// Get the string

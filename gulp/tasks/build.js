@@ -42,11 +42,11 @@ gulp.task('copyGeneralFiles', ['deletDistFolder'], function() {
 
 gulp.task('optimizeImages', ['deletDistFolder'], function() {
 	return gulp.src(['./app/assets/images/**/*'])
-	.pipe(imagemin({
-		progressive: true,
-		interlaced: true,
-		multipass: true
-	}))
+	// .pipe(imagemin({
+	// 	progressive: true,
+	// 	interlaced: true,
+	// 	multipass: true
+	// }))
 	.pipe(gulp.dest("./dist/assets/images"));
 });
 

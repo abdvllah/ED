@@ -2150,6 +2150,7 @@ form .checkbox input {
 	-webkit-transition: all 1s cubic-bezier(0, 0.79, 0.96, 0.69);
 	transition: all 1s cubic-bezier(0, 0.79, 0.96, 0.69);
 	font-size: 110%;
+	border: none;
 }
 
 @media (min-width: 800px) {
@@ -2199,6 +2200,15 @@ form .checkbox input {
 			margin-top: 30px
 	}
 	}
+
+.button--full-width {
+		width: 100%;
+	}
+
+.button--full-width:hover {
+			-webkit-transform: scale(1.1);
+			        transform: scale(1.1);
+		}
 
 .flex-wrapper {
 	display: block;
@@ -2441,7 +2451,7 @@ form .checkbox input {
 
 .thumbnail {
 	background-color: #FFF;
-	height: 450px;
+	height: 400px;
 	margin: 20px 0;
 	position: relative;
 }
@@ -2449,7 +2459,8 @@ form .checkbox input {
 @media (min-width: 800px) {
 
 .thumbnail {
-		margin: 1%
+		margin: 1%;
+		height: 520px
 }
 	}
 
@@ -2506,6 +2517,8 @@ form .checkbox input {
 	padding: 20px;
 	-webkit-transition: all .4s ease;
 	transition: all .4s ease;
+	height: 400px;
+	overflow: hidden;
 
 	
 }
@@ -2582,8 +2595,15 @@ form .checkbox input {
 		background-color: #FFF;
 		color: #272727;
 		margin: 0.5%;
-		width: 32%;
+		width: 49%;
 		cursor: pointer;
+	}
+
+@media (min-width: 800px) {
+
+.months-calendar__month {
+			width: 32%
+	}
 	}
 
 .months-calendar__month:hover, .months-calendar__month.active {

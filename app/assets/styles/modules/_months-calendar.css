@@ -16,8 +16,12 @@
 		background-color: #FFF;
 		color: $black;
 		margin: 0.5%;
-		width: 32%;
+		width: 49%;
 		cursor: pointer;
+
+		@mixin atMedium {
+			width: 32%;
+		}
 
 		&:hover, &.active {
 			background-color: $red;

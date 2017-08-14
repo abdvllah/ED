@@ -1,11 +1,12 @@
 .thumbnail {
 	background-color: #FFF;
-	height: 450px;
+	height: 400px;
 	margin: 20px 0;
 	position: relative;
 
 	@mixin atMedium {
 		margin: 1%;
+		height: 520px;
 	}
 
 	&__image {

@@ -11180,9 +11180,8 @@ var Filter = function () {
 
 		this.filterItem = filterItem;
 		this.results = results;
-		//console.log(this.filterItem);
 		this.filterClick();
-		// this.getSearchParams();
+		this.clearClick();
 	}
 
 	_createClass(Filter, [{
@@ -11250,6 +11249,16 @@ var Filter = function () {
 			return false;
 		} // End Filter Click Function
 
+
+	}, {
+		key: 'clearClick',
+		value: function clearClick() {
+			var that = this;
+			(0, _jquery2.default)('.filter button').click(function () {
+				(0, _jquery2.default)(that.filterItem).removeClass('active');
+				that.results.parent().show();
+			});
+		}
 	}, {
 		key: 'getSearchParams',
 		value: function getSearchParams() {
