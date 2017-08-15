@@ -4,25 +4,29 @@ import jqueryUi from 'jquery-ui-bundle';
 class Slider {
 	constructor(sliderID) {
 		this.sliderWrapper = sliderID;
-		// console.log(this.sliderWrapper);
-		this.trigger = $(this.sliderWrapper).children('.next');
-		// console.log(this.trigger);
+		this.next = $(this.sliderWrapper).children('.next');
+		this.prev = $(this.sliderWrapper).children('.prev');
 		this.sliders = $(this.sliderWrapper).children('.slide');
-		// console.log(this.sliders);
 		this.events();
 		this.count = 1;
+		console.log(this.count);
 	}
 
 	events() {
-		this.trigger.on('click', this.showNext.bind(this));
+		this.next.on('click', this.showNext.bind(this));
+		this.prev.on('click', this.showPrev.bind(this));
 	}
 
 	showNext() {
-		this.trigger.prop('disabled', true);
-		this.count++;
+		console.log(this.count);
+		var nextBtn = this.next;
 
 		// if last sibling not reached yet
-		if (this.count <= this.sliders.length) {
+		if (this.count < this.sliders.length) {
+			this.count++;
+			// this.next.prop('disabled', true);
+			nextBtn.css('pointer-events','none');
+
 			// Get the next element from visible
 			var next = $('.slide--visible').next('.slide');
 
@@ -31,21 +35,58 @@ class Slider {
 
 			$(next).addClass('slide--visible')
 			.show("slide", { time: 3, distance: 50 }, 1300, function(){
-				$('.slider-wrapper .next').prop('disabled', false);
+				// $('.slider-wrapper .next').prop('disabled', false);
+				nextBtn.css('pointer-events','auto');
 			});
 		}
 		// If we reach last sibling, we select the first to make a circle
-		else {
-			this.count = 1;
-			this.sliders.removeClass('slide--visible').hide();
+		// else {
+		// 	this.count = 1;
+		// 	this.sliders.removeClass('slide--visible').hide();
 
-			$('.slide:first').addClass('slide--visible')
-			.show("slide", { time: 3, distance: 50 }, 1300, function() {
-				$('.slider-wrapper .next').prop('disabled', false);
-			});
+		// 	$('.slide:first').addClass('slide--visible')
+		// 	.show("slide", { time: 3, distance: 50 }, 1300, function() {
+		// 		$('.slider-wrapper .next').prop('disabled', false);
+		// 	});
+		// 	}
+
 		}
 
-	}
+		showPrev() {
+			console.log(this.count);
+			var prevBtn = this.prev;
+
+			// if last sibling not reached yet
+			if (this.count > 1) {
+				this.count--;
+				// this.prev.prop('disabled', true);
+				prevBtn.css('pointer-events','none');
+
+				// Get the next element from visible
+				var prev = $('.slide--visible').prev('.slide');
+
+				// Remove class from all siblings and hide them
+				this.sliders.removeClass('slide--visible').hide();
+
+				$(prev).addClass('slide--visible')
+				.show("slide", { time: 3, distance: 50 }, 1300, function(){
+					// $('.slider-wrapper .prev').prop('disabled', false);
+					prevBtn.css('pointer-events','auto');
+
+				});
+			}
+			// If we reach last sibling, we select the first to make a circle
+			// else {
+			// 	this.count = 1;
+			// 	this.sliders.removeClass('slide--visible').hide();
+
+			// 	$('.slide:first').addClass('slide--visible')
+			// 	.show("slide", { time: 3, distance: 50 }, 1300, function() {
+			// 		$('.slider-wrapper .next').prop('disabled', false);
+			// 	});
+			// }
+
+		}
 
 }
 

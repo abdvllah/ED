@@ -1853,6 +1853,8 @@ polygon:hover {
 	overflow: hidden;
 	height: 100%;
 	position: relative;
+
+
 }
 
 .slider-wrapper .slide {
@@ -1876,7 +1878,7 @@ polygon:hover {
 			height: 100%;
 		}
 
-.slider-wrapper .next {
+.slider-wrapper .next, .slider-wrapper .prev {
 		background-color: transparent;
 		border: 0;
 		padding: 0;
@@ -1885,27 +1887,49 @@ polygon:hover {
 		height: 0;
 		border-top: 18px solid transparent;
 		border-bottom: 18px solid transparent;
-		border-left: 18px solid #ad191d;
 		position: absolute;
-		bottom: 50%;
-		right: 10%;
-		-webkit-transform: translateX(-50%);
-		        transform: translateX(-50%);
+		bottom: 30%;
 		cursor: pointer;
 		-webkit-transition: -webkit-transform .4s ease-out;
 		transition: -webkit-transform .4s ease-out;
 		transition: transform .4s ease-out;
 		transition: transform .4s ease-out, -webkit-transform .4s ease-out;
+	}
 
+@media (min-width: 800px) {
+
+.slider-wrapper .next, .slider-wrapper .prev {
+			border-top: 25px solid transparent;
+			border-bottom: 25px solid transparent;
+			bottom: 50%
+	}
+	}
+
+.slider-wrapper .next {
+		border-left: 18px solid #ad191d;
+		right: 4%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 	}
 
 @media (min-width: 800px) {
 
 .slider-wrapper .next {
-			border-top: 25px solid transparent;
-			border-bottom: 25px solid transparent;
 			border-left: 25px solid #ad191d
+	}
+	}
 
+.slider-wrapper .prev {
+		border-right: 18px solid #ad191d;
+		left: 4%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
+
+@media (min-width: 800px) {
+
+.slider-wrapper .prev {
+			border-right: 25px solid #ad191d
 	}
 	}
 
@@ -3530,7 +3554,7 @@ form .checkbox input {
 	height: 90%;
 	position: relative;
 	padding-top: 10%;
-	margin:0;
+	margin:0 auto;
 }
 
 @media (min-width: 800px) {

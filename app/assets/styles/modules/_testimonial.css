@@ -3,7 +3,7 @@
 	height: 90%;
 	position: relative;
 	padding-top: 10%;
-	margin:0;
+	margin:0 auto;
 
 	@mixin atMedium {
 		padding: 8% 5%;

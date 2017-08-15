@@ -11677,28 +11677,32 @@ var Slider = function () {
 		_classCallCheck(this, Slider);
 
 		this.sliderWrapper = sliderID;
-		// console.log(this.sliderWrapper);
-		this.trigger = (0, _jquery2.default)(this.sliderWrapper).children('.next');
-		// console.log(this.trigger);
+		this.next = (0, _jquery2.default)(this.sliderWrapper).children('.next');
+		this.prev = (0, _jquery2.default)(this.sliderWrapper).children('.prev');
 		this.sliders = (0, _jquery2.default)(this.sliderWrapper).children('.slide');
-		// console.log(this.sliders);
 		this.events();
 		this.count = 1;
+		console.log(this.count);
 	}
 
 	_createClass(Slider, [{
 		key: 'events',
 		value: function events() {
-			this.trigger.on('click', this.showNext.bind(this));
+			this.next.on('click', this.showNext.bind(this));
+			this.prev.on('click', this.showPrev.bind(this));
 		}
 	}, {
 		key: 'showNext',
 		value: function showNext() {
-			this.trigger.prop('disabled', true);
-			this.count++;
+			console.log(this.count);
+			var nextBtn = this.next;
 
 			// if last sibling not reached yet
-			if (this.count <= this.sliders.length) {
+			if (this.count < this.sliders.length) {
+				this.count++;
+				// this.next.prop('disabled', true);
+				nextBtn.css('pointer-events', 'none');
+
 				// Get the next element from visible
 				var next = (0, _jquery2.default)('.slide--visible').next('.slide');
 
@@ -11706,18 +11710,54 @@ var Slider = function () {
 				this.sliders.removeClass('slide--visible').hide();
 
 				(0, _jquery2.default)(next).addClass('slide--visible').show("slide", { time: 3, distance: 50 }, 1300, function () {
-					(0, _jquery2.default)('.slider-wrapper .next').prop('disabled', false);
+					// $('.slider-wrapper .next').prop('disabled', false);
+					nextBtn.css('pointer-events', 'auto');
 				});
 			}
 			// If we reach last sibling, we select the first to make a circle
-			else {
-					this.count = 1;
-					this.sliders.removeClass('slide--visible').hide();
+			// else {
+			// 	this.count = 1;
+			// 	this.sliders.removeClass('slide--visible').hide();
 
-					(0, _jquery2.default)('.slide:first').addClass('slide--visible').show("slide", { time: 3, distance: 50 }, 1300, function () {
-						(0, _jquery2.default)('.slider-wrapper .next').prop('disabled', false);
-					});
-				}
+			// 	$('.slide:first').addClass('slide--visible')
+			// 	.show("slide", { time: 3, distance: 50 }, 1300, function() {
+			// 		$('.slider-wrapper .next').prop('disabled', false);
+			// 	});
+			// 	}
+		}
+	}, {
+		key: 'showPrev',
+		value: function showPrev() {
+			console.log(this.count);
+			var prevBtn = this.prev;
+
+			// if last sibling not reached yet
+			if (this.count > 1) {
+				this.count--;
+				// this.prev.prop('disabled', true);
+				prevBtn.css('pointer-events', 'none');
+
+				// Get the next element from visible
+				var prev = (0, _jquery2.default)('.slide--visible').prev('.slide');
+
+				// Remove class from all siblings and hide them
+				this.sliders.removeClass('slide--visible').hide();
+
+				(0, _jquery2.default)(prev).addClass('slide--visible').show("slide", { time: 3, distance: 50 }, 1300, function () {
+					// $('.slider-wrapper .prev').prop('disabled', false);
+					prevBtn.css('pointer-events', 'auto');
+				});
+			}
+			// If we reach last sibling, we select the first to make a circle
+			// else {
+			// 	this.count = 1;
+			// 	this.sliders.removeClass('slide--visible').hide();
+
+			// 	$('.slide:first').addClass('slide--visible')
+			// 	.show("slide", { time: 3, distance: 50 }, 1300, function() {
+			// 		$('.slider-wrapper .next').prop('disabled', false);
+			// 	});
+			// }
 		}
 	}]);
 

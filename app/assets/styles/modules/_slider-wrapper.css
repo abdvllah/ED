@@ -24,7 +24,7 @@
 		}
 	}
 
-	.next {
+	.next, .prev {
 		background-color: transparent;
 		border: 0;
 		padding: 0;
@@ -33,19 +33,37 @@
 		height: 0;
 		border-top: 18px solid transparent;
 		border-bottom: 18px solid transparent;
-		border-left: 18px solid $red;
 		position: absolute;
-		bottom: 50%;
-		right: 10%;
-		transform: translateX(-50%);
+		bottom: 30%;
 		cursor: pointer;
 		transition: transform .4s ease-out;
 
 		@mixin atMedium {
 			border-top: 25px solid transparent;
 			border-bottom: 25px solid transparent;
+			bottom: 50%;
+		}
+	}
+
+	.next {
+		border-left: 18px solid $red;
+		right: 4%;
+		transform: translateX(-50%);
+
+		@mixin atMedium {
 			border-left: 25px solid $red;
 		}
-
 	}
+
+	.prev {
+		border-right: 18px solid $red;
+		left: 4%;
+		transform: translateX(-50%);
+
+		@mixin atMedium {
+			border-right: 25px solid $red;
+		}
+	}
+
+
 }
