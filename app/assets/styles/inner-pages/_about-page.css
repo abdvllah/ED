@@ -24,7 +24,7 @@ background-color: #FFF;
 
 		@mixin atMedium {
 			display: inline-block;
-			vertical-align: middle;
+			vertical-align: top;
 			width: 32%;
 			padding-right: 4%;
 		}

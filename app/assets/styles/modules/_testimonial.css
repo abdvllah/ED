@@ -93,7 +93,7 @@
 		}
 	}
 
-	&__name {
+	&__info {
 		position: relative;
 		right: 0%;
 		font-size: 120%;
@@ -129,5 +129,10 @@
 				height: 50px;
 			}
 		}*/
+	}
+
+	&__nationality {
+		font-weight: 100;
+		font-size: 80%;
 	}
 }

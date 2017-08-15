@@ -3638,7 +3638,7 @@ form .checkbox input {
 		}
 	}
 
-.testimonial__name {
+.testimonial__info {
 		position: relative;
 		right: 0%;
 		font-size: 120%;
@@ -3665,7 +3665,7 @@ form .checkbox input {
 
 @media (min-width: 800px) {
 
-.testimonial__name {
+.testimonial__info {
 			position: absolute;
 			width: 300px;
 			right: 8%;
@@ -3674,10 +3674,15 @@ form .checkbox input {
 	}
 	}
 
-.testimonial__name span {
+.testimonial__info span {
 			display: inline-block;
 			vertical-align: middle;
 		}
+
+.testimonial__nationality {
+		font-weight: 100;
+		font-size: 80%;
+	}
 
 .team__title {
 		color: #272727;
@@ -4042,7 +4047,7 @@ background-color: #FFF;
 
 .about-page .vision, .about-page .mission, .about-page .logo {
 			display: inline-block;
-			vertical-align: middle;
+			vertical-align: top;
 			width: 32%;
 			padding-right: 4%
 	}
