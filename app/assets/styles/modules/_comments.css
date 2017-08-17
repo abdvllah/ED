@@ -1,0 +1,42 @@
+.comments {
+	margin-top: 50px;
+
+	h4 {
+		font-size: 150%;
+	}
+
+	.comment {
+		list-style: none;
+		background-color: lighten($red, .95);
+		padding: 15px;
+		margin-bottom: 30px;
+
+		.avatar {
+			margin: 0 10px;
+		}
+
+		.comment-body {
+			padding: 20px;
+		}
+
+		.comment-meta {
+			padding: 5px;
+			font-size: 80%;
+		}
+
+		p {
+/*			background-color: lighten($black, .8);
+*/			color: $black;
+			padding: 5px;
+			font-weight: 600;
+		}
+
+		.comment-reply-link {
+			color: #FFF;
+			background-color: $black;
+			padding: 5px;
+		}
+	}
+
+
+}

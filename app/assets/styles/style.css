@@ -21,7 +21,7 @@
 @import "modules/_wrapper";
 @import "modules/_slider-wrapper";
 @import "modules/_title";
-@import "modules/_photo";
+/*@import "modules/_photo";*/
 @import "modules/_quote";
 @import "modules/_form";
 @import "modules/_heading";
@@ -43,6 +43,8 @@
 @import "modules/_banner-image";
 @import "modules/_breadcrumb";
 @import "modules/_post";
+@import "modules/_comments";
+@import "modules/_comment-respond";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";

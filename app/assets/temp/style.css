@@ -1986,13 +1986,7 @@ polygon:hover {
 		padding-bottom: 5%;
 	}
 
-.photo {
-	width: 120px;
-	height: 120px;
-	background-color: gray;
-	-webkit-transform: rotate(45deg);
-	        transform: rotate(45deg);
-}
+/*@import "modules/_photo";*/
 
 .quote {
 	font-size: 18px;
@@ -3038,6 +3032,77 @@ form .checkbox input {
 			text-decoration: underline;
 			color: rgb(214,140,142);
 		}
+
+.comments {
+	margin-top: 50px;
+
+
+}
+
+.comments h4 {
+		font-size: 150%;
+	}
+
+.comments .comment {
+		list-style: none;
+		background-color: rgb(251,244,244);
+		padding: 15px;
+		margin-bottom: 30px;
+	}
+
+.comments .comment .avatar {
+			margin: 0 10px;
+		}
+
+.comments .comment .comment-body {
+			padding: 20px;
+		}
+
+.comments .comment .comment-meta {
+			padding: 5px;
+			font-size: 80%;
+		}
+
+.comments .comment p {
+/*			background-color: lighten($black, .8);
+*/			color: #272727;
+			padding: 5px;
+			font-weight: 600;
+		}
+
+.comments .comment .comment-reply-link {
+			color: #FFF;
+			background-color: #272727;
+			padding: 5px;
+		}
+
+.comment-respond {
+	padding: 20px;
+}
+
+.comment-respond .comment-reply-title {
+		font-size: 200%;
+	}
+
+.comment-respond form label {
+			position: relative;
+			left: 0;
+			display: block;
+			color: #ad191d;
+		}
+
+.comment-respond form .form-submit input {
+				background-color: #ad191d;
+				padding: 10px;
+				height: 35px;
+				-webkit-transition: all ease .4s;
+				transition: all ease .4s;
+			}
+
+.comment-respond form .form-submit input:hover {
+					-webkit-transform: scale(1.1);
+					        transform: scale(1.1);
+				}
 
 /* Home Page Sections Modules */
 

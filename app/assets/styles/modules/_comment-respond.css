@@ -1,0 +1,29 @@
+.comment-respond {
+	padding: 20px;
+
+	.comment-reply-title {
+		font-size: 200%;
+	}
+
+	form {
+		label {
+			position: relative;
+			left: 0;
+			display: block;
+			color: $red;
+		}
+
+		.form-submit {
+			input {
+				background-color: $red;
+				padding: 10px;
+				height: 35px;
+				transition: all ease .4s; 
+
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
