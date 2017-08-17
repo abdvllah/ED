@@ -3,6 +3,7 @@ import $ from 'jquery';
 class Generic {
 	constructor() {
 		this.setParentWidth();
+		this.addActiveState();
 		// this.closeNav();
 		// this.changeImageOnHover();
 	}
@@ -13,20 +14,11 @@ class Generic {
 		$('.sponsers').css('width', sponsersWidth);
 	}
 
-	// closeNav() {
-	// 	$(document.body).click(function() {
-	// 		console.log('click on body');
-	// 	});
-	// }
+	addActiveState() {
+		$('.pillow:first-of-type').addClass('active');
+		$('.team-member:first-of-type').addClass('active')
+	}
 
-
-	// changeImageOnHover() {
-	// 	$('.upcoming-events__background').hover(function() {
-	// 		console.log('From hover');
-	// 		$(this).attr('src', 'assets/upcoming.png');
-	// 	});
-
-	// }
 	
 }
 

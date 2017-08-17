@@ -3866,7 +3866,7 @@ form .checkbox input {
 
 }
 
-.team-member--visible {
+.team-member.active {
 		display: block;
 	}
 

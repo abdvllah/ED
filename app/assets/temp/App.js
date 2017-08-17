@@ -11310,6 +11310,7 @@ var Generic = function () {
 		_classCallCheck(this, Generic);
 
 		this.setParentWidth();
+		this.addActiveState();
 		// this.closeNav();
 		// this.changeImageOnHover();
 	}
@@ -11321,22 +11322,12 @@ var Generic = function () {
 			var sponsersWidth = sponsersItem.width() * (sponsersItem.length + 1) + 50;
 			(0, _jquery2.default)('.sponsers').css('width', sponsersWidth);
 		}
-
-		// closeNav() {
-		// 	$(document.body).click(function() {
-		// 		console.log('click on body');
-		// 	});
-		// }
-
-
-		// changeImageOnHover() {
-		// 	$('.upcoming-events__background').hover(function() {
-		// 		console.log('From hover');
-		// 		$(this).attr('src', 'assets/upcoming.png');
-		// 	});
-
-		// }
-
+	}, {
+		key: 'addActiveState',
+		value: function addActiveState() {
+			(0, _jquery2.default)('.pillow:first-of-type').addClass('active');
+			(0, _jquery2.default)('.team-member:first-of-type').addClass('active');
+		}
 	}]);
 
 	return Generic;
