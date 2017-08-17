@@ -53,6 +53,11 @@
 		@mixin atMedium {
 			border-left: 25px solid $red;
 		}
+
+		&.disable {
+			border-left-color: $black;
+			pointer-events: none !important;
+		}
 	}
 
 	.prev {
@@ -62,6 +67,11 @@
 
 		@mixin atMedium {
 			border-right: 25px solid $red;
+		}
+
+		&.disable {
+			border-right-color: $black;
+			pointer-events: none !important;
 		}
 	}
 

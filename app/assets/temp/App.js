@@ -11677,87 +11677,104 @@ var Slider = function () {
 		_classCallCheck(this, Slider);
 
 		this.sliderWrapper = sliderID;
+
+		// Get next button
 		this.next = (0, _jquery2.default)(this.sliderWrapper).children('.next');
+
+		// Get previous button
 		this.prev = (0, _jquery2.default)(this.sliderWrapper).children('.prev');
+
+		// Get the slider elements
 		this.sliders = (0, _jquery2.default)(this.sliderWrapper).children('.slide');
+
 		this.events();
+
+		// Set the slider index count at first 'oviously'
 		this.count = 1;
-		console.log(this.count);
+
+		// In first slider you can't go previous 'oviously'
+		this.prev.addClass('disable');
 	}
 
 	_createClass(Slider, [{
 		key: 'events',
 		value: function events() {
+			// Add click events to buttons
 			this.next.on('click', this.showNext.bind(this));
 			this.prev.on('click', this.showPrev.bind(this));
 		}
+
+		// Handle next button click event
+
 	}, {
 		key: 'showNext',
 		value: function showNext() {
-			console.log(this.count);
+
+			// Next button variable
 			var nextBtn = this.next;
+
+			// If next is clicked we can go to previous :)
+			this.prev.removeClass('disable');
 
 			// if last sibling not reached yet
 			if (this.count < this.sliders.length) {
+				// Track slide index
 				this.count++;
-				// this.next.prop('disabled', true);
+
+				// disable until the function finished
 				nextBtn.css('pointer-events', 'none');
 
-				// Get the next element from visible
+				// Get the next element, it will be after the current visible element
 				var next = (0, _jquery2.default)('.slide--visible').next('.slide');
 
 				// Remove class from all siblings and hide them
 				this.sliders.removeClass('slide--visible').hide();
 
+				// Show the next element and give it a class
 				(0, _jquery2.default)(next).addClass('slide--visible').show("slide", { time: 3, distance: 50 }, 1300, function () {
-					// $('.slider-wrapper .next').prop('disabled', false);
 					nextBtn.css('pointer-events', 'auto');
 				});
-			}
-			// If we reach last sibling, we select the first to make a circle
-			// else {
-			// 	this.count = 1;
-			// 	this.sliders.removeClass('slide--visible').hide();
 
-			// 	$('.slide:first').addClass('slide--visible')
-			// 	.show("slide", { time: 3, distance: 50 }, 1300, function() {
-			// 		$('.slider-wrapper .next').prop('disabled', false);
-			// 	});
-			// 	}
+				// We will check if last element was reach we disable the next button
+				if (this.count == this.sliders.length) {
+					nextBtn.addClass('disable');
+				}
+			}
 		}
 	}, {
 		key: 'showPrev',
 		value: function showPrev() {
-			console.log(this.count);
+			// Previous button variable
 			var prevBtn = this.prev;
+
+			// If previous is clicked we can go to next :)
+			this.next.removeClass('disable');
 
 			// if last sibling not reached yet
 			if (this.count > 1) {
+				// Track slide index
 				this.count--;
-				// this.prev.prop('disabled', true);
+
+				// disable until the function finished
 				prevBtn.css('pointer-events', 'none');
 
-				// Get the next element from visible
+				// Get the previous element, it will be before the current visible element
 				var prev = (0, _jquery2.default)('.slide--visible').prev('.slide');
 
 				// Remove class from all siblings and hide them
 				this.sliders.removeClass('slide--visible').hide();
 
+				// Show the previous element and give it a class
 				(0, _jquery2.default)(prev).addClass('slide--visible').show("slide", { time: 3, distance: 50 }, 1300, function () {
 					// $('.slider-wrapper .prev').prop('disabled', false);
 					prevBtn.css('pointer-events', 'auto');
 				});
-			}
-			// If we reach last sibling, we select the first to make a circle
-			// else {
-			// 	this.count = 1;
-			// 	this.sliders.removeClass('slide--visible').hide();
 
-			// 	$('.slide:first').addClass('slide--visible')
-			// 	.show("slide", { time: 3, distance: 50 }, 1300, function() {
-			// 		$('.slider-wrapper .next').prop('disabled', false);
-			// 	});
-			// }
+				// We will check if first element was reach we disable the previous button
+				if (this.count == 1) {
+					this.prev.addClass('disable');
+				}
+			}
 		}
 	}]);
 

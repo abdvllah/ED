@@ -1919,6 +1919,11 @@ polygon:hover {
 	}
 	}
 
+.slider-wrapper .next.disable {
+			border-left-color: #272727;
+			pointer-events: none !important;
+		}
+
 .slider-wrapper .prev {
 		border-right: 18px solid #ad191d;
 		left: 4%;
@@ -1932,6 +1937,11 @@ polygon:hover {
 			border-right: 25px solid #ad191d
 	}
 	}
+
+.slider-wrapper .prev.disable {
+			border-right-color: #272727;
+			pointer-events: none !important;
+		}
 
 .title {
 	color: #FFF;
