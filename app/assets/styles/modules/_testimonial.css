@@ -3,12 +3,12 @@
 	height: 90%;
 	position: relative;
 	padding-top: 10%;
-	margin:0 auto;
+	margin:auto;
 
 	@mixin atMedium {
 		padding: 2% 6%;
 		width: 100%;
-		margin-top: 1%;
+		margin: auto;
 	}
 
 	&__photo {
@@ -21,7 +21,8 @@
 
 		@mixin atMedium {
 			width: 30%;
-			margin: 0;
+			height: auto;
+			margin: auto 0;
 			display: inline-block;
 			vertical-align: middle;
 		}
@@ -38,10 +39,11 @@
 		@mixin atMedium {
 			display: inline-block;
 			vertical-align: middle;
-			width: 50%;
-			margin: 0 0 0 7%;
+			width: 55%;
+			margin: auto 0 auto 7%;
 			padding-top:0;
 			line-height: 1.5;
+			text-align: justify;
 		}
 
 		&::before {
@@ -49,17 +51,27 @@
 			content: "";
 			display: block;
 			left: -8%;
-			top: -5%;
+			top: -10%;
 			background: url('../images/left-q.png') top left no-repeat;
 			background-size: contain;
+
+			@mixin atMedium {
+				left: -10%;
+				top: -20%;
+			}
 		}
 		&::after {
 			/*content: "”";*/
 			content: "";
 			background: url('../images/right-q.png') top left no-repeat;
 			background-size: contain;
-			right: -5%;
-			bottom: -15%;
+			right: -8%;
+			bottom: -10%;
+
+			@mixin atMedium {
+				right: -10%;
+				bottom: -20%;
+			}
 		}
 		&::before, &::after {
 			display: block;

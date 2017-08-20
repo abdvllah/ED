@@ -1868,6 +1868,15 @@ polygon:hover {
 			display: block;
 		}
 
+@media (min-width: 800px) {
+
+.slider-wrapper .slide--visible {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex
+		}
+	}
+
 .slider-wrapper--narrow {
 		width: 70%;
 		overflow: scroll;
@@ -3630,7 +3639,7 @@ form .checkbox input {
 	height: 90%;
 	position: relative;
 	padding-top: 10%;
-	margin:0 auto;
+	margin:auto;
 }
 
 @media (min-width: 800px) {
@@ -3638,7 +3647,7 @@ form .checkbox input {
 .testimonial {
 		padding: 2% 6%;
 		width: 100%;
-		margin-top: 1%
+		margin: auto
 }
 	}
 
@@ -3655,7 +3664,8 @@ form .checkbox input {
 
 .testimonial__photo {
 			width: 30%;
-			margin: 0;
+			height: auto;
+			margin: auto 0;
 			display: inline-block;
 			vertical-align: middle
 	}
@@ -3675,10 +3685,11 @@ form .checkbox input {
 .testimonial__text {
 			display: inline-block;
 			vertical-align: middle;
-			width: 50%;
-			margin: 0 0 0 7%;
+			width: 55%;
+			margin: auto 0 auto 7%;
 			padding-top:0;
-			line-height: 1.5
+			line-height: 1.5;
+			text-align: justify
 	}
 	}
 
@@ -3687,19 +3698,35 @@ form .checkbox input {
 			content: "";
 			display: block;
 			left: -8%;
-			top: -5%;
+			top: -10%;
 			background: url('../images/left-q.png') top left no-repeat;
 			background-size: contain;
 		}
+
+@media (min-width: 800px) {
+
+.testimonial__text::before {
+				left: -10%;
+				top: -20%
+		}
+	}
 
 .testimonial__text::after {
 			/*content: "”";*/
 			content: "";
 			background: url('../images/right-q.png') top left no-repeat;
 			background-size: contain;
-			right: -5%;
-			bottom: -15%;
+			right: -8%;
+			bottom: -10%;
 		}
+
+@media (min-width: 800px) {
+
+.testimonial__text::after {
+				right: -10%;
+				bottom: -20%
+		}
+	}
 
 .testimonial__text::before, .testimonial__text::after {
 			display: block;

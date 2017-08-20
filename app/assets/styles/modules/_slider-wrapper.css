@@ -9,6 +9,10 @@
 
 		&--visible {
 			display: block;
+			
+			@mixin atMedium {
+				display: flex;
+			}
 		}
 
 	}
