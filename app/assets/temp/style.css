@@ -114,7 +114,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -3635,26 +3636,25 @@ form .checkbox input {
 @media (min-width: 800px) {
 
 .testimonial {
-		padding: 8% 5%;
-		width: 100%
+		padding: 2% 6%;
+		width: 100%;
+		margin-top: 1%
 }
 	}
 
 .testimonial__photo {
-		/*width: 150px;
-		height: 150px;*/
-		/*background-color: gray;*/
 		margin: auto;
-		width: 75%;
+		height: 40%;
 	}
 
-/*transform: rotate(45deg);*/
+.testimonial__photo img {
+			max-height: 100%;
+		}
 
 @media (min-width: 800px) {
 
 .testimonial__photo {
 			width: 30%;
-			/*height: 200px;*/
 			margin: 0;
 			display: inline-block;
 			vertical-align: middle
@@ -3676,14 +3676,8 @@ form .checkbox input {
 			display: inline-block;
 			vertical-align: middle;
 			width: 50%;
-			margin-left: 6%;
-			font-size: 20px;
+			margin: 0 0 0 7%;
 			padding-top:0;
-			/*position: absolute;
-			left: 30%;
-			width: 60%;
-			top: 50%;
-			transform: translateY(-50%);*/
 			line-height: 1.5
 	}
 	}
@@ -3767,9 +3761,8 @@ form .checkbox input {
 .testimonial__info {
 			position: absolute;
 			width: 300px;
-			right: 8%;
-			bottom: 20%;
-			padding: 10px 30px
+			right: 13%;
+			bottom: 15%
 	}
 	}
 

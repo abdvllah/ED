@@ -6,21 +6,21 @@
 	margin:0 auto;
 
 	@mixin atMedium {
-		padding: 8% 5%;
+		padding: 2% 6%;
 		width: 100%;
+		margin-top: 1%;
 	}
 
 	&__photo {
-		/*width: 150px;
-		height: 150px;*/
-		/*background-color: gray;*/
 		margin: auto;
-		width: 75%;
-		/*transform: rotate(45deg);*/
+		height: 40%;
+
+		img {
+			max-height: 100%;
+		}
 
 		@mixin atMedium {
 			width: 30%;
-			/*height: 200px;*/
 			margin: 0;
 			display: inline-block;
 			vertical-align: middle;
@@ -39,14 +39,8 @@
 			display: inline-block;
 			vertical-align: middle;
 			width: 50%;
-			margin-left: 6%;
-			font-size: 20px;
+			margin: 0 0 0 7%;
 			padding-top:0;
-			/*position: absolute;
-			left: 30%;
-			width: 60%;
-			top: 50%;
-			transform: translateY(-50%);*/
 			line-height: 1.5;
 		}
 
@@ -104,9 +98,8 @@
 		@mixin atMedium {
 			position: absolute;
 			width: 300px;
-			right: 8%;
-			bottom: 20%;
-			padding: 10px 30px;
+			right: 13%;
+			bottom: 15%;
 		}
 
 		span {
