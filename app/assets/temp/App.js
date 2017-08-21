@@ -11311,6 +11311,7 @@ var Generic = function () {
 
 		this.setParentWidth();
 		this.addActiveState();
+		this.showAlert();
 		// this.closeNav();
 		// this.changeImageOnHover();
 	}
@@ -11327,6 +11328,11 @@ var Generic = function () {
 		value: function addActiveState() {
 			(0, _jquery2.default)('.pillow:first-of-type').addClass('active');
 			(0, _jquery2.default)('.team-member:first-of-type').addClass('active');
+		}
+	}, {
+		key: 'showAlert',
+		value: function showAlert() {
+			(0, _jquery2.default)('.alert').slideDown(1000).delay(3000).fadeOut(1000);
 		}
 	}]);
 

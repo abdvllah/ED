@@ -3124,6 +3124,16 @@ form .checkbox input {
 					        transform: scale(1.1);
 				}
 
+.alert {
+	position: fixed;
+	bottom: 0;
+	background: yellow;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	display: none;
+}
+
 /* Home Page Sections Modules */
 
 .large-hero {

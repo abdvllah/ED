@@ -45,6 +45,7 @@
 @import "modules/_post";
 @import "modules/_comments";
 @import "modules/_comment-respond";
+@import "modules/_alert";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";

@@ -4,6 +4,7 @@ class Generic {
 	constructor() {
 		this.setParentWidth();
 		this.addActiveState();
+		this.showAlert();
 		// this.closeNav();
 		// this.changeImageOnHover();
 	}
@@ -19,7 +20,11 @@ class Generic {
 		$('.team-member:first-of-type').addClass('active')
 	}
 
-	
+	showAlert() {
+		$('.alert').slideDown(1000).delay(3000).fadeOut(1000);
+	}
+
+
 }
 
 export default Generic;
