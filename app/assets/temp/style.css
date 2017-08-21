@@ -3132,7 +3132,13 @@ form .checkbox input {
 	padding: 20px;
 	text-align: center;
 	display: none;
+	z-index: 5;
 }
+
+.alert--red {
+		background-color: #ad191d;
+		color: #FFF;
+	}
 
 /* Home Page Sections Modules */
 

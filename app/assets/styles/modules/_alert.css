@@ -6,4 +6,10 @@
 	padding: 20px;
 	text-align: center;
 	display: none;
+	z-index: 5;
+
+	&--red {
+		background-color: $red;
+		color: #FFF;
+	}
 }
