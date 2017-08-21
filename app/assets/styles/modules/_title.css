@@ -7,7 +7,7 @@
 	position: relative;
 	margin: 0;
 
-	@mixin atMedium {
+	@mixin atSmall , @mixin atMedium {
 		font-size: 300%;
 	}
 

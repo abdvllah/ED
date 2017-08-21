@@ -32,6 +32,10 @@
 			background: url('../images/dark-pattern.png') top 100% right no-repeat;
 			background-size: cover;
 
+			@mixin atSmall {
+				padding-top: 45px;
+			}
+
 			@mixin atMedium {
 				padding-top: 60px;
 			}

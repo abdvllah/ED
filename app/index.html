@@ -74,8 +74,7 @@
 		<div class="upcoming-events__wrapper">
 			<h2 class="upcoming-events__title title">Upcoming Events</h2>
 			
-			<div class="upcoming-events__image">
-					<img class="lazyload" data-src="assets/images/upcoming-event.jpg" alt="">
+			<div class="upcoming-events__image" style="background-image:url('assets/images/upcoming-event.jpg')">
 				<a href="single.html">
 					<div class="upcoming-events__image__caption">April 12 | Souq Waqif Tour</div>
 				</a>
@@ -85,7 +84,9 @@
 
 		<a href="page-upcoming.html"><div class="upcoming-events__strip">More Events</div></a>
 
-		<div class="upcoming-events__background lazyload" alt=""></div>
+		<div class="upcoming-events__background" alt="">
+			<img class="lazyload" data-srcset="assets/images/upcoming-hi.jp2 900w, assets/images/upcoming.jp2 500w" alt="">
+		</div>
 	</section> <!-- End Upcoming Section -->
 
 
@@ -406,10 +407,6 @@
 	</form>
 </div> <!-- End Testimonial Modal -->
 
-<div class="alert alert--red">
-          Thank you, Your <b>response</b> has been recieved<br>
-          We will get back to you soon.
-</div>
 
 </body>
 

@@ -23,14 +23,18 @@
 	}
 
 	&__nav {
-		height: 100px;
+		height: 50px;
 		width: 80%;
 		position: relative;
 		left: 0;
-		top: 15px;
+		top: 3%;
 		overflow: hidden;
 		margin: 0 auto;
 		text-align: left;
+
+		@mixin atSmall {
+			top: 8%;
+		}
 
 		@mixin atMedium {
 			width: 90%;
@@ -43,7 +47,7 @@
 		position: relative;
 		display: none;
 
-		@mixin atMedium {
+		@mixin atSmall , @mixin atMedium {
 			display: block;
 		}
 	}

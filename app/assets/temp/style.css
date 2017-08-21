@@ -1557,6 +1557,14 @@ polygon:hover {
 			}
 	}
 
+@media (min-width: 530px) {
+
+.site-logo {
+		width: 20%
+
+}
+	}
+
 @media (min-width: 800px) {
 
 .site-logo {
@@ -1611,6 +1619,80 @@ polygon:hover {
 .row__b-margin-until-medium {
     margin-bottom: 1rem;
   }
+
+@media (min-width: 530px) {
+
+    .row__b-margin-until-medium {
+      margin-bottom: 0;
+    }
+
+    .row__medium-2 {
+      float: left;
+      width: 16.66%;
+    }
+
+      .row__medium-2--margin {
+        width: 14%;
+        margin: 1%;
+      }
+
+    .row__medium-3 {
+      float: left;
+      width: 100%;
+    }
+
+      .row__medium-3--margin {
+        width: 98%;
+        margin: 1%;
+      }
+
+    .row__medium-3--larger {
+      width: 37%;
+    }
+
+
+    .row__medium-4 {
+      float: left;
+      width: 50%;
+    }
+
+      .row__medium-4--margin {
+        width: 47%;
+        margin: 2%;
+      }
+
+    .row__medium-4--larger {
+      width: 37%;
+    }
+
+    .row__medium-6 {
+      float: left;
+      width: 50%;
+    }
+
+      .row__medium-6--margin {
+        width: 48%;
+      }
+
+    .row__medium-8 {
+      float: left;
+      width: 66.66%;
+    }
+
+    .row__medium-8--smaller {
+      width: 63%;
+    }
+
+    .row__medium-9 {
+      float: left;
+      width: 100%;
+    }
+
+     .row__medium-10 {
+      float: left;
+      width: 83.33%;
+    }
+	}
 
 @media (min-width: 800px) {
 
@@ -1797,6 +1879,15 @@ polygon:hover {
 			border-bottom: 1px solid;
 		}
 
+@media (min-width: 530px) {
+
+.nav ul li > a {
+				font-size: 130%;
+				width: 250px;
+				padding: 20px 15px
+		}
+	}
+
 @media (min-width: 800px) {
 
 .nav ul li > a {
@@ -1965,7 +2056,7 @@ polygon:hover {
 	
 }
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .title {
 		font-size: 300%
@@ -2101,7 +2192,7 @@ form input, form select {
 		font-size: 100%;
 	}
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 form input, form select {
 			width: 300px;
@@ -2120,7 +2211,7 @@ form textarea {
 		font-size: 100%;
 	}
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 form textarea {
 			width: 400px;
@@ -2190,6 +2281,16 @@ form .checkbox input {
 	font-size: 110%;
 	border: none;
 }
+
+@media (min-width: 530px) {
+
+.button {
+		font-size: 120%;
+		padding: 15px 30px;
+		height: 50px;
+		width: 175px
+}
+	}
 
 @media (min-width: 800px) {
 
@@ -2400,10 +2501,6 @@ form .checkbox input {
 	background: url('../images/side-patt.png') top left no-repeat;
 	background-size: contain;
 	background-color: rgba(207,207,207, .97);
-	/*top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;*/
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -2482,7 +2579,6 @@ form .checkbox input {
 @media (min-width: 800px) {
 
 .modal__form-wrapper {
-			width: auto;
 			left: 50%
 	}
 	}
@@ -2493,6 +2589,14 @@ form .checkbox input {
 	margin: 20px 0;
 	position: relative;
 }
+
+@media (min-width: 530px) {
+
+.thumbnail {
+		margin: 1%;
+		height: 400px
+}
+	}
 
 @media (min-width: 800px) {
 
@@ -2738,6 +2842,15 @@ form .checkbox input {
 		color: #FFF;
 	}
 
+@media (min-width: 530px) {
+
+.search__field{
+			font-size: 130%;
+			width: 250px;
+			padding: 20px 15px
+	}
+	}
+
 @media (min-width: 800px) {
 
 .search__field{
@@ -2757,6 +2870,9 @@ form .checkbox input {
 	}
 
 .footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	text-align: center;
 	margin-top: 20px;
 	padding: 20px 5px;
@@ -2832,7 +2948,7 @@ form .checkbox input {
 		margin: 1%;
 		display: inline-block;
 		vertical-align: top;
-		width: 100%;
+		width: 47%;
 		-webkit-transition: all .4s ease;
 		transition: all .4s ease;
 
@@ -2843,7 +2959,7 @@ form .checkbox input {
 			width: 100%;
 		}
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .gallery__image {
 			width: 30%
@@ -2871,18 +2987,24 @@ form .checkbox input {
 
 .gallery--side {
 		margin-top: 10px;
+
 	}
+
+.gallery--side .gallery__image {
+			width: 47%;
+		}
 
 @media (min-width: 800px) {
 
 .gallery--side {
 			margin-top: -5%
-	}
+
 	}
 
-.gallery--side .gallery__image {
-			width: 100%;
-		}
+			.gallery--side .gallery__image {
+				width: 100%;
+			}
+	}
 
 .content-wrapper {
 	background-color: rgba(255,255,255, .98);
@@ -2935,16 +3057,15 @@ form .checkbox input {
 .banner-image {
 	width: 100%;
 	height: 200px;
-	background-repeat: no-repeat;
-	background-position: 0% 50%;
-	background-size: auto 100%;
+	background-position: 50% 0%;
+	background-size: 100% auto;
 	-webkit-transition: 2s all ease;
 	transition: 2s all ease;
 
 }
 
 .banner-image:hover {
-		background-position: 100% 50%;
+		background-position: 50% 100%;
 	}
 
 @media (min-width: 800px) {
@@ -2956,10 +3077,6 @@ form .checkbox input {
 		background-size: 100% auto
 
 }
-
-		.banner-image:hover {
-			background-position: 50% 100%;
-		}
 	}
 
 .breadcrumb {
@@ -3151,6 +3268,16 @@ form .checkbox input {
 	
 }
 
+@media (min-width: 530px) {
+
+.large-hero {
+		background-image: url('../images/hero-hi.jpg');
+		background-attachment: fixed;
+		background-position: 20% 50%
+	
+}
+	}
+
 @media (min-width: 800px) {
 
 .large-hero {
@@ -3163,6 +3290,18 @@ form .checkbox input {
 
 .large-hero__triangle-pattern {
 		display: none;
+	}
+
+@media (min-width: 530px) {
+
+.large-hero__triangle-pattern {
+			display: block;
+			position: absolute;
+			width: 80%;
+			opacity: .4;
+			left: 10%;
+			top: 20%
+	}
 	}
 
 @media (min-width: 800px) {
@@ -3183,6 +3322,13 @@ form .checkbox input {
 		opacity: .3;
 		right: 0px;
 		bottom: 0px;
+	}
+
+@media (min-width: 530px) {
+
+.large-hero__triangle-pattern--small {
+			display: none
+	}
 	}
 
 @media (min-width: 800px) {
@@ -3207,6 +3353,13 @@ form .checkbox input {
 		opacity: .4;
 	}
 
+@media (min-width: 530px) {
+
+.large-hero__slogen {
+			bottom: 10%
+	}
+	}
+
 @media (min-width: 800px) {
 
 .large-hero__slogen {
@@ -3220,6 +3373,7 @@ form .checkbox input {
 
 .upcoming-events__wrapper {
 		position: relative;
+		height: 70%;
 		z-index: 3;
 	}
 
@@ -3240,13 +3394,23 @@ form .checkbox input {
 		z-index: 3;
 	}
 
+@media (min-width: 530px) {
+
+.upcoming-events__triangle-pattern--small {
+			width: 25%;
+			opacity: .7;
+			left: 15%;
+			bottom: 0
+	}
+	}
+
 @media (min-width: 800px) {
 
 .upcoming-events__triangle-pattern--small {
 			width: 30%;
 			opacity: .5;
 			left: 100px;
-			bottom: 0px
+			bottom: 0
 	}
 	}
 
@@ -3267,8 +3431,12 @@ form .checkbox input {
 
 .upcoming-events__image {
 		position: relative;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
 		z-index: 4;
 		width: 100%;
+		height: 300px;
 
 	}
 
@@ -3293,11 +3461,19 @@ form .checkbox input {
 			transition: all .4s ease;
 		}
 
+@media (min-width: 530px) {
+
+.upcoming-events__image__caption {
+				padding: 20px;
+				font-size: 150%
+		}
+	}
+
 @media (min-width: 800px) {
 
 .upcoming-events__image__caption {
 				padding: 15px;
-				font-size: 24px
+				font-size: 130%
 		}
 	}
 
@@ -3319,6 +3495,14 @@ form .checkbox input {
 		margin: 0;
 		z-index: 1;
 		text-decoration: none;
+	}
+
+@media (min-width: 530px) {
+
+.upcoming-events__strip {
+			font-size: 200%;
+			padding: 30px 50px
+	}
 	}
 
 @media (min-width: 800px) {
@@ -3374,39 +3558,41 @@ form .checkbox input {
 	}
 
 .upcoming-events__background {
-		background: url('../images/upcoming-b.jp2')  no-repeat top left;
-		background-size: contain;
-
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		z-index: 2;
 		height: 50%;
-		width: 100%;
+		width: auto;
 		-webkit-transition: all 2s ease-in-out;
 		transition: all 2s ease-in-out;
 		opacity: .8;
+		z-index: 2;
 
 	}
+
+.upcoming-events__background img {
+			max-height: 100%;
+			width: auto;
+			-webkit-transition: all 1s ease;
+			transition: all 1s ease;
+			-webkit-filter: grayscale(100%);
+			        filter: grayscale(100%);
+		}
+
+.upcoming-events__background img:hover {
+				-webkit-filter: grayscale(0%);
+				        filter: grayscale(0%);
+			}
 
 @media (min-width: 800px) {
 
 .upcoming-events__background {
-			background: url('../images/upcoming-b-hi.jp2')  no-repeat top left;
-			background-size: contain
-
-	}
-	}
-
-@media (min-width: 800px) {
-
-.upcoming-events__background {
-			text-align: center;
+			z-index: 2;
+			text-align: left;
 			top: 0;
 			left: 0;
-			height: 100%;
-			width: 60%;
-			opacity: 1
+			opacity: 1;
+			height: 100%
 
 	}
 	}
@@ -3421,6 +3607,14 @@ form .checkbox input {
 		background: url('../images/our-services-l.jp2') no-repeat top 30% left, url('../images/our-services-r.jp2') no-repeat bottom right;
 		background-size: 70% auto;
 		background-color: #272727;
+	}
+
+@media (min-width: 530px) {
+		.our-services.lazyloaded {
+			background: url('../images/our-services-l-hi.jp2') no-repeat top 30% left -20%, url('../images/our-services-r-hi.jp2') no-repeat bottom right -50%;
+			background-size: 70% auto;
+			background-color: #272727;
+		}
 	}
 
 @media (min-width: 800px) {
@@ -3577,6 +3771,13 @@ form .checkbox input {
 			background: url('../images/dark-pattern.png') top 100% right no-repeat;
 			background-size: cover;
 		}
+
+@media (min-width: 530px) {
+
+.clients__small__title {
+				padding-top: 45px
+		}
+	}
 
 @media (min-width: 800px) {
 
@@ -3848,14 +4049,21 @@ form .checkbox input {
 	}
 
 .team__nav {
-		height: 100px;
+		height: 50px;
 		width: 80%;
 		position: relative;
 		left: 0;
-		top: 15px;
+		top: 3%;
 		overflow: hidden;
 		margin: 0 auto;
 		text-align: left;
+	}
+
+@media (min-width: 530px) {
+
+.team__nav {
+			top: 8%
+	}
 	}
 
 @media (min-width: 800px) {
@@ -3872,7 +4080,7 @@ form .checkbox input {
 		display: none;
 	}
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .team__things {
 			display: block
@@ -3914,6 +4122,13 @@ form .checkbox input {
 		        transform: none;
 	}
 
+@media (min-width: 530px) {
+
+.team-member__photo {
+			width: 50%
+	}
+	}
+
 @media (min-width: 800px) {
 
 .team-member__photo {
@@ -3925,12 +4140,20 @@ form .checkbox input {
 .team-member__name {
 		padding:0;
 		margin:0;
-		font-size: 18px;
+		font-size: 150%;
 		color: #ad191d;
 		font-weight: 600;
 		text-transform: uppercase;
 		text-align: center;
 
+	}
+
+@media (min-width: 530px) {
+
+.team-member__name {
+			font-size: 180%
+
+	}
 	}
 
 @media (min-width: 800px) {
@@ -3950,6 +4173,13 @@ form .checkbox input {
 		color: #272727;
 		padding: 8px;
 		font-size: 80%;
+	}
+
+@media (min-width: 530px) {
+
+.team-member__info {
+			font-size: 100%
+	}
 	}
 
 @media (min-width: 800px) {
@@ -4120,6 +4350,17 @@ form .checkbox input {
 			background: url('../images/contact-back-hi.jp2') top right no-repeat;
 			background-size: contain;
 			background-color: rgb(147,147,147)
+	}
+	}
+
+.contact form {
+		margin-top: 10%;
+	}
+
+@media (min-width: 800px) {
+
+.contact form {
+			margin-top: 5%
 	}
 	}
 

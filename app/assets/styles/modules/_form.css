@@ -15,7 +15,7 @@ form {
 		color: #FFF;
 		font-size: 100%;
 
-		@mixin atMedium {
+		@mixin atSmall , @mixin atMedium {
 			width: 300px;
 			height: 40px;
 			padding: 10px;
@@ -31,7 +31,7 @@ form {
 		border: 1px solid $backGray;
 		font-size: 100%;
 
-		@mixin atMedium {
+		@mixin atSmall , @mixin atMedium {
 			width: 400px;
 			height: 250px;
 		}

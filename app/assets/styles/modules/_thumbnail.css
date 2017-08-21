@@ -4,6 +4,11 @@
 	margin: 20px 0;
 	position: relative;
 
+	@mixin atSmall {
+		margin: 1%;
+		height: 400px;
+	}
+
 	@mixin atMedium {
 		margin: 1%;
 		height: 520px;

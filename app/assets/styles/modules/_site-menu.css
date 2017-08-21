@@ -25,6 +25,7 @@
 			border-radius: 100%;
 			position: relative;
 			cursor: pointer;
+			
 
 			@mixin atMedium {
 				height: 20px;

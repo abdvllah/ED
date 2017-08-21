@@ -6,14 +6,14 @@
 		margin: 1%;
 		display: inline-block;
 		vertical-align: top;
-		width: 100%;
+		width: 47%;
 		transition: all .4s ease;
 
 		img {
 			width: 100%;
 		}
 
-		@mixin atMedium {
+		@mixin atSmall , @mixin atMedium {
 			width: 30%;
 
 			&:hover {
@@ -39,12 +39,17 @@
 	&--side {
 		margin-top: 10px;
 
-		@mixin atMedium {
-			margin-top: -5%;
+		.gallery__image {
+			width: 47%;
 		}
 
-		.gallery__image {
-			width: 100%;
+		@mixin atMedium {
+			margin-top: -5%;
+
+			.gallery__image {
+				width: 100%;
+			}
 		}
+
 	}
 }
