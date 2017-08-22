@@ -26,7 +26,7 @@
 		&__title {
 			color: lighten($black, .7);
 			font-size: 250%;
-			padding-top: 10px;
+			padding-top: 30px;
 			padding-left: 10px;
 			margin: 0;
 			background: url('../images/dark-pattern.png') top 100% right no-repeat;
@@ -48,9 +48,13 @@
 	.sponsers {
 		height: 100%;
 		padding: 0 10px;
-		margin: 20px 0;
+		margin: 10px 0;
 		position: relative;
 		transition: all 5s ease;
+
+		@mixin atMedium {
+			margin: 20px 0;
+		}
 
 		/*&:hover {
 			transform: translateX(-50%);

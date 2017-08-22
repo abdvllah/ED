@@ -1557,14 +1557,6 @@ polygon:hover {
 			}
 	}
 
-@media (min-width: 530px) {
-
-.site-logo {
-		width: 20%
-
-}
-	}
-
 @media (min-width: 800px) {
 
 .site-logo {
@@ -1796,13 +1788,11 @@ polygon:hover {
 			display: inline-block;
 			vertical-align: middle;
 			width: 130px;
-			height: 30px;
-			padding: 5px;
+			padding: 10px;
 			margin-bottom: 15px;
 			margin-left: 15%;
 			text-decoration: none;
 			color: #FFF;
-			border-bottom: 1px solid;
 		}
 
 @media (min-width: 800px) {
@@ -1973,7 +1963,7 @@ polygon:hover {
 	
 }
 
-@media (min-width: 530px) {
+@media (min-width: 230px) {
 
 .title {
 		font-size: 300%
@@ -2093,6 +2083,26 @@ polygon:hover {
 				background-size: contain;
 			}
 
+form .form-group {
+		display: block;
+	}
+
+form .form-group--inline {
+			display: inline-block;
+			margin: 0 0.5%;
+			width: 49%;
+		}
+
+@media (min-width: 800px) {
+		form .form-group {
+			display: block;
+		}
+
+			form .form-group--inline {
+				display: block;
+			}
+	}
+
 form label {
 		position: absolute;
 		left: -9999px;
@@ -2108,6 +2118,11 @@ form input, form select {
 		color: #FFF;
 		font-size: 100%;
 	}
+
+form input.inline, form select.inline {
+			display: inline-block;
+			width: 49%;
+		}
 
 @media (min-width: 800px) {
 
@@ -2138,7 +2153,7 @@ form textarea {
 
 form .narrow {
 		width: 100%;
-		height: 150px;
+		height: 50px;
 		margin: 5px 0;
 	}
 
@@ -2288,7 +2303,6 @@ form .checkbox input {
 		-webkit-box-align: start;
 		    -ms-flex-align: start;
 		        align-items: flex-start;
-		overflow: hidden;
 	}
 
 @media (min-width: 800px) {
@@ -2502,7 +2516,7 @@ form .checkbox input {
 	position: relative;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 230px) {
 
 .thumbnail {
 		margin: 1%;
@@ -2747,7 +2761,7 @@ form .checkbox input {
 .search__field{
 		display: inline-block;
 		vertical-align: top;
-		width: 100px;
+		width: 70%;
 		height: 40px;
 		padding: 5px;
 		background-color: rgba(39,39,39, .9);
@@ -2768,7 +2782,7 @@ form .checkbox input {
 		background-size: contain;
 		border: none;
 		height: 40px;
-		width: 40px;
+		width: 20%;
 		cursor: pointer;
 	}
 
@@ -2859,7 +2873,7 @@ form .checkbox input {
 			width: 100%;
 		}
 
-@media (min-width: 530px) {
+@media (min-width: 230px) {
 
 .gallery__image {
 			width: 30%
@@ -2957,8 +2971,9 @@ form .checkbox input {
 .banner-image {
 	width: 100%;
 	height: 200px;
-	background-position: 50% 0%;
-	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: cover;
 	-webkit-transition: 2s all ease;
 	transition: 2s all ease;
 
@@ -2977,6 +2992,10 @@ form .checkbox input {
 		background-size: 100% auto
 
 }
+
+		.banner-image:hover {
+			background-position: 50% 100%;
+		}
 	}
 
 .breadcrumb {
@@ -3071,7 +3090,7 @@ form .checkbox input {
 		}
 
 .comments {
-	margin-top: 50px;
+	margin-top: 100px;
 
 
 }
@@ -3258,7 +3277,7 @@ form .checkbox input {
 		z-index: 3;
 	}
 
-@media (min-width: 530px) {
+@media (min-width: 230px) {
 
 .upcoming-events__triangle-pattern--small {
 			width: 25%;
@@ -3300,7 +3319,7 @@ form .checkbox input {
 		background-size: cover;
 		z-index: 4;
 		width: 100%;
-		height: 300px;
+		height: 200px;
 
 	}
 
@@ -3325,7 +3344,7 @@ form .checkbox input {
 			transition: all .4s ease;
 		}
 
-@media (min-width: 530px) {
+@media (min-width: 230px) {
 
 .upcoming-events__image__caption {
 				padding: 20px;
@@ -3359,14 +3378,6 @@ form .checkbox input {
 		margin: 0;
 		z-index: 1;
 		text-decoration: none;
-	}
-
-@media (min-width: 530px) {
-
-.upcoming-events__strip {
-			font-size: 200%;
-			padding: 30px 50px
-	}
 	}
 
 @media (min-width: 800px) {
@@ -3473,7 +3484,7 @@ form .checkbox input {
 		background-color: #272727;
 	}
 
-@media (min-width: 530px) {
+@media (min-width: 230px) {
 		.our-services.lazyloaded {
 			background: url('../images/our-services-l-hi.jp2') no-repeat top 30% left -20%, url('../images/our-services-r-hi.jp2') no-repeat bottom right -50%;
 			background-size: 70% auto;
@@ -3629,7 +3640,7 @@ form .checkbox input {
 .clients__small__title {
 			color: rgb(190,190,190);
 			font-size: 250%;
-			padding-top: 10px;
+			padding-top: 30px;
 			padding-left: 10px;
 			margin: 0;
 			background: url('../images/dark-pattern.png') top 100% right no-repeat;
@@ -3653,10 +3664,17 @@ form .checkbox input {
 .clients .sponsers {
 		height: 100%;
 		padding: 0 10px;
-		margin: 20px 0;
+		margin: 10px 0;
 		position: relative;
 		-webkit-transition: all 5s ease;
 		transition: all 5s ease;
+	}
+
+@media (min-width: 800px) {
+
+.clients .sponsers {
+			margin: 20px 0
+	}
 	}
 
 /*&:hover {
@@ -3726,8 +3744,8 @@ form .checkbox input {
 	}
 
 .testimonial__photo {
-		margin: auto;
-		height: 40%;
+		margin: 0;
+		height: 20%;
 	}
 
 .testimonial__photo img {
@@ -3747,11 +3765,11 @@ form .checkbox input {
 
 .testimonial__text {
 		position: relative;
-		font-size: 100%;
+		font-size: 80%;
 		color: #272727;
-		text-align: center;
-		line-height: 1.5;
-		margin: 6% 10%;
+		text-align: justify;
+		line-height: 1;
+		margin: 3% 10%;
 	}
 
 @media (min-width: 800px) {
@@ -3760,10 +3778,10 @@ form .checkbox input {
 			display: inline-block;
 			vertical-align: middle;
 			width: 55%;
+			font-size: 100%;
 			margin: auto 0 auto 7%;
 			padding-top:0;
-			line-height: 1.5;
-			text-align: justify
+			line-height: 1.5
 	}
 	}
 
@@ -3910,17 +3928,10 @@ form .checkbox input {
 		width: 80%;
 		position: relative;
 		left: 0;
-		top: 3%;
+		top: 4%;
 		overflow: hidden;
 		margin: 0 auto;
 		text-align: left;
-	}
-
-@media (min-width: 530px) {
-
-.team__nav {
-			top: 8%
-	}
 	}
 
 @media (min-width: 800px) {
@@ -3937,7 +3948,7 @@ form .checkbox input {
 		display: none;
 	}
 
-@media (min-width: 530px) {
+@media (min-width: 230px) {
 
 .team__things {
 			display: block
@@ -3979,7 +3990,7 @@ form .checkbox input {
 		        transform: none;
 	}
 
-@media (min-width: 530px) {
+@media (min-width: 230px) {
 
 .team-member__photo {
 			width: 50%
@@ -4005,7 +4016,7 @@ form .checkbox input {
 
 	}
 
-@media (min-width: 530px) {
+@media (min-width: 230px) {
 
 .team-member__name {
 			font-size: 180%
@@ -4032,7 +4043,7 @@ form .checkbox input {
 		font-size: 80%;
 	}
 
-@media (min-width: 530px) {
+@media (min-width: 230px) {
 
 .team-member__info {
 			font-size: 100%

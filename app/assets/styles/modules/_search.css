@@ -5,7 +5,7 @@
 	&__field{
 		display: inline-block;
 		vertical-align: top;
-		width: 100px;
+		width: 70%;
 		height: 40px;
 		padding: 5px;
 		background-color: rgba($black, .9);
@@ -23,7 +23,7 @@
 		background-size: contain;
 		border: none;
 		height: 40px;
-		width: 40px;
+		width: 20%;
 		cursor: pointer;
 	}
 	

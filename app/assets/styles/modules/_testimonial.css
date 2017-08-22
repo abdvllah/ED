@@ -12,8 +12,8 @@
 	}
 
 	&__photo {
-		margin: auto;
-		height: 40%;
+		margin: 0;
+		height: 20%;
 
 		img {
 			max-height: 100%;
@@ -30,20 +30,20 @@
 
 	&__text {
 		position: relative;
-		font-size: 100%;
+		font-size: 80%;
 		color: $black;
-		text-align: center;
-		line-height: 1.5;
-		margin: 6% 10%;
+		text-align: justify;
+		line-height: 1;
+		margin: 3% 10%;
 
 		@mixin atMedium {
 			display: inline-block;
 			vertical-align: middle;
 			width: 55%;
+			font-size: 100%;
 			margin: auto 0 auto 7%;
 			padding-top:0;
 			line-height: 1.5;
-			text-align: justify;
 		}
 
 		&::before {

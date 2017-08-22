@@ -151,75 +151,74 @@
 
 <div id="book-modal" class="modal">
 	<h3 class="modal__title title">Book Event</h3>
-		<form action="book-session.php">
+		<form action="<?php echo bloginfo('template_url'); ?>/forms/book-service.php" method="post">
 			<div class="flex-wrapper modal__form-wrapper">
-				<div>
-					<div>
-						<label for="session">Event Name</label>
-						<select name="session" required>
-							<option value="">-- Choose An Event</option>
-							<option value="national">National Day</option>
-							<option value="cul-events">Cultural Events</option>
-						</select>
-					</div>
-
-					<div>
-						<label for="type">Requestor Type</label>	
-						<select name="type" required>
-							<option value="">-- Choose who you are</option>
-							<option value="group">Group</option>
-							<option value="company">Company</option>
-						</select>
-
-					</div>
-
-					<div>
-						<label for="requestor">Requestor Name</label>
-						<input type="text" name="requestor" placeholder="Your Name">
-					</div>
-
-					<div>
-						<label for="attendees">Attendees</label>
-						<input type="number" max="50" name="attendees" placeholder="Number of Attendees">
-					</div>
-					<div>
-						<label for="date">Date</label>
-						<input id="datepicker" type="text" name="date" placeholder="Prefered Date">
-					</div>
-					<div>
-						<label for="time">Time</label>
-						<input type="text" name="time" placeholder="Prefered Time">
-					</div>
-
-				
+			<div class="flex-wrapper__child">
+				<div class="form-group">
+					<label for="service">Event Name</label>
+					<select name="service">
+						<option value="">-- Choose An Event</option>
+						<option value="National Day">National Day</option>
+						<option value="Cultural Events">Cultural Events</option>
+					</select>
 				</div>
 
-				<div>
-					<div>
-						<label for="name">Contact Name</label>
-						<input type="text" name="name" placeholder="Contact Person Name">
-					</div>
-					<div>
-						<label for="email">Contact Email</label>
-						<input type="text" name="email" placeholder="Contact Email">
-					</div>
-					<div>
-						<label for="number">Contact Number</label>
-						<input type="text" name="number" placeholder="Contact Number">
-					</div>
-
-					<div>
-						<label for="notes">Special Requests</label>
-						<textarea class="narrow" name="notes" placeholder="Write any special requests or notes ..."></textarea>
-					</div>
-
-					<input class="button" type="submit">
+				<div class="form-group">
+					<label for="type">Requestor Type</label>	
+					<select name="type">
+						<option value="">-- Choose who you are</option>
+						<option value="Group">Group</option>
+						<option value="Company">Company</option>
+					</select>
 
 				</div>
+
+				<div class="form-group">
+					<label for="requestor">Requestor Name</label>
+					<input type="text" name="requestor" placeholder="Your Name">
+				</div>
+
+				<div class="form-group">
+					<label for="attendees">Attendees</label>
+					<input type="number" max="50" name="attendees" placeholder="Number of Attendees">
+				</div>
+				<div class="form-group form-group--inline">
+					<label for="date">Date</label>
+					<input id="datepicker" type="text" name="date" placeholder="Prefered Date">
+				</div><!--
+				--><div class="form-group form-group--inline">
+					<label for="time">Time</label>
+					<input type="text" name="time" placeholder="Prefered Time">
+				</div>
+
+			
 			</div>
-		</form>
-	</div>
 
+			<div class="flex-wrapper__child">
+				<div class="form-group">
+					<label for="name">Contact Name</label>
+					<input type="text" name="name" placeholder="Contact Person Name">
+				</div>
+				<div class="form-group">
+					<label for="email">Contact Email</label>
+					<input type="email" name="email" placeholder="Contact Email">
+				</div>
+				<div class="form-group">
+					<label for="number">Contact Number</label>
+					<input type="text" name="number" placeholder="Contact Number">
+				</div>
+
+				<div class="form-group">
+					<label for="notes">Special Requests</label>
+					<textarea class="narrow" name="notes" placeholder="Write any special requests or notes ..."></textarea>
+				</div>
+
+				<input name="book-service" class="button" type="submit">
+
+			</div>
+		</div>
+	</form>
+</div>
 
 </body>
 

@@ -27,13 +27,11 @@
 			display: inline-block;
 			vertical-align: middle;
 			width: 130px;
-			height: 30px;
-			padding: 5px;
+			padding: 10px;
 			margin-bottom: 15px;
 			margin-left: 15%;
 			text-decoration: none;
 			color: #FFF;
-			border-bottom: 1px solid;
 
 			@mixin atMedium {
 				font-size: 100%;

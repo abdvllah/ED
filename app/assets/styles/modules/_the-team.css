@@ -27,14 +27,11 @@
 		width: 80%;
 		position: relative;
 		left: 0;
-		top: 3%;
+		top: 4%;
 		overflow: hidden;
 		margin: 0 auto;
 		text-align: left;
 
-		@mixin atSmall {
-			top: 8%;
-		}
 
 		@mixin atMedium {
 			width: 90%;

@@ -17,11 +17,6 @@
 		}
 
 
-	@mixin atSmall {
-		width: 20%;
-	}
-
-
 	@mixin atMedium{
 		width: 150px;
 	}
