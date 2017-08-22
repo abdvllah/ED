@@ -13,6 +13,7 @@
 
 	form {
 		margin-top: 10%;
+		height: 60%;
 
 		@mixin atMedium {
 			margin-top: 5%;

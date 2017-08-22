@@ -1789,7 +1789,7 @@ polygon:hover {
 			vertical-align: middle;
 			width: 130px;
 			padding: 10px;
-			margin-bottom: 15px;
+			margin-bottom: 0;
 			margin-left: 15%;
 			text-decoration: none;
 			color: #FFF;
@@ -2761,7 +2761,7 @@ form .checkbox input {
 .search__field{
 		display: inline-block;
 		vertical-align: top;
-		width: 70%;
+		width: 90%;
 		height: 40px;
 		padding: 5px;
 		background-color: rgba(39,39,39, .9);
@@ -2776,7 +2776,7 @@ form .checkbox input {
 	}
 
 .search__button {
-		display: inline-block;
+		position: absolute;
 		vertical-align: top;
 		background: url('../icons/search.png') no-repeat;
 		background-size: contain;
@@ -3326,7 +3326,8 @@ form .checkbox input {
 @media (min-width: 800px) {
 
 .upcoming-events__image {
-			width: 700px
+			width: 700px;
+			height: 300px
 
 	}
 	}
@@ -4223,6 +4224,7 @@ form .checkbox input {
 
 .contact form {
 		margin-top: 10%;
+		height: 60%;
 	}
 
 @media (min-width: 800px) {

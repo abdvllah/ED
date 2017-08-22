@@ -59,6 +59,7 @@
 
 		@mixin atMedium {
 			width: 700px;
+			height: 300px;
 		}
 		
 

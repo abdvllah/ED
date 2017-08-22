@@ -5,7 +5,7 @@
 	&__field{
 		display: inline-block;
 		vertical-align: top;
-		width: 70%;
+		width: 90%;
 		height: 40px;
 		padding: 5px;
 		background-color: rgba($black, .9);
@@ -17,7 +17,7 @@
 	}
 
 	&__button {
-		display: inline-block;
+		position: absolute;
 		vertical-align: top;
 		background: url('../icons/search.png') no-repeat;
 		background-size: contain;
