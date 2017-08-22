@@ -7,22 +7,25 @@ form {
 
 	input, select {
 		margin: 5px 0;
-		width: 300px;
-		height: 40px;
-		padding: 10px;
+		height: 30px;
+		width: 100%;
+		padding: 5px;
 		background-color: $black;
 		border: 1px solid $black;
 		color: #FFF;
 		font-size: 100%;
 
 		@mixin atMedium {
-			margin: 20px;
+			width: 300px;
+			height: 40px;
+			padding: 10px;
+			margin: 10px;
 		}
 	}
 
 	textarea {
-		width: 300px;
-		height: 250px;
+		width: 100%;
+		height: 150px;
 		padding: 10px;
 		margin: 5px 0;
 		border: 1px solid $backGray;
@@ -30,14 +33,20 @@ form {
 
 		@mixin atMedium {
 			width: 400px;
+			height: 250px;
 		}
 	}
 
 	.narrow {
-		width: 300px;
+		width: 100%;
 		height: 150px;
-		margin: 10px;
+		margin: 5px 0;
 
+		@mixin atMedium {
+			width: 300px;
+			height: 150px;
+			margin: 10px;
+		}
 	}
 
 	input[type="submit"] {

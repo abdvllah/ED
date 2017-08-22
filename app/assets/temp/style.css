@@ -1805,15 +1805,6 @@ polygon:hover {
 			border-bottom: 1px solid;
 		}
 
-@media (min-width: 530px) {
-
-.nav ul li > a {
-				font-size: 130%;
-				width: 250px;
-				padding: 20px 15px
-		}
-	}
-
 @media (min-width: 800px) {
 
 .nav ul li > a {
@@ -2109,9 +2100,9 @@ form label {
 
 form input, form select {
 		margin: 5px 0;
-		width: 300px;
-		height: 40px;
-		padding: 10px;
+		height: 30px;
+		width: 100%;
+		padding: 5px;
 		background-color: #272727;
 		border: 1px solid #272727;
 		color: #FFF;
@@ -2121,13 +2112,16 @@ form input, form select {
 @media (min-width: 800px) {
 
 form input, form select {
-			margin: 20px
+			width: 300px;
+			height: 40px;
+			padding: 10px;
+			margin: 10px
 	}
 	}
 
 form textarea {
-		width: 300px;
-		height: 250px;
+		width: 100%;
+		height: 150px;
 		padding: 10px;
 		margin: 5px 0;
 		border: 1px solid #cfcfcf;
@@ -2137,15 +2131,24 @@ form textarea {
 @media (min-width: 800px) {
 
 form textarea {
-			width: 400px
+			width: 400px;
+			height: 250px
 	}
 	}
 
 form .narrow {
-		width: 300px;
+		width: 100%;
 		height: 150px;
-		margin: 10px;
+		margin: 5px 0;
+	}
 
+@media (min-width: 800px) {
+
+form .narrow {
+			width: 300px;
+			height: 150px;
+			margin: 10px
+	}
 	}
 
 form input[type="submit"] {
@@ -2195,16 +2198,6 @@ form .checkbox input {
 	font-size: 110%;
 	border: none;
 }
-
-@media (min-width: 530px) {
-
-.button {
-		font-size: 120%;
-		padding: 15px 30px;
-		height: 50px;
-		width: 175px
-}
-	}
 
 @media (min-width: 800px) {
 
@@ -2412,9 +2405,13 @@ form .checkbox input {
 .modal {
 	position: fixed;
 	z-index: 20;
-	background: url('../images/side-patt.png') top left -10% no-repeat;
+	background: url('../images/side-patt.png') top left no-repeat;
 	background-size: contain;
 	background-color: rgba(207,207,207, .97);
+	/*top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;*/
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -2450,7 +2447,7 @@ form .checkbox input {
 		cursor: auto;
 		font-size: 150%;
 		width: 70%;
-		text-align: center;
+		padding-left: 20%;
 		margin: auto;
 		padding-top: 10%;
 	}
@@ -2481,8 +2478,9 @@ form .checkbox input {
 		padding: 30px;
 		margin: auto;
 		position: absolute;
+		text-align: right;
 		top: 50%;
-		left: 50%;
+		left: 60%;
 		-webkit-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
 		cursor: auto;
@@ -2492,6 +2490,7 @@ form .checkbox input {
 @media (min-width: 800px) {
 
 .modal__form-wrapper {
+			width: auto;
 			left: 50%
 	}
 	}
@@ -2755,15 +2754,6 @@ form .checkbox input {
 		color: #FFF;
 	}
 
-@media (min-width: 530px) {
-
-.search__field{
-			font-size: 130%;
-			width: 250px;
-			padding: 20px 15px
-	}
-	}
-
 @media (min-width: 800px) {
 
 .search__field{
@@ -2783,7 +2773,6 @@ form .checkbox input {
 	}
 
 .footer {
-	width: 100%;
 	text-align: center;
 	margin-top: 20px;
 	padding: 20px 5px;
@@ -3179,16 +3168,6 @@ form .checkbox input {
 	
 }
 
-@media (min-width: 530px) {
-
-.large-hero {
-		background-image: url('../images/hero-hi.jpg');
-		background-attachment: fixed;
-		background-position: 20% 50%
-	
-}
-	}
-
 @media (min-width: 800px) {
 
 .large-hero {
@@ -3201,18 +3180,6 @@ form .checkbox input {
 
 .large-hero__triangle-pattern {
 		display: none;
-	}
-
-@media (min-width: 530px) {
-
-.large-hero__triangle-pattern {
-			display: block;
-			position: absolute;
-			width: 80%;
-			opacity: .4;
-			left: 10%;
-			top: 20%
-	}
 	}
 
 @media (min-width: 800px) {
@@ -3235,13 +3202,6 @@ form .checkbox input {
 		bottom: 0px;
 	}
 
-@media (min-width: 530px) {
-
-.large-hero__triangle-pattern--small {
-			display: none
-	}
-	}
-
 @media (min-width: 800px) {
 
 .large-hero__triangle-pattern--small {
@@ -3262,13 +3222,6 @@ form .checkbox input {
 		font-size: 500%;
 		text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
 		opacity: .4;
-	}
-
-@media (min-width: 530px) {
-
-.large-hero__slogen {
-			bottom: 10%
-	}
 	}
 
 @media (min-width: 800px) {
@@ -3682,13 +3635,6 @@ form .checkbox input {
 			background: url('../images/dark-pattern.png') top 100% right no-repeat;
 			background-size: cover;
 		}
-
-@media (min-width: 530px) {
-
-.clients__small__title {
-				padding-top: 45px
-		}
-	}
 
 @media (min-width: 800px) {
 

@@ -11,12 +11,6 @@
 		background-color: rgba($black, .9);
 		color: #FFF;
 
-		@mixin atSmall {
-			font-size: 130%;
-			width: 250px;
-			padding: 20px 15px;
-		}
-
 		@mixin atMedium {
 			width: 250px;
 		}

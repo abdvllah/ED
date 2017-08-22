@@ -40,7 +40,6 @@
     margin-bottom: 1rem;
   }
 
-
   @mixin atMedium {
 
     &__b-margin-until-medium {

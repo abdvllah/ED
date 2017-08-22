@@ -35,12 +35,6 @@
 			color: #FFF;
 			border-bottom: 1px solid;
 
-			@mixin atSmall {
-				font-size: 130%;
-				width: 250px;
-				padding: 20px 15px;
-			}
-
 			@mixin atMedium {
 				font-size: 100%;
 				width: 250px;

@@ -5,11 +5,7 @@
 	background-position: 50% 50%;
 	text-align: center;
 
-	@mixin atSmall {
-		background-image: url('../images/hero-hi.jpg');
-		background-attachment: fixed;
-		background-position: 20% 50%;
-	}
+
 
 	@mixin atMedium {
 		background-image: url('../images/hero-hi.jpg');
@@ -19,15 +15,6 @@
 
 	&__triangle-pattern {
 		display: none;
-
-		@mixin atSmall {
-			display: block;
-			position: absolute;
-			width: 80%;
-			opacity: .4;
-			left: 10%;
-			top: 20%;
-		}
 
 		@mixin atMedium {
 			display: block;
@@ -44,10 +31,6 @@
 		opacity: .3;
 		right: 0px;
 		bottom: 0px;
-
-		@mixin atSmall {
-			display: none;
-		}
 
 		@mixin atMedium {
 			width: 20%;
@@ -67,11 +50,6 @@
 		font-size: 500%;
 		text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
 		opacity: .4;
-
-		@mixin atSmall {
-			bottom: 10%;
-		}
-
 
 		@mixin atMedium {
 			bottom: 50px;
