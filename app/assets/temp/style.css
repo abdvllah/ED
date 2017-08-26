@@ -2498,7 +2498,6 @@ form .checkbox input {
 		-webkit-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
 		cursor: auto;
-		overflow: auto;
 	}
 
 @media (min-width: 800px) {
@@ -4222,15 +4221,18 @@ form .checkbox input {
 	}
 	}
 
-.contact form {
+.contact__form {
 		margin-top: 10%;
 		height: 60%;
+		position: relative;
+		right: 0;
 	}
 
 @media (min-width: 800px) {
 
-.contact form {
-			margin-top: 5%
+.contact__form {
+			margin-top: 5%;
+			height: auto
 	}
 	}
 

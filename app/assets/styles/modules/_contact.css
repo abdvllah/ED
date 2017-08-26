@@ -11,12 +11,16 @@
 		}
 	}
 
-	form {
+
+	&__form {
 		margin-top: 10%;
 		height: 60%;
+		position: relative;
+		right: 0;
 
 		@mixin atMedium {
 			margin-top: 5%;
+			height: auto;
 		}
 	}
 }
