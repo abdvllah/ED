@@ -63,7 +63,7 @@
 			}
 		}
 		.active {
-			background-color: #FFF;
+			background-color: $red;
 		}
 
 		.prev, .next {

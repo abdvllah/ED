@@ -28,7 +28,7 @@
 				position: absolute;
 				width: 25px;
 				height: 25px;
-				left: -5%;
+				left: -35px;
 				top: -5%;
 				background: url('../images/left-q.png') top left no-repeat;
 				background-size: contain;
@@ -40,7 +40,7 @@
 				position: absolute;
 				width: 25px;
 				height: 25px;
-				right: -5%;
+				right: -35px;
 				bottom: -5%;
 				background: url('../images/right-q.png') top left no-repeat;
 				background-size: contain;

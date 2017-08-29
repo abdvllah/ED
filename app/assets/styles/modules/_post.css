@@ -30,6 +30,13 @@
 
 	}
 
+	&__content {
+		ul {
+			list-style-type: auto;
+			padding: auto;
+		}
+	}
+
 	&__date {
 
 	}
