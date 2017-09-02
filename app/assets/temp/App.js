@@ -11312,8 +11312,7 @@ var Generic = function () {
 		this.setParentWidth();
 		this.addActiveState();
 		this.showAlert();
-		// this.closeNav();
-		// this.changeImageOnHover();
+		this.hideLoader();
 	}
 
 	_createClass(Generic, [{
@@ -11333,6 +11332,13 @@ var Generic = function () {
 		key: 'showAlert',
 		value: function showAlert() {
 			(0, _jquery2.default)('.alert').slideDown(1000).delay(3000).fadeOut(1000);
+		}
+	}, {
+		key: 'hideLoader',
+		value: function hideLoader() {
+			(0, _jquery2.default)(document).ready(function () {
+				(0, _jquery2.default)('.loader').hide();
+			});
 		}
 	}]);
 

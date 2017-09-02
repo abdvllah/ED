@@ -11,7 +11,6 @@
 @import "animations/_reveal-item";
 @import "animations/_automove";
 
-
 /* General Modules */
 @import "modules/_site-menu";
 @import "modules/_site-logo";
@@ -46,6 +45,7 @@
 @import "modules/_comments";
 @import "modules/_comment-respond";
 @import "modules/_alert";
+@import "modules/_loader";
 
 /* Home Page Sections Modules */
 @import "modules/_large-hero";

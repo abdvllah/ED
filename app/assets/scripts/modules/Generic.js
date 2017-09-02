@@ -5,8 +5,7 @@ class Generic {
 		this.setParentWidth();
 		this.addActiveState();
 		this.showAlert();
-		// this.closeNav();
-		// this.changeImageOnHover();
+		this.hideLoader();
 	}
 
 	setParentWidth() {
@@ -22,6 +21,12 @@ class Generic {
 
 	showAlert() {
 		$('.alert').slideDown(1000).delay(3000).fadeOut(1000);
+	}
+
+	hideLoader() {
+		$(document).ready(function() {
+			$('.loader').hide();
+		});
 	}
 
 
