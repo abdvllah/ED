@@ -26,7 +26,7 @@ background-color: #FFF;
 			display: inline-block;
 			vertical-align: top;
 			width: 32%;
-			padding-right: 4%;
+			padding-right: 3%;
 		}
 	}
 
@@ -35,8 +35,7 @@ background-color: #FFF;
 
 		@mixin atMedium {
 			display: inline-block;
-			width: 200px;
-		}
+			}
 	}
 
 	.nat2030 {

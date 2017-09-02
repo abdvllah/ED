@@ -38,7 +38,7 @@
 		border-top: 18px solid transparent;
 		border-bottom: 18px solid transparent;
 		position: absolute;
-		bottom: 30%;
+		bottom: 20%;
 		cursor: pointer;
 		transition: transform .4s ease-out;
 

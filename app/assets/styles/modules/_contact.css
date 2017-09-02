@@ -1,4 +1,6 @@
 .contact {
+	position: relative;
+	
 	&.lazyloaded {
 		background: url('../images/contact-back.jp2') top right no-repeat;
 		background-size: contain;
@@ -11,16 +13,30 @@
 		}
 	}
 
+	.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
 
 	&__form {
 		margin-top: 10%;
-		height: 60%;
+		padding: 5%;
 		position: relative;
 		right: 0;
+		@mixin clearfix;
+
 
 		@mixin atMedium {
 			margin-top: 5%;
+			padding: 0 5%;
 			height: auto;
+
+			.left {
+				float: left;
+				margin-right: 10px;
+			}
 		}
 	}
 }

@@ -12,7 +12,7 @@
 		color: #FFF;
 
 		@mixin atMedium {
-			width: 250px;
+			width: 230px;
 		}
 	}
 

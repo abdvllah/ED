@@ -4,8 +4,6 @@
 	top: 20%;
 	text-align: center;
 	padding: 6px 8px;
-	font-size: 100%;
-	font-weight: 100;
 	color: #FFF;
 	margin:0;
 	display: inline-block;
@@ -14,8 +12,8 @@
 
 	@mixin atMedium {
 		background: url('../images/left-pillow.svg') top center no-repeat;
-		height: 100px;
-		width: 200px;
+		height: 80px;
+		width: 180px;
 		top: 30px;
 		padding: 15px;
 		font-weight: 500;
@@ -47,7 +45,9 @@
 		@mixin atMedium {
 			position: absolute;
 			left: 15%;
-			top: 40%;
+			top: 45%;
+			font-size: 90%;
+			font-weight: 100;
 		}
 	}
 
@@ -67,7 +67,9 @@
 			@mixin atMedium {
 				position: absolute;
 				left: 51%;
-				top: 40%;
+				top: 45%;
+				font-size: 90%;
+				font-weight: 100;
 			}
 
 		}

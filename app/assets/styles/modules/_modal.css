@@ -72,8 +72,8 @@
 		cursor: auto;
 
 		@mixin atMedium {
-			width: auto;
 			left: 50%;
 		}
+
 	}
 }
