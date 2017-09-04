@@ -4420,7 +4420,7 @@ background-color: #FFF;
 
 .icon-wrapper__icon {
 		width: 24%;
-		padding: 30px;
+		padding: 10px;
 		display: inline-block;
 		cursor: pointer;
 		-webkit-transition: background-color .4s ease;
@@ -4428,6 +4428,17 @@ background-color: #FFF;
 		border-bottom: 3px solid transparent;
 
 	}
+
+.icon-wrapper__icon img {
+ 			display: block;
+ 			height: 70px;
+ 			margin: auto;
+ 			position: relative;
+ 			-webkit-filter: grayscale(80);
+ 			        filter: grayscale(80);
+ 			-webkit-transition: all .2s ease;
+ 			transition: all .2s ease;
+		}
 
 @media (min-width: 800px) {
 
@@ -4481,6 +4492,11 @@ background-color: #FFF;
 			border-bottom-color: rgba(173,25,29,.7);
 		}
 
+.icon-wrapper__icon.active img {
+				-webkit-filter: grayscale(0);
+				        filter: grayscale(0);
+			}
+
 @media (min-width: 800px) {
 
 .icon-wrapper__icon.active {
@@ -4498,6 +4514,11 @@ background-color: #FFF;
 			border-bottom-color: rgba(173,25,29,.7);
 		}
 
+.icon-wrapper__icon:hover img {
+				-webkit-filter: grayscale(100);
+				        filter: grayscale(100);
+			}
+
 @media (min-width: 800px) {
 
 .icon-wrapper__icon:hover {
@@ -4505,76 +4526,6 @@ background-color: #FFF;
 				-webkit-transform: scale(1.1);
 				        transform: scale(1.1)
 		}
-	}
-
-.icon-wrapper .cultural {
-		background: url('../icons/cultural-b.svg') no-repeat;
-	}
-
-.icon-wrapper .cultural.active {
-			background-image: url('../icons/cultural.svg');
-		}
-
-.icon-wrapper .family {
-		background: url('../icons/family-b.svg') no-repeat;
-	}
-
-.icon-wrapper .family.active {
-			background-image: url('../icons/family.svg');
-		}
-
-.icon-wrapper .business {
-		background: url('../icons/business-b.svg') no-repeat;
-	}
-
-.icon-wrapper .business.active {
-			background-image: url('../icons/business.svg');
-		}
-
-.icon-wrapper .ramadan {
-		background: url('../icons/ramadan-b.svg') no-repeat;
-	}
-
-.icon-wrapper .ramadan.active {
-			background-image: url('../icons/ramadan.svg');
-		}
-
-.icon-wrapper .national {
-		 background: url('../icons/national-b.svg') no-repeat;
-	}
-
-.icon-wrapper .national.active {
-		 	background-image: url('../icons/national.svg');
-		 }
-
-.icon-wrapper .national {
-		 background: url('../icons/national-b.svg') no-repeat;
-	}
-
-.icon-wrapper .national.active {
-		 	background-image: url('../icons/national.svg');
-		 }
-
-.icon-wrapper .cul-events {
-		background: url('../icons/cul-events-b.svg') no-repeat;
-	}
-
-.icon-wrapper .cul-events.active {
-			background-image: url('../icons/cul-events.svg');
-		}
-
-.icon-wrapper .cultural, .icon-wrapper .family, .icon-wrapper .business, .icon-wrapper .ramadan, .icon-wrapper .national, .icon-wrapper .cul-events {
-		background-size: auto 70%;
-		background-position: center center;
-		background-color: rgb(61,61,61);
-	}
-
-@media (min-width: 800px) {
-
-.icon-wrapper .cultural, .icon-wrapper .family, .icon-wrapper .business, .icon-wrapper .ramadan, .icon-wrapper .national, .icon-wrapper .cul-events {
-			background-size: auto 90%;
-			background-color: transparent
-	}
 	}
 
 .icon-wrapper__text {

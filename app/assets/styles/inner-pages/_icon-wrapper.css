@@ -17,12 +17,20 @@
 
 	&__icon {
 		width: 24%;
-		padding: 30px;
+		padding: 10px;
 		display: inline-block;
 		cursor: pointer;
 		transition: background-color .4s ease;
 		border-bottom: 3px solid transparent;
 
+		img {
+ 			display: block;
+ 			height: 70px;
+ 			margin: auto;
+ 			position: relative;
+ 			filter: grayscale(80);
+ 			transition: all .2s ease;
+		}
 
 		@mixin atMedium {
 			display: block;
@@ -37,6 +45,8 @@
 			&:first-of-type {
 				margin-top: 50px;
 			}
+			
+
 		}
 
 		&::after {
@@ -63,6 +73,10 @@
 			border-bottom: 3px solid;
 			border-bottom-color: rgba($red,.7);
 
+			img {
+				filter: grayscale(0);
+			}
+
 			@mixin atMedium {
 				border: none;
 			}
@@ -77,86 +91,16 @@
 			border-bottom: 3px solid;
 			border-bottom-color: rgba($red,.7);
 
+			img {
+				filter: grayscale(100);
+			}
+
 			@mixin atMedium {
 				border: none;
 				transform: scale(1.1);
 			}
 		}
 
-	}
-
-	.cultural {
-		background: url('../icons/cultural-b.svg') no-repeat;
-		
-
-		&.active {
-			background-image: url('../icons/cultural.svg');
-		}
-	}
-
-	.family {
-		background: url('../icons/family-b.svg') no-repeat;
-		
-
-		&.active {
-			background-image: url('../icons/family.svg');
-		}
-	}
-
-	.business {
-		background: url('../icons/business-b.svg') no-repeat;
-		
-
-		&.active {
-			background-image: url('../icons/business.svg');
-		}
-	}
-
-	.ramadan {
-		background: url('../icons/ramadan-b.svg') no-repeat;
-		
-
-		&.active {
-			background-image: url('../icons/ramadan.svg');
-		}
-	}
-
-	.national {
-		 background: url('../icons/national-b.svg') no-repeat;
-		 
-
-		 &.active {
-		 	background-image: url('../icons/national.svg');
-		 }
-	}
-
-	.national {
-		 background: url('../icons/national-b.svg') no-repeat;
-		 
-
-		 &.active {
-		 	background-image: url('../icons/national.svg');
-		 }
-	}
-
-	.cul-events {
-		background: url('../icons/cul-events-b.svg') no-repeat;
-		
-
-		&.active {
-			background-image: url('../icons/cul-events.svg');
-		}
-	}
-
-	.cultural, .family, .business, .ramadan, .national, .cul-events {
-		background-size: auto 70%;
-		background-position: center center;
-		background-color: lighten($black, .1);
-
-		@mixin atMedium {
-			background-size: auto 90%;
-			background-color: transparent;
-		}
 	}
 
 
