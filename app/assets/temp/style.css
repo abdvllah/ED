@@ -4434,8 +4434,8 @@ background-color: #FFF;
  			height: 70px;
  			margin: auto;
  			position: relative;
- 			-webkit-filter: grayscale(80);
- 			        filter: grayscale(80);
+ 			-webkit-filter: grayscale(100);
+ 			        filter: grayscale(100);
  			-webkit-transition: all .2s ease;
  			transition: all .2s ease;
 		}
@@ -4515,8 +4515,8 @@ background-color: #FFF;
 		}
 
 .icon-wrapper__icon:hover img {
-				-webkit-filter: grayscale(100);
-				        filter: grayscale(100);
+				-webkit-filter: grayscale(0);
+				        filter: grayscale(0);
 			}
 
 @media (min-width: 800px) {
