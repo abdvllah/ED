@@ -16,7 +16,10 @@ class Generic {
 
 	addActiveState() {
 		$('.pillow:first-of-type').addClass('active');
-		$('.team-member:first-of-type').addClass('active')
+		$('.team-member:first-of-type').addClass('active');
+		$('.content-wrapper .content:first-of-type').addClass('active');
+		$('.icon-wrapper__icon:first-of-type').addClass('active');
+		
 	}
 
 	showAlert() {

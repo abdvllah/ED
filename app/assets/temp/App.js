@@ -11327,6 +11327,8 @@ var Generic = function () {
 		value: function addActiveState() {
 			(0, _jquery2.default)('.pillow:first-of-type').addClass('active');
 			(0, _jquery2.default)('.team-member:first-of-type').addClass('active');
+			(0, _jquery2.default)('.content-wrapper .content:first-of-type').addClass('active');
+			(0, _jquery2.default)('.icon-wrapper__icon:first-of-type').addClass('active');
 		}
 	}, {
 		key: 'showAlert',
