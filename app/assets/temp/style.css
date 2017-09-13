@@ -2863,7 +2863,7 @@ form .checkbox input {
 		margin: 1%;
 		display: inline-block;
 		vertical-align: top;
-		width: 47%;
+		width: 100%;
 		-webkit-transition: all .4s ease;
 		transition: all .4s ease;
 
@@ -2874,7 +2874,7 @@ form .checkbox input {
 			width: 100%;
 		}
 
-@media (min-width: 230px) {
+@media (min-width: 800px) {
 
 .gallery__image {
 			width: 30%
@@ -3194,11 +3194,21 @@ form .checkbox input {
 }
 
 .loader h3 {
-		position: absolute;
-		color: #FFF;
-		top: 30%;
-		left: 45%;
-		font-size: 200%;
+
+        position: absolute;
+        color: #FFF;
+        top: 30%;
+        left: 35%;
+        font-size: 200%;
+
+	}
+
+@media (min-width: 800px) {
+
+.loader h3 {
+            left: 45%
+
+	}
 	}
 
 .loader__spinner {
@@ -3529,7 +3539,7 @@ form .checkbox input {
 }
 
 .our-services.lazyloaded {
-		background: url('../images/our-services-l.jp2') no-repeat top 30% left, url('../images/our-services-r.jp2') no-repeat bottom right;
+		background: url('../images/our-services-l.png') no-repeat top 30% left, url('../images/our-services-r.png') no-repeat bottom right;
 		background-size: 70% auto;
 		background-color: #272727;
 	}
@@ -3542,7 +3552,7 @@ form .checkbox input {
 		text-align: center
 }
 		.our-services.lazyloaded {
-			background: url('../images/our-services-l-hi.jp2') no-repeat top left, url('../images/our-services-r-hi.jp2') no-repeat top right;
+			background: url('../images/our-services-l-hi.png') no-repeat top left, url('../images/our-services-r-hi.png') no-repeat top right;
 			background-size: 55% auto, 50% auto;
 			background-color: #272727;
 		}
@@ -3787,7 +3797,7 @@ form .checkbox input {
 
 .testimonial__photo {
 		margin: 0;
-		height: 20%;
+		height: 25%;
 	}
 
 .testimonial__photo img {
@@ -4255,7 +4265,7 @@ form .checkbox input {
 }
 
 .contact.lazyloaded {
-		background: url('../images/contact-back.jp2') top right no-repeat;
+		background: url('../images/contact-back.png') top right no-repeat;
 		background-size: contain;
 		background-color: rgb(147,147,147);
 	}
@@ -4263,7 +4273,7 @@ form .checkbox input {
 @media (min-width: 800px) {
 
 .contact.lazyloaded {
-			background: url('../images/contact-back-hi.jp2') top right no-repeat;
+			background: url('../images/contact-back-hi.png') top right no-repeat;
 			background-size: contain;
 			background-color: rgb(147,147,147)
 	}
@@ -4335,8 +4345,8 @@ background-color: #FFF;
 @media (min-width: 800px) {
 
 .about-page {
-		background: url('../images/about-back1.jp2') bottom 10% right no-repeat,
-		url('../images/about-back2.jp2') top 30% left no-repeat;
+		background: url('../images/about-back1.png') bottom 10% right no-repeat,
+		url('../images/about-back2.png') top 30% left no-repeat;
 		background-color: #FFF;
 		background-size: 25% auto;
 

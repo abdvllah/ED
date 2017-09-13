@@ -6,14 +6,14 @@
 		margin: 1%;
 		display: inline-block;
 		vertical-align: top;
-		width: 47%;
+		width: 100%;
 		transition: all .4s ease;
 
 		img {
 			width: 100%;
 		}
 
-		@mixin atSmall , @mixin atMedium {
+		@mixin atMedium {
 			width: 30%;
 
 			&:hover {
